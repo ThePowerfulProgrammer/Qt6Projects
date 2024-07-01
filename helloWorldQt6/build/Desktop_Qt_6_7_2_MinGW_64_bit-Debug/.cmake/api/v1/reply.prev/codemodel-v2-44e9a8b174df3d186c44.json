@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-b39b1a5d343106a980b1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "helloWorldQt6",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "helloWorldQt6::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-helloWorldQt6-Debug-15e662078a8bdb6c34a1.json",
+					"name" : "helloWorldQt6",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "helloWorldQt6_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-helloWorldQt6_autogen-Debug-a1c1fbc4533294f7587b.json",
+					"name" : "helloWorldQt6_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "helloWorldQt6_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-helloWorldQt6_autogen_timestamp_deps-Debug-4fe19c63464759110956.json",
+					"name" : "helloWorldQt6_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Qt6 Projects/helloWorldQt6/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug",
+		"source" : "C:/Qt6 Projects/helloWorldQt6"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

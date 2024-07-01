@@ -1,0 +1,16 @@
+# ninja log v5
+12	886	7415560066416669	helloWorldQt6_autogen/timestamp	e4c5a628da0029bb
+12	886	7415560066416669	helloWorldQt6_autogen/mocs_compilation.cpp	e4c5a628da0029bb
+12	886	7415560066416669	C:/Qt6 Projects/helloWorldQt6/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/helloWorldQt6_autogen/timestamp	e4c5a628da0029bb
+12	886	7415560066416669	C:/Qt6 Projects/helloWorldQt6/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/helloWorldQt6_autogen/mocs_compilation.cpp	e4c5a628da0029bb
+892	3329	7415560091710158	CMakeFiles/helloWorldQt6.dir/helloWorldQt6_autogen/mocs_compilation.cpp.obj	33237003d71856c3
+898	3367	7415560092077546	CMakeFiles/helloWorldQt6.dir/main.cpp.obj	9223590f8a149f20
+904	3402	7415560092448282	CMakeFiles/helloWorldQt6.dir/mainwindow.cpp.obj	d38712182226be14
+3403	3665	7415560095024665	helloWorldQt6.exe	4562ca8cbbc4efef
+19	197	7415565232460844	helloWorldQt6_autogen/timestamp	e4c5a628da0029bb
+19	197	7415565232460844	helloWorldQt6_autogen/mocs_compilation.cpp	e4c5a628da0029bb
+19	197	7415565232460844	C:/Qt6 Projects/helloWorldQt6/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/helloWorldQt6_autogen/timestamp	e4c5a628da0029bb
+19	197	7415565232460844	C:/Qt6 Projects/helloWorldQt6/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/helloWorldQt6_autogen/mocs_compilation.cpp	e4c5a628da0029bb
+215	2457	7415565292150146	CMakeFiles/helloWorldQt6.dir/main.cpp.obj	9223590f8a149f20
+221	2535	7415565292916636	CMakeFiles/helloWorldQt6.dir/mainwindow.cpp.obj	d38712182226be14
+2536	2744	7415565294986613	helloWorldQt6.exe	4562ca8cbbc4efef
