@@ -16,6 +16,9 @@ add_executable(Assignment2_Question1
   main.cpp
   person.h person.cpp
   registration.h registration.cpp
+  studentregistration.h studentregistration.cpp
+  guestregistration.h guestregistration.cpp
+  registrationlist.h registrationlist.cpp
 )
 target_link_libraries(Assignment2_Question1 Qt${QT_VERSION_MAJOR}::Core  Qt${QT_VERSION_MAJOR}::Widgets)
 
