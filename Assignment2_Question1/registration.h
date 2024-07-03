@@ -16,13 +16,7 @@ public:
     QDate getBookingDate();
     double calculateFee();
     QString toString();
-
-
     double STANDARD_FEE;
-    Person Attendee() const;
-
-    void setBookingDate(const QDate &newBookingDate);
-
 private:
     Person m_Attendee;
     QDate m_BookingDate;

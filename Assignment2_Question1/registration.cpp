@@ -11,7 +11,7 @@ QDate Registration::getBookingDate()
     return m_BookingDate;
 }
 
-Person Registration::Attendee() const
+Person Registration::getAttendee()
 {
     return m_Attendee;
 }
@@ -23,7 +23,7 @@ double Registration::calculateFee()
 
 QString Registration::toString()
 {
-    return QString("%1 %2 %3").arg(m_Attendee.toString()).arg(m_BookingDate.toString("dd.MM.yyyy")).arg( QString::number(calculateFee())) ;
+    return QString("%1 %2 ").arg(m_Attendee.toString()).arg(m_BookingDate.toString("dd.MM.yyyy"));
 }
 
 
