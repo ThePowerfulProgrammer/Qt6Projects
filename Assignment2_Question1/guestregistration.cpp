@@ -13,6 +13,9 @@ double GuestRegistration::calculateFee()
 
 QString GuestRegistration::toString()
 {
+    const QMetaObject *metaObject = this->metaObject();
+    qDebug() << "Class Name: " << metaObject->className() << "\n";
+    qDebug() << "Class Name: " << metaObject->superClass() << "\n";
     QString studentRegString = Registration::toString();
     studentRegString.append(m_Category);
 

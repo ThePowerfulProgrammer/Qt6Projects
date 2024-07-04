@@ -5,6 +5,7 @@
 
 class StudentRegistration : public Registration
 {
+    Q_OBJECT
 public:
     StudentRegistration(Person a, QString q);
     double calculateFee();

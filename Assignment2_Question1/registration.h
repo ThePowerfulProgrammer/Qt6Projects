@@ -4,13 +4,16 @@
 #include "person.h"
 #include <QDate>
 #include <QString>
-#include <QMultiMap>
 
 // fwd declarartions
 
 
-class Registration
+class Registration : public QObject
 {
+    Q_OBJECT
+
+
+
 public:
     Registration(Person a);
     Person getAttendee();
@@ -21,13 +24,6 @@ public:
 private:
     Person m_Attendee;
     QDate m_BookingDate;
-            // Name: Email
-    static QMultiMap<QString, QString> allRegistrations;
-
-
-    // A:x@.com
-    // B: x@.com
-    // A:x@.com NO NO RedunDanT
 };
 
 #endif // REGISTRATION_H

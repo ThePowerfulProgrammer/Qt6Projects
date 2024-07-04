@@ -5,11 +5,12 @@
 
 #include "registration.h"
 
-class RegistrationList :  public QObject
+class RegistrationList : public QObject
 {
     Q_OBJECT
 
 public:
+    RegistrationList(); // I added a default ctor
 
     bool addRegistration(Registration *r);
     bool isRegistered(QString n);
@@ -18,8 +19,13 @@ public:
 
     ~RegistrationList(); // deallocate memeory from the heap
 
+    int m_StandardRegistered;
+    int m_StudentRegistered;
+    int m_GuestRegistered;
+
 private:
     QList<Registration*> m_AttendeeList;
+
 };
 
 #endif // REGISTRATIONLIST_H
