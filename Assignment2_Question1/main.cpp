@@ -12,28 +12,26 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
     Person p1("Azura", "Affliated with the dogs of Doom", "pup@puppers.com");
+    Person p2("Azura", "Affliated with the dogs of Doom", "pup@puppers.com");
+    Person p3("Azura", "Affliated with the dogs of Doom", "dog@gmail.com");
+    Person p4("AshKetchum", "Affliated with Team Rocket", "pokemon@pokedex.com");
+
     Registration reg1(p1);
-    StudentRegistration student(p1, "BSc Comp Sci");
-    GuestRegistration guest(p1, "Lecturer");
+    Registration reg2(p2); // copy of reg1
+    Registration reg3(p3);
+    Registration reg4(p4);
+
+    StudentRegistration student(p1, "BSc Comp Sci"); // copy of reg1
+    GuestRegistration guest(p1, "Lecturer"); // copy of reg1
+
+
     RegistrationList regList;
 
-    regList.addRegistration(&reg1);
-    regList.addRegistration(&student);
-    regList.addRegistration(&guest);
+    qDebug() << "\n\n\n\n\n\n";
+    qDebug() << student.toString() << "\n";
 
 
 
-    qDebug() << p1.getName() << " " << p1.getAffliation() << " " << p1.getEmail() << "\n";
-    qDebug() << p1.toString() << "\n";
-
-    qDebug() << reg1.toString() << reg1.calculateFee() << "\n  \n \n ";
-
-    qDebug() << student.toString() << student.calculateFee() << "\n \n \n \n";
-
-    qDebug() << guest.toString() << guest.calculateFee() << "\n \n \n \n \n \n";
-
-
-    regList.isRegistered("Azura");
 
     return a.exec();
 }

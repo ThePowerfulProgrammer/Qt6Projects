@@ -1,9 +1,29 @@
 #include "registration.h"
 
+QMultiMap<QString, QString> Registration::allRegistrations;
 
-Registration::Registration(Person a) : m_Attendee(a), STANDARD_FEE(500), m_BookingDate(QDate::currentDate())
+Registration::Registration(Person a) : m_Attendee(a), STANDARD_FEE(500),
+    m_BookingDate(QDate::currentDate())
 {
 
+    if (allRegistrations.contains(a.getName(), a.getEmail()) == true)
+    {
+        qDebug() << "Registrations cannot be for the same Person with the same email address \n";
+    }
+    else
+    {
+        allRegistrations.insert(a.getName(), a.getEmail());
+    }
+    // remove the below after video
+    QMultiMapIterator<QString, QString> i(allRegistrations);
+    while (i.hasNext())
+    {
+        i.next();
+        qDebug() << "Key: " << " Value: " << "\n";
+        qDebug() << i.key() << " : " << i.value() << "\n";
+    }
+
+    qDebug() << "run Complete" << "\n";
 }
 
 QDate Registration::getBookingDate()
