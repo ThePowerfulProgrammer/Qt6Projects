@@ -3,7 +3,7 @@
 
 GuestRegistration::GuestRegistration(Person a, QString q) : Registration(a), m_Category(q)
 {
-
+    STANDARD_FEE = Registration::STANDARD_FEE*0.10;
 }
 
 double GuestRegistration::calculateFee()

@@ -41,11 +41,11 @@ bool RegistrationList::addRegistration(Registration *r)
 
         if (m_RegisteredPayments.find("StudentRegistration") != m_RegisteredPayments.end())
         {
-            m_RegisteredPayments["StudentRegistration"] += m_AttendeeList.last()->calculateFee()/2.0;
+            m_RegisteredPayments["StudentRegistration"] += m_AttendeeList.last()->calculateFee();
         }
         else
         {
-            m_RegisteredPayments["StudentRegistration"] = m_AttendeeList.last()->calculateFee()/2.0;
+            m_RegisteredPayments["StudentRegistration"] = m_AttendeeList.last()->calculateFee();
         }
 
     }
@@ -54,11 +54,11 @@ bool RegistrationList::addRegistration(Registration *r)
         m_GuestRegistered += 1;
         if (m_RegisteredPayments.find("GuestRegistration") != m_RegisteredPayments.end())
         {
-            m_RegisteredPayments["GuestRegistration"] += m_AttendeeList.last()->calculateFee()*0.10;
+            m_RegisteredPayments["GuestRegistration"] += m_AttendeeList.last()->calculateFee();
         }
         else
         {
-            m_RegisteredPayments["GuestRegistration"] = m_AttendeeList.last()->calculateFee()*0.10;
+            m_RegisteredPayments["GuestRegistration"] = m_AttendeeList.last()->calculateFee();
         }
     }
 

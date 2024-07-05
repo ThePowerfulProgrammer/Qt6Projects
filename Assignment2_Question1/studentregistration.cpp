@@ -3,7 +3,7 @@
 
 StudentRegistration::StudentRegistration(Person a, QString q) : Registration(a), m_Qualification(q)
 {
-
+    STANDARD_FEE = Registration::STANDARD_FEE*0.5;
 }
 
 double StudentRegistration::calculateFee()
