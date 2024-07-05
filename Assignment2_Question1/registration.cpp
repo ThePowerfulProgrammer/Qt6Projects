@@ -1,7 +1,6 @@
 #include "registration.h"
 #include <QDebug>
 
-
 Registration::Registration(Person a) : m_Attendee(a), STANDARD_FEE(500),
     m_BookingDate(QDate::currentDate())
 {

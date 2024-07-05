@@ -2,6 +2,7 @@
 #define REGISTRATIONLIST_H
 
 #include <QList>
+#include <QMap>
 
 #include "registration.h"
 
@@ -25,7 +26,7 @@ public:
 
 private:
     QList<Registration*> m_AttendeeList;
-
+    QMap<QString, double> m_RegisteredPayments;
 };
 
 #endif // REGISTRATIONLIST_H

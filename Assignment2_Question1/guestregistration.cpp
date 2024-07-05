@@ -8,7 +8,9 @@ GuestRegistration::GuestRegistration(Person a, QString q) : Registration(a), m_C
 
 double GuestRegistration::calculateFee()
 {
-    return Registration::calculateFee()*0.10;
+    double originalFee = Registration::calculateFee();
+    qDebug() << "Guest Fee running";
+    return originalFee*0.10;
 }
 
 QString GuestRegistration::toString()

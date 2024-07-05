@@ -5,7 +5,6 @@
 #include <QDate>
 #include <QString>
 
-// fwd declarartions
 
 
 class Registration : public QObject

@@ -46,11 +46,36 @@ int main(int argc, char *argv[])
     // qDebug() << regList.isRegistered("Bob") << "\n";
     // qDebug() << regList.isRegistered("AshKetchum") << "\n";
 
-    // qDebug() << "Total registered with Uni: "<< regList.totalRegistration("Uni") << "\n";
-    // qDebug() << "Total registered with Pokemon: "<< regList.totalRegistration("Pokemon") << "\n";
+    qDebug() << "Student paid: " << student->calculateFee() << "\n";
+    qDebug() << "Guest paid: " << guest->calculateFee() << "\n";
+
+    qDebug() << "Total registered with Uni: "<< regList.totalRegistration("Uni") << "\n";
+    qDebug() << "Total registered with Pokemon: "<< regList.totalRegistration("Pokemon") << "\n";
 
     qDebug() << " number of reg \t"<< regList.m_StandardRegistered << "\n";
     qDebug() << " number of sreg \t"<< regList.m_StudentRegistered << "\n";
     qDebug() << " number of greg \t"<< regList.m_GuestRegistered << "\n";
+
+    qDebug() << "Amount owned by all Registrations: " << regList.totalFee("All") << "\n";
+    qDebug() << "Amount owned by     Registrations: " << regList.totalFee("Registration") << "\n";
+    qDebug() << "Amount owned by     StudentRegistrations: " << regList.totalFee("StudentRegistration") << "\n";
+    qDebug() << "Amount owned by      GuestRegistrations: " << regList.totalFee("GuestRegistration") << "\n";
     return a.exec();
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -8,7 +8,9 @@ StudentRegistration::StudentRegistration(Person a, QString q) : Registration(a),
 
 double StudentRegistration::calculateFee()
 {
-    return Registration::calculateFee()/2.0;
+    double originalFee = Registration::calculateFee();
+    qDebug() << "Student Fee running";
+    return originalFee/2.0;
 }
 
 QString StudentRegistration::toString()

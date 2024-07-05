@@ -3,12 +3,12 @@
 
 // complete
 RegistrationList::RegistrationList() : m_AttendeeList(), m_StandardRegistered(0),
-    m_StudentRegistered(0), m_GuestRegistered(0)
+    m_StudentRegistered(0), m_GuestRegistered(0), m_RegisteredPayments()
 {
 
 }
 
-// complete
+// OverKILL
 bool RegistrationList::addRegistration(Registration *r)
 {
     for (int i=0;i<m_AttendeeList.size(); i++)
@@ -25,18 +25,47 @@ bool RegistrationList::addRegistration(Registration *r)
     if (QString("Registration").compare(m_AttendeeList.last()->metaObject()->className()) == 0 )
     {
         m_StandardRegistered += 1;
+
+        if (m_RegisteredPayments.find("Registration") != m_RegisteredPayments.end())
+        {
+            m_RegisteredPayments["Registration"] += m_AttendeeList.last()->calculateFee();
+        }
+        else
+        {
+            m_RegisteredPayments["Registration"] = m_AttendeeList.last()->calculateFee();
+        }
     }
     else if (QString("StudentRegistration").compare(m_AttendeeList.last()->metaObject()->className()) == 0)
     {
         m_StudentRegistered += 1;
+
+        if (m_RegisteredPayments.find("StudentRegistration") != m_RegisteredPayments.end())
+        {
+            m_RegisteredPayments["StudentRegistration"] += m_AttendeeList.last()->calculateFee()/2.0;
+        }
+        else
+        {
+            m_RegisteredPayments["StudentRegistration"] = m_AttendeeList.last()->calculateFee()/2.0;
+        }
+
     }
     else
     {
         m_GuestRegistered += 1;
+        if (m_RegisteredPayments.find("GuestRegistration") != m_RegisteredPayments.end())
+        {
+            m_RegisteredPayments["GuestRegistration"] += m_AttendeeList.last()->calculateFee()*0.10;
+        }
+        else
+        {
+            m_RegisteredPayments["GuestRegistration"] = m_AttendeeList.last()->calculateFee()*0.10;
+        }
     }
 
     return true;
 }
+
+
 
 // complete
 bool RegistrationList::isRegistered(QString n)
@@ -51,15 +80,19 @@ bool RegistrationList::isRegistered(QString n)
     return false;
 }
 
-
+// complete
 double RegistrationList::totalFee(QString t)
 {
-    double totalFees = 0.0;
-
-    return totalFees;
-
+    if (m_RegisteredPayments.find(t) == m_RegisteredPayments.end())
+    {
+        return m_RegisteredPayments["Registration"]
+               + m_RegisteredPayments["StudentRegistration"]
+               + m_RegisteredPayments["GuestRegistration"];
+    }
+    return m_RegisteredPayments[t];
 }
 
+// complete ???
 int RegistrationList::totalRegistration(QString a)
 {
     int totalRegistered = 0;
