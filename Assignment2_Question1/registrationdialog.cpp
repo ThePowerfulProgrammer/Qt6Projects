@@ -1,4 +1,8 @@
 #include "registrationdialog.h"
+#include "registration.h"
+#include "studentregistration.h"
+#include "guestregistration.h"
+#include "person.h"
 
 #include <QStandardItemModel>
 #include <QTableView>
@@ -9,7 +13,11 @@
 #include <QHBoxLayout>
 #include <QSpacerItem>
 #include <QHeaderView>
-#include <QMetaProperty>
+#include <QMessageBox>
+#include <QList>
+#include <QStandardItem>
+#include <QInputDialog>
+
 #include <QDebug>
 
 
@@ -40,7 +48,7 @@ RegistrationDialog::RegistrationDialog(QWidget *parent) : QDialog(parent, Qt::Wi
     // create the 2nd row
     typeOfRegistration = new QComboBox(this);
     QStringList list;
-    list << "Registration Type ▾ " << "Standard Registration" << "Student Registration" << "Guest Registration";
+    list << "Registration Type▾" << "Standard Registration" << "Student Registration" << "Guest Registration";
     typeOfRegistration->addItems(list);
 
     QHBoxLayout *secondRow = new QHBoxLayout;
@@ -75,6 +83,10 @@ RegistrationDialog::RegistrationDialog(QWidget *parent) : QDialog(parent, Qt::Wi
     fourthRow->addWidget(moreActions);
     fourthRow->addWidget(confirmAction);
 
+
+    // Signals and slots
+    connect(ok, SIGNAL(clicked()), this, SLOT(createRegistration()));
+
     // main Layout
     QVBoxLayout *mainLayout = new QVBoxLayout;
     mainLayout->addLayout(firstRow);
@@ -86,29 +98,84 @@ RegistrationDialog::RegistrationDialog(QWidget *parent) : QDialog(parent, Qt::Wi
     setLayout(mainLayout);
 }
 
+void RegistrationDialog::createRegistration()
+{
+    if (!addName->text().isEmpty() && !addEmail->text().isEmpty() && !addAffliation->text().isEmpty() && typeOfRegistration->currentText() != "Registration Type▾")
+    {
+        if (typeOfRegistration->currentText() == "Standard Registration")
+        {
+            QString name = addName->text();
+            QString affiliation = addAffliation->text();
+            QString email = addEmail->text();
 
+            Person p(name, affiliation, email);
+            Registration r(p);
+            regList.addRegistration(&r);
 
+            QStandardItem *name_item = new QStandardItem(name);
+            QStandardItem *email_item = new QStandardItem(r.metaObject()->className());
+            QStandardItem *booking_date_item = new QStandardItem(r.getBookingDate().toString("dd.MM.yyyy"));
+            QStandardItem *reg_fee_item = new QStandardItem(QString::number(r.calculateFee()));
 
+            // insert a new row to the model
+            int row =  model->rowCount();
+            model->insertRow(row, QList<QStandardItem*>() << name_item << email_item << booking_date_item << reg_fee_item);
+        }
+        else if (typeOfRegistration->currentText() == "Student Registration")
+        {
+            QString name = addName->text();
+            QString affiliation = addAffliation->text();
+            QString email = addEmail->text();
 
+            Person p(name, affiliation, email);
+            QString qualification = QInputDialog::getText(this, "Confirm Qualification", "Enter qualification",QLineEdit::Normal);
+            StudentRegistration *student = new StudentRegistration(p, qualification);
+            regList.addRegistration(student);
 
+            QStandardItem *name_item = new QStandardItem(name);
+            QStandardItem *type_item = new QStandardItem(student->metaObject()->className());
+            QStandardItem *booking_date_item = new QStandardItem(student->getBookingDate().toString("dd.MM.yyyy"));
+            QStandardItem *reg_fee_item = new QStandardItem(QString::number(student->STANDARD_FEE));
 
+            // insert a new row to the model
+            int row =  model->rowCount();
+            model->insertRow(row, QList<QStandardItem*>() << name_item << type_item << booking_date_item << reg_fee_item);
+        }
+        else
+        {
+            QString name = addName->text();
+            QString affiliation = addAffliation->text();
+            QString email = addEmail->text();
 
+            Person p(name, affiliation, email);
+            QString category = QInputDialog::getText(this, "Confirm Category", "Enter category",QLineEdit::Normal);
+            GuestRegistration *guest= new GuestRegistration(p, category);
+            regList.addRegistration(guest);
 
+            QStandardItem *name_item = new QStandardItem(name);
+            QStandardItem *type_item = new QStandardItem(guest->metaObject()->className());
+            QStandardItem *booking_date_item = new QStandardItem(guest->getBookingDate().toString("dd.MM.yyyy"));
+            QStandardItem *reg_fee_item = new QStandardItem(QString::number(guest->STANDARD_FEE));
 
+            // insert a new row to the model
+            int row =  model->rowCount();
+            model->insertRow(row, QList<QStandardItem*>() << name_item << type_item << booking_date_item << reg_fee_item);
+        }
 
+        addName->clear();
+        addAffliation->clear();
+        addEmail->clear();
+        typeOfRegistration->setCurrentIndex(0);
 
-
-
-
-
-
-
-
-
-
-
+    }
+    else
+    {
+        QMessageBox::information(this, "Values Missing",  "Add Appropriate Data in the forms");
+    }
+}
 
 RegistrationDialog::~RegistrationDialog()
 {
-
 }
+
+

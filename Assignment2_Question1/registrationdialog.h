@@ -4,7 +4,6 @@
 #include <QDialog>
 #include "registrationlist.h"
 
-
 class QStandardItemModel;
 class QTableView; // model + view + (delegate) MVC (MVD) design pattern
 class  QLineEdit;
@@ -19,6 +18,9 @@ class RegistrationDialog : public QDialog
 public:
     RegistrationDialog(QWidget *parent = 0);
     ~RegistrationDialog();
+
+public slots:
+    void createRegistration(); // create a Person -> Create a Registration -> Add that Registration to the table
 
 private:
     // 1st row
@@ -36,7 +38,7 @@ private:
 
     // 4th row
     QComboBox *moreActions;
-    RegistrationList *regList;
+    RegistrationList regList;
     QPushButton *confirmAction;
 };
 
