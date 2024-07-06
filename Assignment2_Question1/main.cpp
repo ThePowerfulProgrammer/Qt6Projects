@@ -7,6 +7,8 @@
 #include "studentregistration.h"
 #include "guestregistration.h"
 #include "registrationlist.h"
+#include "registrationdialog.h"
+
 
 int main(int argc, char *argv[])
 {
@@ -51,6 +53,7 @@ int main(int argc, char *argv[])
 
     qDebug() << "Total registered with Uni: "<< regList.totalRegistration("Uni") << "\n";
     qDebug() << "Total registered with Pokemon: "<< regList.totalRegistration("Pokemon") << "\n";
+    qDebug() << "Total registered with MK: "<< regList.totalRegistration("MK") << "\n";
 
     qDebug() << " number of reg \t"<< regList.m_StandardRegistered << "\n";
     qDebug() << " number of sreg \t"<< regList.m_StudentRegistered << "\n";
@@ -60,6 +63,9 @@ int main(int argc, char *argv[])
     qDebug() << "Amount owned by     Registrations: " << regList.totalFee("Registration") << "\n";
     qDebug() << "Amount owned by     StudentRegistrations: " << regList.totalFee("StudentRegistration") << "\n";
     qDebug() << "Amount owned by      GuestRegistrations: " << regList.totalFee("GuestRegistration") << "\n";
+
+    RegistrationDialog *dialog = new RegistrationDialog;
+    dialog->show();
     return a.exec();
 }
 

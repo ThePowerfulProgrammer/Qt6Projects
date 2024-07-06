@@ -19,6 +19,7 @@ add_executable(Assignment2_Question1
   studentregistration.h studentregistration.cpp
   guestregistration.h guestregistration.cpp
   registrationlist.h registrationlist.cpp
+  registrationdialog.h registrationdialog.cpp
 )
 target_link_libraries(Assignment2_Question1 Qt${QT_VERSION_MAJOR}::Core  Qt${QT_VERSION_MAJOR}::Widgets)
 

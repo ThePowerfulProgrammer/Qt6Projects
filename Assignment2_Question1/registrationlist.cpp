@@ -1,5 +1,6 @@
 #include "registrationlist.h"
 #include <QDebug>
+#include <QMetaProperty>
 
 // complete
 RegistrationList::RegistrationList() : m_AttendeeList(), m_StandardRegistered(0),
@@ -89,6 +90,11 @@ double RegistrationList::totalFee(QString t)
                + m_RegisteredPayments["StudentRegistration"]
                + m_RegisteredPayments["GuestRegistration"];
     }
+    for (int i = 0; i< this->metaObject()->methodCount(); ++i)
+    {
+        qDebug() << this->metaObject()->method(i).name();
+    }
+
     return m_RegisteredPayments[t];
 }
 
@@ -110,6 +116,8 @@ int RegistrationList::totalRegistration(QString a)
 // complete
 RegistrationList::~RegistrationList()
 {
+
+
     for (Registration *r: m_AttendeeList)
     {
         delete r;
