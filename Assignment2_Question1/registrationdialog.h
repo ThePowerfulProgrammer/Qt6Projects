@@ -37,6 +37,7 @@ private:
     // 4th row
     QComboBox *moreActions;
     RegistrationList *regList;
+    QPushButton *confirmAction;
 };
 
 #endif // REGISTRATIONDIALOG_H

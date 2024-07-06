@@ -40,7 +40,7 @@ RegistrationDialog::RegistrationDialog(QWidget *parent) : QDialog(parent, Qt::Wi
     // create the 2nd row
     typeOfRegistration = new QComboBox(this);
     QStringList list;
-    list << "Standard Registration" << "Student Registration" << "Guest Registration";
+    list << "Registration Type ▾ " << "Standard Registration" << "Student Registration" << "Guest Registration";
     typeOfRegistration->addItems(list);
 
     QHBoxLayout *secondRow = new QHBoxLayout;
@@ -66,20 +66,14 @@ RegistrationDialog::RegistrationDialog(QWidget *parent) : QDialog(parent, Qt::Wi
 
     // create the 4th row
     moreActions = new QComboBox(this);
-
     QStringList actions;
-    for (int i = 0; i< regList->metaObject()->propertyCount(); ++i)
-    {
-        QMetaProperty metaproperty = regList->metaObject()->property(i);
-        qDebug() << metaproperty.name();
-    }
-
-    actions << "Placeholder";
+    actions << "More ▾"<< "addRegistration" << "isRegistered" << "totalFee" << "totalRegistration";
     moreActions->addItems(actions);
+    confirmAction = new QPushButton("Confirm", this);
 
     QHBoxLayout *fourthRow = new QHBoxLayout;
     fourthRow->addWidget(moreActions);
-
+    fourthRow->addWidget(confirmAction);
 
     // main Layout
     QVBoxLayout *mainLayout = new QVBoxLayout;
