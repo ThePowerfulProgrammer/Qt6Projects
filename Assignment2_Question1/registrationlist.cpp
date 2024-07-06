@@ -14,8 +14,8 @@ bool RegistrationList::addRegistration(Registration *r)
 {
     for (int i=0;i<m_AttendeeList.size(); i++)
     {
-        if ((m_AttendeeList[i]->getAttendee().getName() == r->getAttendee().getName())  &&
-            (m_AttendeeList[i]->getAttendee().getEmail() == r->getAttendee().getEmail()) )
+        if ((m_AttendeeList[i]->getAttendee().getName().compare(r->getAttendee().getName()) == 0 )  &&
+            (m_AttendeeList[i]->getAttendee().getEmail().compare(r->getAttendee().getEmail()) == 0) )
         {
             qDebug() << "Cannot add a registration with the same name and same email address \n";
             return false;
@@ -89,10 +89,6 @@ double RegistrationList::totalFee(QString t)
         return m_RegisteredPayments["Registration"]
                + m_RegisteredPayments["StudentRegistration"]
                + m_RegisteredPayments["GuestRegistration"];
-    }
-    for (int i = 0; i< this->metaObject()->methodCount(); ++i)
-    {
-        qDebug() << this->metaObject()->method(i).name();
     }
 
     return m_RegisteredPayments[t];

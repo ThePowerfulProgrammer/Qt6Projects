@@ -44,7 +44,7 @@ int main(int argc, char *argv[])
 
 
 
-    // qDebug() << regList.isRegistered("Azura") << "\n";
+    qDebug() << "Azura??? "<< regList.isRegistered("Azura") << "\n";
     // qDebug() << regList.isRegistered("Bob") << "\n";
     // qDebug() << regList.isRegistered("AshKetchum") << "\n";
 

@@ -21,6 +21,7 @@ public:
 
 public slots:
     void createRegistration(); // create a Person -> Create a Registration -> Add that Registration to the table
+    void runRegistrationListFunction(); // run an applicable regList method
 
 private:
     // 1st row
