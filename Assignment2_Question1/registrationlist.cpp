@@ -3,8 +3,7 @@
 #include <QMetaProperty>
 
 // complete
-RegistrationList::RegistrationList() : m_AttendeeList(), m_StandardRegistered(0),
-    m_StudentRegistered(0), m_GuestRegistered(0), m_RegisteredPayments()
+RegistrationList::RegistrationList() : m_AttendeeList(), m_RegisteredPayments()
 {
 
 }
@@ -25,8 +24,6 @@ bool RegistrationList::addRegistration(Registration *r)
 
     if (QString("Registration").compare(m_AttendeeList.last()->metaObject()->className()) == 0 )
     {
-        m_StandardRegistered += 1;
-
         if (m_RegisteredPayments.find("Registration") != m_RegisteredPayments.end())
         {
             m_RegisteredPayments["Registration"] += m_AttendeeList.last()->calculateFee();
@@ -38,8 +35,6 @@ bool RegistrationList::addRegistration(Registration *r)
     }
     else if (QString("StudentRegistration").compare(m_AttendeeList.last()->metaObject()->className()) == 0)
     {
-        m_StudentRegistered += 1;
-
         if (m_RegisteredPayments.find("StudentRegistration") != m_RegisteredPayments.end())
         {
             m_RegisteredPayments["StudentRegistration"] += m_AttendeeList.last()->calculateFee();
@@ -52,7 +47,6 @@ bool RegistrationList::addRegistration(Registration *r)
     }
     else
     {
-        m_GuestRegistered += 1;
         if (m_RegisteredPayments.find("GuestRegistration") != m_RegisteredPayments.end())
         {
             m_RegisteredPayments["GuestRegistration"] += m_AttendeeList.last()->calculateFee();
@@ -84,14 +78,18 @@ bool RegistrationList::isRegistered(QString n)
 // complete
 double RegistrationList::totalFee(QString t)
 {
-    if (m_RegisteredPayments.find(t) == m_RegisteredPayments.end())
+    if (t=="All")
     {
         return m_RegisteredPayments["Registration"]
                + m_RegisteredPayments["StudentRegistration"]
                + m_RegisteredPayments["GuestRegistration"];
     }
+    else if (t == "Registration" || t == "StudentRegistration" || t == "GuestRegistration")
+    {
+        return m_RegisteredPayments[t];
+    }
 
-    return m_RegisteredPayments[t];
+    return 0.0;
 }
 
 // complete ???
@@ -112,10 +110,9 @@ int RegistrationList::totalRegistration(QString a)
 // complete
 RegistrationList::~RegistrationList()
 {
-
-
-    for (Registration *r: m_AttendeeList)
+    for (Registration *r : m_AttendeeList)
     {
         delete r;
     }
 }
+

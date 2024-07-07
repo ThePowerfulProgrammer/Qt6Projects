@@ -17,13 +17,13 @@
 #include <QList>
 #include <QStandardItem>
 #include <QInputDialog>
-
+#include <QDir>
 #include <QDebug>
 
 
 // I will create the base UI
 RegistrationDialog::RegistrationDialog(QWidget *parent) : QDialog(parent, Qt::Window | Qt::WindowTitleHint
-                          | Qt::WindowCloseButtonHint | Qt::CustomizeWindowHint), regList()
+                          | Qt::WindowCloseButtonHint | Qt::CustomizeWindowHint),  regList()
 {
     // create the 1st row
     addName = new QLineEdit(this);
@@ -31,28 +31,30 @@ RegistrationDialog::RegistrationDialog(QWidget *parent) : QDialog(parent, Qt::Wi
     addName->setPlaceholderText("Name: ");
 
     addEmail = new QLineEdit(this);
-    addEmail->setPlaceholderText("name@site.com ");
+    addEmail->setPlaceholderText("Email: ");
 
     addAffliation = new QLineEdit(this);
-    addAffliation->setPlaceholderText("Uni");
+    addAffliation->setPlaceholderText("Affiliation: ");
 
-    ok = new QPushButton("OK",this);
 
     QHBoxLayout *firstRow = new QHBoxLayout;
     firstRow->addWidget(addName);
     firstRow->addWidget(addEmail);
     firstRow->addWidget(addAffliation);
     firstRow->addSpacing(20);
-    firstRow->addWidget(ok);
 
     // create the 2nd row
     typeOfRegistration = new QComboBox(this);
     QStringList list;
     list << "Registration Type▾" << "Standard Registration" << "Student Registration" << "Guest Registration";
     typeOfRegistration->addItems(list);
+    ok = new QPushButton("OK",this);
+
 
     QHBoxLayout *secondRow = new QHBoxLayout;
     secondRow->addWidget(typeOfRegistration);
+    secondRow->addWidget(ok);
+
 
     // create the third row
 
@@ -65,7 +67,9 @@ RegistrationDialog::RegistrationDialog(QWidget *parent) : QDialog(parent, Qt::Wi
     tableView->setModel(model);
     tableView->setShowGrid(true);
     tableView->setSortingEnabled(true);
-    tableView->setColumnWidth(3, tableView->columnWidth(3)+100);
+    tableView->setColumnWidth(1, tableView->columnWidth(1)+10);
+    tableView->setColumnWidth(2, tableView->columnWidth(2)+10);
+    tableView->setColumnWidth(3, tableView->columnWidth(3)+30);
     tableView->horizontalHeader()->setStretchLastSection(true);
 
 
@@ -110,14 +114,14 @@ void RegistrationDialog::createRegistration()
             QString email = addEmail->text();
 
             Person p(name, affiliation, email);
-            Registration r(p);
-            if(regList.addRegistration(&r))
+            Registration *r = new Registration(p);
+            if(regList.addRegistration(r))
             {
 
                 QStandardItem *name_item = new QStandardItem(name);
-                QStandardItem *email_item = new QStandardItem(r.metaObject()->className());
-                QStandardItem *booking_date_item = new QStandardItem(r.getBookingDate().toString("dd.MM.yyyy"));
-                QStandardItem *reg_fee_item = new QStandardItem(QString::number(r.calculateFee()));
+                QStandardItem *email_item = new QStandardItem(r->metaObject()->className());
+                QStandardItem *booking_date_item = new QStandardItem(r->getBookingDate().toString("dd.MM.yyyy"));
+                QStandardItem *reg_fee_item = new QStandardItem(QString::number(r->calculateFee()));
 
                 // insert a new row to the model
                 int row =  model->rowCount();
@@ -135,12 +139,10 @@ void RegistrationDialog::createRegistration()
             StudentRegistration *student = new StudentRegistration(p, qualification);
             if (regList.addRegistration(student))
             {
-
                 QStandardItem *name_item = new QStandardItem(name);
                 QStandardItem *type_item = new QStandardItem(student->metaObject()->className());
                 QStandardItem *booking_date_item = new QStandardItem(student->getBookingDate().toString("dd.MM.yyyy"));
                 QStandardItem *reg_fee_item = new QStandardItem(QString::number(student->STANDARD_FEE));
-
                 // insert a new row to the model
                 int row =  model->rowCount();
                 model->insertRow(row, QList<QStandardItem*>() << name_item << type_item << booking_date_item << reg_fee_item);
@@ -174,7 +176,6 @@ void RegistrationDialog::createRegistration()
         addAffliation->clear();
         addEmail->clear();
         typeOfRegistration->setCurrentIndex(0);
-
     }
     else
     {
@@ -184,23 +185,41 @@ void RegistrationDialog::createRegistration()
 
 void RegistrationDialog::runRegistrationListFunction()
 {
-    if (moreActions->currentText() == "More▾")
+    if (moreActions->currentIndex() == 0)
     {
         QMessageBox::information(this, "Choice error", "choose an applicable function");
     }
     else
     {
-        if (moreActions->currentText() == "isRegistered")
+        if (moreActions->currentIndex() == 2)
         {
-            QString name = QInputDialog::getText(this,"Search Register", "Search Name: ", QLineEdit::Normal).trimmed();
+            QString name = QInputDialog::getText(this,"Search Register", "Search Name", QLineEdit::Normal).trimmed();
             qDebug() << name << "\n";
-            qDebug() << regList.isRegistered("Ash") << "\n";
+
+            if (regList.isRegistered(name))
+            {
+                QMessageBox::information(this, "Attendee found", QString("Attendee %1 is registered").arg(name));
+            }
+            else
+            {
+                QMessageBox::warning(this, "Attendee not found", QString("Attendee %1 is not registered").arg(name));
+            }
+
         }
-        else if (moreActions->currentText() == "totalFee")
+        else if (moreActions->currentIndex() == 3)
         {
-            qDebug() << regList.m_AttendeeList.size() << "\n";
-            QString t = QInputDialog::getText(this,"Search Register", "Search Name: ", QLineEdit::Normal).trimmed();
-            qDebug() << regList.totalFee(t) << "\n";
+            QString t = QInputDialog::getText(this,"Total Fee", "Type", QLineEdit::Normal).trimmed();
+
+            QMessageBox::information(this, "Total Due", QString("Total amount due for %1 is: %2").arg(t).arg(QString::number(regList.totalFee(t))));
+        }
+        else if (moreActions->currentIndex() == 4)
+        {
+            QString a = QInputDialog::getText(this, "Affliation Search", "Affliation", QLineEdit::Normal).trimmed();
+            QMessageBox::information(this, "Total Affiliation Registration", QString("Number of People Registered with %1 is: %2").arg(a).arg(regList.totalRegistration(a)));
+        }
+        else if (moreActions->currentIndex() == 1)
+        {
+            QMessageBox::information(this, "Add Registration", "Use the UI above to register a user.");
         }
     }
 }

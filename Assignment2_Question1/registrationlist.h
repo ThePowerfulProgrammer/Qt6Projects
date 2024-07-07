@@ -20,14 +20,9 @@ public:
 
     ~RegistrationList(); // deallocate memeory from the heap
 
-    int m_StandardRegistered;
-    int m_StudentRegistered;
-    int m_GuestRegistered;
-    QList<Registration*> m_AttendeeList;
-
-
 private:
     QMap<QString, double> m_RegisteredPayments;
+    QList<Registration*> m_AttendeeList;
 };
 
 #endif // REGISTRATIONLIST_H
