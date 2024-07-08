@@ -8,15 +8,11 @@ StudentRegistration::StudentRegistration(Person a, QString q) : Registration(a),
 
 double StudentRegistration::calculateFee()
 {
-    qDebug() << "Student Fee running";
     return STANDARD_FEE;
 }
 
 QString StudentRegistration::toString()
 {
-    const QMetaObject *metaObject = this->metaObject();
-    qDebug() << "Class Name: " << metaObject->className() << "\n";
-    qDebug() << "Class Name: " << metaObject->superClass() << "\n";
     QString studentRegString = Registration::toString();
     studentRegString.append(m_Qualification);
 

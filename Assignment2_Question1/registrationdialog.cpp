@@ -14,11 +14,8 @@
 #include <QSpacerItem>
 #include <QHeaderView>
 #include <QMessageBox>
-#include <QList>
 #include <QStandardItem>
 #include <QInputDialog>
-#include <QDir>
-#include <QDebug>
 
 
 // I will create the base UI
@@ -194,7 +191,6 @@ void RegistrationDialog::runRegistrationListFunction()
         if (moreActions->currentIndex() == 2)
         {
             QString name = QInputDialog::getText(this,"Search Register", "Search Name", QLineEdit::Normal).trimmed();
-            qDebug() << name << "\n";
 
             if (regList.isRegistered(name))
             {
@@ -209,13 +205,19 @@ void RegistrationDialog::runRegistrationListFunction()
         else if (moreActions->currentIndex() == 3)
         {
             QString t = QInputDialog::getText(this,"Total Fee", "Type", QLineEdit::Normal).trimmed();
+            if (!t.isEmpty())
+            {
+                QMessageBox::information(this, "Total Due", QString("Total amount due for %1 is: %2").arg(t).arg(QString::number(regList.totalFee(t))));
+            }
 
-            QMessageBox::information(this, "Total Due", QString("Total amount due for %1 is: %2").arg(t).arg(QString::number(regList.totalFee(t))));
         }
         else if (moreActions->currentIndex() == 4)
         {
             QString a = QInputDialog::getText(this, "Affliation Search", "Affliation", QLineEdit::Normal).trimmed();
-            QMessageBox::information(this, "Total Affiliation Registration", QString("Number of People Registered with %1 is: %2").arg(a).arg(regList.totalRegistration(a)));
+            if (!a.isEmpty())
+            {
+                QMessageBox::information(this, "Total Affiliation Registration", QString("Number of People Registered with %1 is: %2").arg(a).arg(regList.totalRegistration(a)));
+            }
         }
         else if (moreActions->currentIndex() == 1)
         {

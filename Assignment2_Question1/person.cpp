@@ -1,9 +1,6 @@
 #include "person.h"
 
 
-#include <QString>
-
-
 Person::Person(QString n, QString a, QString e) : m_Name(n), m_Affliation(a), m_Email(e)
 {
 }

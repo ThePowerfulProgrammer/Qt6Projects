@@ -1,10 +1,12 @@
 #ifndef REGISTRATIONLIST_H
 #define REGISTRATIONLIST_H
 
+#include "registration.h"
+
 #include <QList>
 #include <QMap>
 
-#include "registration.h"
+
 
 class RegistrationList : public QObject
 {

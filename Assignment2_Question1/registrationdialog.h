@@ -1,8 +1,9 @@
 #ifndef REGISTRATIONDIALOG_H
 #define REGISTRATIONDIALOG_H
 
-#include <QDialog>
+
 #include "registrationlist.h"
+#include <QDialog>
 
 class QStandardItemModel;
 class QTableView; // model + view + (delegate) MVC (MVD) design pattern
@@ -20,8 +21,8 @@ public:
     ~RegistrationDialog();
 
 public slots:
-    void createRegistration(); // create a Person -> Create a Registration -> Add that Registration to the table
-    void runRegistrationListFunction(); // run an applicable regList method
+    void createRegistration();
+    void runRegistrationListFunction();
 
 private:
     // 1st row

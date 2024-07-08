@@ -3,16 +3,12 @@
 
 #include "person.h"
 #include <QDate>
-#include <QString>
 
-
+class QString;
 
 class Registration : public QObject
 {
     Q_OBJECT
-
-
-
 public:
     Registration(Person a);
     Person getAttendee();
