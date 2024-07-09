@@ -22,29 +22,29 @@ RegistrationListWriter::RegistrationListWriter(QString path, RegistrationList &r
 
         QDomElement nameNode = document.createElement("name");
         attendeeNode.appendChild(nameNode);
-        QDomText t = document.createTextNode(regList.getAttendeeList()[i]->getAttendee().getName());
-        nameNode.appendChild(t);
+        QDomText nameText = document.createTextNode(regList.getAttendeeList()[i]->getAttendee().getName());
+        nameNode.appendChild(nameText);
 
         QDomElement affliationNode = document.createElement("affiliation");
         attendeeNode.appendChild(affliationNode );
-        QDomText s = document.createTextNode(regList.getAttendeeList()[i]->getAttendee().getAffliation());
-        affliationNode.appendChild(s);
+        QDomText affliationText = document.createTextNode(regList.getAttendeeList()[i]->getAttendee().getAffliation());
+        affliationNode.appendChild(affliationText);
 
         QDomElement emailNode = document.createElement("email");
         attendeeNode.appendChild(emailNode);
-        QDomText u = document.createTextNode(regList.getAttendeeList()[i]->getAttendee().getEmail());
-        emailNode.appendChild(u);
+        QDomText emailText = document.createTextNode(regList.getAttendeeList()[i]->getAttendee().getEmail());
+        emailNode.appendChild(emailText);
 
         QDomElement bookingDateNode = document.createElement("bookingdate");
         registrationNode.appendChild(bookingDateNode);
-        QDomText v = document.createTextNode(regList.getAttendeeList()[i]->getBookingDate().toString("dd.MM.yyyy"));
-        bookingDateNode.appendChild(v);
+        QDomText bookingDateText = document.createTextNode(regList.getAttendeeList()[i]->getBookingDate().toString("dd.MM.yyyy"));
+        bookingDateNode.appendChild(bookingDateText);
 
         QDomElement registrationFeeNode = document.createElement("registrationfee");
         registrationNode.appendChild(registrationFeeNode);
         QString fee = QString::number(regList.getAttendeeList()[i]->calculateFee());
-        QDomText w = document.createTextNode(fee);
-        registrationFeeNode.appendChild(w);
+        QDomText feeText = document.createTextNode(fee);
+        registrationFeeNode.appendChild(feeText);
     }
 
     QFile file(path);

@@ -204,7 +204,7 @@ void RegistrationDialog::runRegistrationListFunction()
             {
                 QMessageBox::information(this, "Attendee found", QString("Attendee %1 is registered").arg(name));
             }
-            else
+            else if (!regList.isRegistered(name) ||  name.isNull())
             {
                 QMessageBox::warning(this, "Attendee not found", QString("Attendee %1 is not registered").arg(name));
             }
@@ -213,18 +213,26 @@ void RegistrationDialog::runRegistrationListFunction()
         else if (moreActions->currentIndex() == 3)
         {
             QString t = QInputDialog::getText(this,"Total Fee", "Type", QLineEdit::Normal).trimmed();
-            if (!t.isEmpty())
+            if (!t.isNull())
             {
                 QMessageBox::information(this, "Total Due", QString("Total amount due for %1 is: %2").arg(t).arg(QString::number(regList.totalFee(t))));
+            }
+            else
+            {
+                QMessageBox::warning(this,"Total Due Error", "Cannot Search for an empty string");
             }
 
         }
         else if (moreActions->currentIndex() == 4)
         {
             QString a = QInputDialog::getText(this, "Affliation Search", "Affliation", QLineEdit::Normal).trimmed();
-            if (!a.isEmpty())
+            if (!a.isNull())
             {
                 QMessageBox::information(this, "Total Affliation Registration", QString("Number of People Registered with %1 is: %2").arg(a).arg(regList.totalRegistration(a)));
+            }
+            else
+            {
+                QMessageBox::warning(this,"Total Affliation Registration Error", "Cannot search for an empty text");
             }
         }
         else if (moreActions->currentIndex() == 1)
@@ -240,6 +248,10 @@ void RegistrationDialog::runRegistrationWriterFunction()
     {
         QString path = QInputDialog::getText(this, "File Path", "What is the file path to write to? ", QLineEdit::Normal);
         RegistrationListWriter regListWriter(path, regList);
+    }
+    else
+    {
+        QMessageBox::warning(this,"Write Error", "Cannot write from an empty table\nFill in data");
     }
 }
 
