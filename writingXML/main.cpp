@@ -19,7 +19,9 @@ int main(int argc, char *argv[])
     for (int c=0; c<1;c++)
     {
         QDomElement registration = document.createElement("Registration");
+
         registration.setAttribute("Type: ", "Registration");
+
         registrationListRoot.appendChild(registration);
 
         for (int i=0;i<1;i++)
@@ -37,7 +39,16 @@ int main(int argc, char *argv[])
                 attendee.appendChild(affiliation);
                 attendee.appendChild(email);
             }
+            QDomElement bookingDate = document.createElement("bookingdate");
+            registration.appendChild(bookingDate);
+            QDomText t = document.createTextNode("Hllo World");
+            bookingDate.appendChild(t);
+            QDomElement registrationFee = document.createElement("registrationFee");
+            registration.appendChild(registrationFee);
         }
+
+
+
     }
 
 
