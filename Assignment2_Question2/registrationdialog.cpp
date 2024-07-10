@@ -198,22 +198,29 @@ void RegistrationDialog::runRegistrationListFunction()
     {
         if (moreActions->currentIndex() == 2)
         {
-            QString name = QInputDialog::getText(this,"Search Register", "Search Name", QLineEdit::Normal).trimmed();
-
-            if (regList.isRegistered(name))
+            bool ok;
+            QString name = QInputDialog::getText(this,"Search Register", "Search Name", QLineEdit::Normal, "Name: ", &ok).trimmed();
+            if (!name.isNull() && ok)
             {
-                QMessageBox::information(this, "Attendee found", QString("Attendee %1 is registered").arg(name));
+                if (regList.isRegistered(name))
+                {
+                    QMessageBox::information(this, "Attendee found", QString("Attendee %1 is registered").arg(name));
+                }
+                else if (!regList.isRegistered(name) ||  name.isNull())
+                {
+                    QMessageBox::warning(this, "Attendee not found", QString("Attendee %1 is not registered").arg(name));
+                }
             }
-            else if (!regList.isRegistered(name) ||  name.isNull())
+            else
             {
-                QMessageBox::warning(this, "Attendee not found", QString("Attendee %1 is not registered").arg(name));
+                QMessageBox::warning(this, "Name Search error", "Cannot search for an empty string\nTry Again");
             }
-
         }
         else if (moreActions->currentIndex() == 3)
         {
-            QString t = QInputDialog::getText(this,"Total Fee", "Type", QLineEdit::Normal).trimmed();
-            if (!t.isNull())
+            bool ok;
+            QString t = QInputDialog::getText(this,"Total Fee", "Type", QLineEdit::Normal, "Search?", &ok).trimmed();
+            if (!t.isNull() && ok)
             {
                 QMessageBox::information(this, "Total Due", QString("Total amount due for %1 is: %2").arg(t).arg(QString::number(regList.totalFee(t))));
             }
@@ -225,7 +232,8 @@ void RegistrationDialog::runRegistrationListFunction()
         }
         else if (moreActions->currentIndex() == 4)
         {
-            QString a = QInputDialog::getText(this, "Affliation Search", "Affliation", QLineEdit::Normal).trimmed();
+            bool ok;
+            QString a = QInputDialog::getText(this, "Affliation Search", "Affliation", QLineEdit::Normal, "unisa", &ok).trimmed();
             if (!a.isNull())
             {
                 QMessageBox::information(this, "Total Affliation Registration", QString("Number of People Registered with %1 is: %2").arg(a).arg(regList.totalRegistration(a)));
