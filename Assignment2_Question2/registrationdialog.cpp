@@ -17,6 +17,7 @@
 #include <QMessageBox>
 #include <QStandardItem>
 #include <QInputDialog>
+#include <QFileDialog>
 
 
 // I will create the base UI
@@ -254,7 +255,7 @@ void RegistrationDialog::runRegistrationWriterFunction()
 {
     if (regList.getAttendeeList().size() > 0)
     {
-        QString path = QInputDialog::getText(this, "File Path", "What is the file path to write to? ", QLineEdit::Normal);
+        QString path = QFileDialog::getSaveFileName(this, "Write Location", QDir::currentPath(), "Xml Files (*.xml)");
         RegistrationListWriter regListWriter(path, regList);
     }
     else

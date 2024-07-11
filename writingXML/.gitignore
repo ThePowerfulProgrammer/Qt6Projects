@@ -73,4 +73,4 @@ CMakeLists.txt.user*
 *.exe
 	
 writingXML/MyXML.xml
-writingXML/build
+writingXML/build/
