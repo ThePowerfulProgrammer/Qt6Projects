@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RegistrationList>
+ <Registration Type: ="Registration">
+  <attendee>
+   <name/>
+   <affiliation/>
+   <email/>
+  </attendee>
+  <bookingdate>Hllo World</bookingdate>
+  <registrationFee/>
+ </Registration>
+</RegistrationList>
