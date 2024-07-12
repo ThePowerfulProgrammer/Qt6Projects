@@ -91,12 +91,6 @@ RegistrationDialog::RegistrationDialog(QWidget *parent) : QDialog(parent, Qt::Wi
     QHBoxLayout *fifthRow = new QHBoxLayout;
     fifthRow->addWidget(writeBtn);
 
-    // create the 6th row
-    readBtn = new QPushButton("Read XML", this);
-    QHBoxLayout *sixthRow = new QHBoxLayout;
-    sixthRow->addWidget(readBtn);
-
-
     // Signals and slots
     connect(ok, SIGNAL(clicked()), this, SLOT(createRegistration()));
     connect(confirmAction, SIGNAL(clicked()), this, SLOT(runRegistrationListFunction()));
@@ -109,7 +103,6 @@ RegistrationDialog::RegistrationDialog(QWidget *parent) : QDialog(parent, Qt::Wi
     mainLayout->addLayout(thirdRow);
     mainLayout->addLayout(fourthRow);
     mainLayout->addLayout(fifthRow);
-    mainLayout->addLayout(sixthRow);
 
     setWindowTitle("Conference Registration System");
     setLayout(mainLayout);
