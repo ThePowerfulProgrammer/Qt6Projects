@@ -122,6 +122,8 @@ QList<Registration *> RegistrationList::getAttendeeList()
 }
 
 
+
+
 // complete
 RegistrationList::~RegistrationList()
 {

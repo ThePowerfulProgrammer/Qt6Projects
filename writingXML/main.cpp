@@ -108,7 +108,6 @@ int main(int argc, char *argv[])
             {
                 qDebug() << reader.readElementText(QXmlStreamReader::SkipChildElements) << "\n";
             }
-
             reader.readNext();
         }
     }

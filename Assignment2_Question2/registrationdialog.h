@@ -46,6 +46,9 @@ private:
 
     // 5th row
     QPushButton *writeBtn;
+
+    // 6th row
+    QPushButton *readBtn;
 };
 
 #endif // REGISTRATIONDIALOG_H

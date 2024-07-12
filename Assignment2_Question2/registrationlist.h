@@ -23,6 +23,7 @@ public:
     QList<Registration*> getAttendeeList();
 
 
+
     ~RegistrationList(); // deallocate memeory from the heap
 
 private:

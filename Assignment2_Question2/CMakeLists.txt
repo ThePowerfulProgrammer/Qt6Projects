@@ -21,6 +21,7 @@ add_executable(Assignment2_Question2
   registrationlist.h registrationlist.cpp
   registrationdialog.h registrationdialog.cpp
   registrationlistwriter.h registrationlistwriter.cpp
+
 )
 target_link_libraries(Assignment2_Question2 Qt${QT_VERSION_MAJOR}::Core Qt${QT_VERSION_MAJOR}::Widgets Qt${QT_VERSION_MAJOR}::Xml)
 
