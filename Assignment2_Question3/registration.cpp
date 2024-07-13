@@ -26,5 +26,10 @@ QString Registration::toString()
     return QString("%1 %2 ").arg(m_Attendee.toString()).arg(m_BookingDate.toString("dd.MM.yyyy"));
 }
 
+void Registration::setBookingDate(const QDate newBookingDate)
+{
+    m_BookingDate = newBookingDate;
+}
+
 
 

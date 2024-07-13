@@ -2,7 +2,8 @@
 #include <QDebug>
 
 #include "registrationdialog.h"
-
+#include <QFileDialog>
+#include <QList>
 
 int main(int argc, char *argv[])
 {
@@ -11,5 +12,7 @@ int main(int argc, char *argv[])
 
     RegistrationDialog dialog;
     dialog.show();
+
+
     return a.exec();
 }
