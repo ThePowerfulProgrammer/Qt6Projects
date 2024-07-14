@@ -48,8 +48,6 @@ QList<Registration *> RegistrationListReader::readXML(QString path)
 
         if (t != "" && n != "" && a != "" && e != "" && date != "")
         {
-            qDebug()<< QString("Person(%1,%2,%3) ").arg(n).arg(a).arg(e);
-            qDebug() << "Type : " <<t << "\n";
             if (t == "Registration")
             {
                 Person p(n,a,e);

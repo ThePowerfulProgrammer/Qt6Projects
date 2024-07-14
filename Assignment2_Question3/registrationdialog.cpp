@@ -68,8 +68,8 @@ RegistrationDialog::RegistrationDialog(QWidget *parent) : QDialog(parent, Qt::Wi
     tableView->setModel(model);
     tableView->setShowGrid(true);
     tableView->setSortingEnabled(true);
-    tableView->setColumnWidth(1, tableView->columnWidth(1)+10);
-    tableView->setColumnWidth(2, tableView->columnWidth(2)+10);
+    tableView->setColumnWidth(1, tableView->columnWidth(1)+15);
+    tableView->setColumnWidth(2, tableView->columnWidth(2)+15);
     tableView->setColumnWidth(3, tableView->columnWidth(3)+30);
     tableView->horizontalHeader()->setStretchLastSection(true);
 
@@ -229,7 +229,7 @@ void RegistrationDialog::runRegistrationListFunction()
         else if (moreActions->currentIndex() == 3)
         {
             bool ok;
-            QString t = QInputDialog::getText(this,"Total Fee", "Type", QLineEdit::Normal, "Search?", &ok).trimmed();
+            QString t = QInputDialog::getText(this,"Total Fee", "Type", QLineEdit::Normal, "(All,Registration,StudentRegistration or GuestRegistration)", &ok).trimmed();
             if (!t.isNull() && ok)
             {
                 QMessageBox::information(this, "Total Due", QString("Total amount due for %1 is: %2").arg(t).arg(QString::number(regList.totalFee(t))));
@@ -283,7 +283,6 @@ void RegistrationDialog::runRegistrationReaderFunction()
     {
         if (regList.addRegistration(list[i]))
         {
-            qDebug() << "Successful \n";
             QStandardItem *name_item = new QStandardItem(list[i]->getAttendee().getName());
             QStandardItem *type_item = new QStandardItem(list[i]->metaObject()->className());
             QStandardItem *booking_date_item = new QStandardItem(list[i]->getBookingDate().toString("yyyy.MM.dd"));
@@ -294,8 +293,6 @@ void RegistrationDialog::runRegistrationReaderFunction()
             model->insertRow(row, QList<QStandardItem*>() << name_item << type_item << booking_date_item << reg_fee_item);
         }
     }
-
-
 }
 
 
