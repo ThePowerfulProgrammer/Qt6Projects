@@ -2,6 +2,8 @@
 #include "person.h"
 #include "studentregistration.h"
 #include "guestregistration.h"
+#include "abstractregistrationfactory.h"
+#include "registrationfactory.h"
 #include <QFile>
 #include <QDebug>
 
@@ -22,6 +24,7 @@ QList<Registration *> RegistrationListReader::readXML(QString path)
     QString a = "";
     QString e = "";
     QString date = "";
+    AbstractRegistrationFactory *factory = new RegistrationFactory();
 
     while (!reader.atEnd())
     {
@@ -51,7 +54,8 @@ QList<Registration *> RegistrationListReader::readXML(QString path)
             if (t == "Registration")
             {
                 Person p(n,a,e);
-                Registration *r = new Registration(p);
+                // Registration *r = new Registration(p);
+                Registration *r = factory->createRegistration(p,"Registration", "", "");
                 r->setBookingDate(QDate::fromString(date, "dd.MM.yyyy"));
                 m_AttendeeList.append(r);
                 t = "";
@@ -63,7 +67,9 @@ QList<Registration *> RegistrationListReader::readXML(QString path)
             else if (t == "StudentRegistration")
             {
                 Person p(n,a,e);
-                StudentRegistration *r = new StudentRegistration(p, QString("Undecided"));
+
+                Registration *sreg = factory->createRegistration(p,"StudentRegistration", "Undecided", "");
+                StudentRegistration *r= dynamic_cast<StudentRegistration*>(sreg);
                 r->setBookingDate(QDate::fromString(date, "dd.MM.yyyy"));
                 m_AttendeeList.append(r);
                 t = "";
@@ -74,8 +80,11 @@ QList<Registration *> RegistrationListReader::readXML(QString path)
             else
             {
                 Person p(n,a,e);
-                GuestRegistration *r = new GuestRegistration(p, QString("Visitor"));
+
+                Registration *greg = factory->createRegistration(p,"GuestRegistration", "", "Visitor");
+                GuestRegistration *r= dynamic_cast<GuestRegistration*>(greg);
                 r->setBookingDate(QDate::fromString(date, "dd.MM.yyyy"));
+
                 m_AttendeeList.append(r);
                 t = "";
                 n = "";
@@ -85,6 +94,7 @@ QList<Registration *> RegistrationListReader::readXML(QString path)
         }
         reader.readNext();
     }
+    delete factory;
 
     return m_AttendeeList;
 }

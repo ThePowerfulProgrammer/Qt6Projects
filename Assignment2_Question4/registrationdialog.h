@@ -3,6 +3,7 @@
 
 
 #include "registrationlist.h"
+#include "abstractregistrationfactory.h"
 #include <QDialog>
 
 class QStandardItemModel;
@@ -50,6 +51,9 @@ private:
 
     // 6th row
     QPushButton *readBtn;
+
+    // Factory objects
+    AbstractRegistrationFactory *factory;
 };
 
 #endif // REGISTRATIONDIALOG_H

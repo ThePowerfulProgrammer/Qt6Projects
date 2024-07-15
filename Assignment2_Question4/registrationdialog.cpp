@@ -5,6 +5,7 @@
 #include "registrationlistwriter.h"
 #include "person.h"
 #include "registrationlistreader.h"
+#include "registrationfactory.h"
 
 
 #include <QStandardItemModel>
@@ -105,6 +106,9 @@ RegistrationDialog::RegistrationDialog(QWidget *parent) : QDialog(parent, Qt::Wi
     connect(writeBtn, SIGNAL(clicked()), this, SLOT(runRegistrationWriterFunction()));
     connect(readBtn, SIGNAL(clicked()), this, SLOT(runRegistrationReaderFunction()));
 
+    // factory objects
+    factory = new RegistrationFactory();
+
     // main Layout
     QVBoxLayout *mainLayout = new QVBoxLayout;
     mainLayout->addLayout(firstRow);
@@ -129,14 +133,14 @@ void RegistrationDialog::createRegistration()
             QString email = addEmail->text();
 
             Person p(name, affliation, email);
-            Registration *r = new Registration(p);
-            if(regList.addRegistration(r))
+            Registration *reg = factory->createRegistration(p,"Registration", "", "");
+            if(regList.addRegistration(reg))
             {
 
                 QStandardItem *name_item = new QStandardItem(name);
-                QStandardItem *email_item = new QStandardItem(r->metaObject()->className());
-                QStandardItem *booking_date_item = new QStandardItem(r->getBookingDate().toString("dd.MM.yyyy"));
-                QStandardItem *reg_fee_item = new QStandardItem(QString::number(r->calculateFee()));
+                QStandardItem *email_item = new QStandardItem(reg->metaObject()->className());
+                QStandardItem *booking_date_item = new QStandardItem(reg->getBookingDate().toString("dd.MM.yyyy"));
+                QStandardItem *reg_fee_item = new QStandardItem(QString::number(reg->calculateFee()));
 
                 // insert a new row to the model
                 int row =  model->rowCount();
@@ -151,13 +155,15 @@ void RegistrationDialog::createRegistration()
 
             Person p(name, affliation, email);
             QString qualification = QInputDialog::getText(this, "Confirm Qualification", "Enter qualification",QLineEdit::Normal);
-            StudentRegistration *student = new StudentRegistration(p, qualification);
-            if (regList.addRegistration(student))
+            Registration *sreg = factory->createRegistration(p,"StudentRegistration", qualification, "");
+            StudentRegistration *studentObj = dynamic_cast<StudentRegistration*>(sreg);
+
+            if (regList.addRegistration(studentObj))
             {
                 QStandardItem *name_item = new QStandardItem(name);
-                QStandardItem *type_item = new QStandardItem(student->metaObject()->className());
-                QStandardItem *booking_date_item = new QStandardItem(student->getBookingDate().toString("dd.MM.yyyy"));
-                QStandardItem *reg_fee_item = new QStandardItem(QString::number(student->STANDARD_FEE));
+                QStandardItem *type_item = new QStandardItem(studentObj->metaObject()->className());
+                QStandardItem *booking_date_item = new QStandardItem(studentObj->getBookingDate().toString("dd.MM.yyyy"));
+                QStandardItem *reg_fee_item = new QStandardItem(QString::number(studentObj->STANDARD_FEE));
                 // insert a new row to the model
                 int row =  model->rowCount();
                 model->insertRow(row, QList<QStandardItem*>() << name_item << type_item << booking_date_item << reg_fee_item);
@@ -171,15 +177,16 @@ void RegistrationDialog::createRegistration()
 
             Person p(name, affliation, email);
             QString category = QInputDialog::getText(this, "Confirm Category", "Enter category",QLineEdit::Normal);
-            GuestRegistration *guest= new GuestRegistration(p, category);
+            Registration *greg = factory->createRegistration(p,"GuestRegistration", "", category);
+            GuestRegistration *guestObj = dynamic_cast<GuestRegistration*>(greg);
 
-            if(regList.addRegistration(guest))
+            if(regList.addRegistration(guestObj))
             {
 
                 QStandardItem *name_item = new QStandardItem(name);
-                QStandardItem *type_item = new QStandardItem(guest->metaObject()->className());
-                QStandardItem *booking_date_item = new QStandardItem(guest->getBookingDate().toString("dd.MM.yyyy"));
-                QStandardItem *reg_fee_item = new QStandardItem(QString::number(guest->STANDARD_FEE));
+                QStandardItem *type_item = new QStandardItem(guestObj->metaObject()->className());
+                QStandardItem *booking_date_item = new QStandardItem(guestObj->getBookingDate().toString("dd.MM.yyyy"));
+                QStandardItem *reg_fee_item = new QStandardItem(QString::number(guestObj->STANDARD_FEE));
 
                 // insert a new row to the model
                 int row =  model->rowCount();
@@ -299,6 +306,7 @@ void RegistrationDialog::runRegistrationReaderFunction()
 
 RegistrationDialog::~RegistrationDialog()
 {
+    delete factory;
 }
 
 

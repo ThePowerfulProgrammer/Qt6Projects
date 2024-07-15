@@ -2,14 +2,16 @@
 #define REGISTRATIONFACTORY_H
 
 #include "registration.h"
+#include "abstractregistrationfactory.h"
+#include "person.h"
 #include <memory.h>
 #include <QString>
 
-class RegistrationFactory
+class RegistrationFactory : public AbstractRegistrationFactory
 {
 public:
     RegistrationFactory() = default;
-    static Registration *createRegistration(QString choice);
+    Registration *createRegistration(Person p,QString choice, QString q, QString c);
 
 };
 

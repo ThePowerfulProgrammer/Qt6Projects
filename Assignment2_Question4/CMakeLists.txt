@@ -23,6 +23,7 @@ add_executable(Assignment2_Question4
     registrationlistwriter.h registrationlistwriter.cpp
     registrationlistreader.h registrationlistreader.cpp
     registrationfactory.h registrationfactory.cpp
+    abstractregistrationfactory.h abstractregistrationfactory.cpp
 )
 
 target_link_libraries(Assignment2_Question4 Qt${QT_VERSION_MAJOR}::Core Qt${QT_VERSION_MAJOR}::Widgets Qt${QT_VERSION_MAJOR}::Xml)
