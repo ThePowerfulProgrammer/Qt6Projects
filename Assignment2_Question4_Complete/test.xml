@@ -1,0 +1,60 @@
+<registrationlist>
+ <registration type="Registration">
+  <attendee>
+   <name>Ash</name>
+   <affiliation>yt</affiliation>
+   <email>ash@yahoo.com</email>
+  </attendee>
+  <bookingdate>16.07.2024</bookingdate>
+  <registrationfee>500</registrationfee>
+ </registration>
+ <registration type="StudentRegistration">
+  <attendee>
+   <name>bob</name>
+   <affiliation>yt</affiliation>
+   <email>bob@test.com</email>
+  </attendee>
+  <bookingdate>16.07.2024</bookingdate>
+  <registrationfee>250</registrationfee>
+ </registration>
+ <additionalInformation></additionalInformation>
+ <registration type="GuestRegistration">
+  <attendee>
+   <name>Guest</name>
+   <affiliation>guest</affiliation>
+   <email>guest1@home.com</email>
+  </attendee>
+  <bookingdate>16.07.2024</bookingdate>
+  <registrationfee>50</registrationfee>
+ </registration>
+ <additionalInformation>BSc Lol</additionalInformation>
+ <registration type="StudentRegistration">
+  <attendee>
+   <name>AshK</name>
+   <affiliation>pokemon</affiliation>
+   <email>pikachu@gmail.com</email>
+  </attendee>
+  <bookingdate>16.07.2024</bookingdate>
+  <registrationfee>250</registrationfee>
+ </registration>
+ <additionalInformation>BA Gym trainer</additionalInformation>
+ <registration type="GuestRegistration">
+  <attendee>
+   <name>Jessie</name>
+   <affiliation>team rocket</affiliation>
+   <email>jessie@gmail.com</email>
+  </attendee>
+  <bookingdate>16.07.2024</bookingdate>
+  <registrationfee>50</registrationfee>
+ </registration>
+ <additionalInformation>Visitor</additionalInformation>
+ <registration type="Registration">
+  <attendee>
+   <name>James</name>
+   <affiliation>pokemon</affiliation>
+   <email>james@yahoo.com</email>
+  </attendee>
+  <bookingdate>16.07.2024</bookingdate>
+  <registrationfee>500</registrationfee>
+ </registration>
+</registrationlist>

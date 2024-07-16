@@ -1,0 +1,116 @@
+#include "registrationlistreader.h"
+#include "person.h"
+#include "studentregistration.h"
+#include "guestregistration.h"
+#include <QFile>
+#include <QDebug>
+
+RegistrationListReader::RegistrationListReader() : creator(RegistrationFactory::GetInstance())
+{
+
+}
+
+QList<Registration *> RegistrationListReader::readXML(QString path)
+{
+    qDebug() << "Running" << "\n";
+
+    QFile file(path);
+    if (!file.open(QIODevice::ReadOnly | QIODevice::Text) )
+    {
+        QList<Registration*> list;
+        return list;
+    }
+
+    QXmlStreamReader reader(&file);
+    QString t = "";
+    QString n = "";
+    QString a = "";
+    QString e = "";
+    QString date = "";
+    QString addInfo = "";
+
+    while (!reader.atEnd())
+    {
+        if (reader.isStartElement() && reader.name().toString() == "registration")
+        {
+            t = reader.attributes().value("type").toString();
+        }
+        else if (reader.isStartElement() && reader.name().toString() == "name")
+        {
+            n = reader.readElementText(QXmlStreamReader::SkipChildElements);
+        }
+        else if (reader.isStartElement() && reader.name().toString() == "affiliation")
+        {
+            a = reader.readElementText(QXmlStreamReader::SkipChildElements);
+        }
+        else if (reader.isStartElement() && reader.name().toString() == "email")
+        {
+            e = reader.readElementText(QXmlStreamReader::SkipChildElements);
+        }
+        else if (reader.isStartElement() && reader.name().toString() == "bookingdate")
+        {
+            date = reader.readElementText(QXmlStreamReader::SkipChildElements);
+        }
+        else if (reader.isStartElement() && reader.name().toString() == "additionalInformation")
+        {
+            addInfo = reader.readElementText(QXmlStreamReader::SkipChildElements);
+            qDebug() << "Add info: " << addInfo << "\n";
+
+        }
+
+        if (t != "" && n != "" && a != "" && e != "" && date != "")
+        {
+            if (t == "Registration")
+            {
+                qDebug() << "Reg run: "<< "\n";
+
+                Person p(n,a,e);
+                Registration *r = creator->FactoryMethod(t,p,"");
+                qDebug() << r->metaObject()->className() << "\n";
+                r->setBookingDate(QDate::fromString(date, "dd.MM.yyyy"));
+                m_AttendeeList.append(r);
+                t = "";
+                n = "";
+                a = "";
+                e = "";
+                date = "";
+            }
+            else if (t == "StudentRegistration")
+            {
+                qDebug() << "stu run: "<< "\n";
+                Person p(n,a,e);
+                qDebug() << "Add info: " << addInfo << "\n";
+                Registration *r = creator->FactoryMethod(t,p,addInfo);
+                qDebug() << r->metaObject()->className() << "\n";
+                r->setBookingDate(QDate::fromString(date, "dd.MM.yyyy"));
+                m_AttendeeList.append(r);
+                t = "";
+                n = "";
+                a = "";
+                e = "";
+                date = "";
+                addInfo = "";
+
+            }
+            else
+            {
+                qDebug() << "guest run: "<< "\n";
+                Person p(n,a,e);
+                qDebug() << "Add info: " << addInfo << "\n";
+                Registration *r = creator->FactoryMethod(t,p,addInfo);
+                r->setBookingDate(QDate::fromString(date, "dd.MM.yyyy"));
+                qDebug() << r->metaObject()->className() << "\n";
+                m_AttendeeList.append(r);
+                t = "";
+                n = "";
+                a = "";
+                e = "";
+                date = "";
+                addInfo = "";
+            }
+        }
+        reader.readNext();
+    }
+
+    return m_AttendeeList;
+}
