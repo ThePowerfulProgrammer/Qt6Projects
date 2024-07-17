@@ -18,3 +18,13 @@ QString GuestRegistration::toString()
 
     return studentRegString;
 }
+
+QString GuestRegistration::Category() const
+{
+    return m_Category;
+}
+
+void GuestRegistration::setCategory(const QString &newCategory)
+{
+    m_Category = newCategory;
+}

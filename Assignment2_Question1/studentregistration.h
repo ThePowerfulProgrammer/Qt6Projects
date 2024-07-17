@@ -11,6 +11,9 @@ public:
     double calculateFee();
     QString toString();
 
+    QString Qualification() const;
+    void setQualification(const QString &newQualification);
+
 private:
     QString m_Qualification;
 

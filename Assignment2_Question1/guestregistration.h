@@ -11,6 +11,9 @@ public:
     double calculateFee();
     QString toString();
 
+    QString Category() const;
+    void setCategory(const QString &newCategory);
+
 private:
     QString m_Category;
 
