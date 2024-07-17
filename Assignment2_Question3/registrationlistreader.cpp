@@ -22,12 +22,14 @@ QList<Registration *> RegistrationListReader::readXML(QString path)
     QString a = "";
     QString e = "";
     QString date = "";
+    QString addInfo = "";
+
 
     while (!reader.atEnd())
     {
         if (reader.isStartElement() && reader.name().toString() == "registration")
         {
-            t = reader.attributes().value("Type").toString();
+            t = reader.attributes().value("type").toString();
         }
         else if (reader.isStartElement() && reader.name().toString() == "name")
         {
@@ -44,6 +46,12 @@ QList<Registration *> RegistrationListReader::readXML(QString path)
         else if (reader.isStartElement() && reader.name().toString() == "bookingdate")
         {
             date = reader.readElementText(QXmlStreamReader::SkipChildElements);
+        }
+        else if (reader.isStartElement() && reader.name().toString() == "additionalInformation")
+        {
+            addInfo = reader.readElementText(QXmlStreamReader::SkipChildElements);
+            qDebug() << "Add info: " << addInfo << "\n";
+
         }
 
         if (t != "" && n != "" && a != "" && e != "" && date != "")
@@ -63,24 +71,28 @@ QList<Registration *> RegistrationListReader::readXML(QString path)
             else if (t == "StudentRegistration")
             {
                 Person p(n,a,e);
-                StudentRegistration *r = new StudentRegistration(p, QString("Undecided"));
+                StudentRegistration *r = new StudentRegistration(p, addInfo);
                 r->setBookingDate(QDate::fromString(date, "dd.MM.yyyy"));
                 m_AttendeeList.append(r);
                 t = "";
                 n = "";
                 a = "";
                 e = "";
+                date = "";
+                addInfo = "";
             }
             else
             {
                 Person p(n,a,e);
-                GuestRegistration *r = new GuestRegistration(p, QString("Visitor"));
+                GuestRegistration *r = new GuestRegistration(p, addInfo);
                 r->setBookingDate(QDate::fromString(date, "dd.MM.yyyy"));
                 m_AttendeeList.append(r);
                 t = "";
                 n = "";
                 a = "";
                 e = "";
+                date = "";
+                addInfo = "";
             }
         }
         reader.readNext();

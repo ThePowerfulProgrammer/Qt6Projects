@@ -19,7 +19,7 @@ RegistrationListWriter::RegistrationListWriter(QString path, RegistrationList &r
     for (int i=0;i<tempList.size();i++)
     {
         QDomElement registrationNode = document.createElement("registration");
-        registrationNode.setAttribute("Type", tempList[i]->metaObject()->className());
+        registrationNode.setAttribute("type", tempList[i]->metaObject()->className());
         registrationListRoot.appendChild(registrationNode);
 
         QDomElement attendeeNode = document.createElement("attendee");
