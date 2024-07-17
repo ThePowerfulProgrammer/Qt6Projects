@@ -75,13 +75,10 @@ QList<Registration *> RegistrationListReader::readXML(QString path)
                 e = "";
                 date = "";
             }
-            else if (t == "StudentRegistration")
+            else if (t == "StudentRegistration" && addInfo != "")
             {
-                qDebug() << "stu run: "<< "\n";
                 Person p(n,a,e);
-                qDebug() << "Add info: " << addInfo << "\n";
-                Registration *r = creator->FactoryMethod(t,p,addInfo);
-                qDebug() << r->metaObject()->className() << "\n";
+                StudentRegistration *r = new StudentRegistration(p, addInfo);
                 r->setBookingDate(QDate::fromString(date, "dd.MM.yyyy"));
                 m_AttendeeList.append(r);
                 t = "";
@@ -90,16 +87,12 @@ QList<Registration *> RegistrationListReader::readXML(QString path)
                 e = "";
                 date = "";
                 addInfo = "";
-
             }
-            else
+            else if (t == "GuestRegistration" && addInfo != "")
             {
-                qDebug() << "guest run: "<< "\n";
                 Person p(n,a,e);
-                qDebug() << "Add info: " << addInfo << "\n";
-                Registration *r = creator->FactoryMethod(t,p,addInfo);
+                GuestRegistration *r = new GuestRegistration(p, addInfo);
                 r->setBookingDate(QDate::fromString(date, "dd.MM.yyyy"));
-                qDebug() << r->metaObject()->className() << "\n";
                 m_AttendeeList.append(r);
                 t = "";
                 n = "";
