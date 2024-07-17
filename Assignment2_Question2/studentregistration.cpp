@@ -19,3 +19,13 @@ QString StudentRegistration::toString()
     return studentRegString;
 
 }
+
+QString StudentRegistration::Qualification() const
+{
+    return m_Qualification;
+}
+
+void StudentRegistration::setQualification(const QString &newQualification)
+{
+    m_Qualification = newQualification;
+}

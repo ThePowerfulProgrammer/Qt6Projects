@@ -1,5 +1,7 @@
 #include "registrationlistwriter.h"
 #include "registration.h"
+#include "studentregistration.h"
+#include "guestregistration.h"
 #include <QList>
 #include <QDebug>
 
@@ -48,6 +50,23 @@ RegistrationListWriter::RegistrationListWriter(QString path, RegistrationList &r
         QString fee = QString::number(tempList[i]->calculateFee());
         QDomText feeText = document.createTextNode(fee);
         registrationFeeNode.appendChild(feeText);
+
+        if (tempList[i]->metaObject()->className() == QStringLiteral("StudentRegistration"))
+        {
+            QDomElement additionalInformationNode = document.createElement("additionalInformation");
+            registrationListRoot.appendChild(additionalInformationNode);
+            StudentRegistration *stu = qobject_cast<StudentRegistration*>(tempList[i]);
+            QDomText addInfoText = document.createTextNode(stu->Qualification());
+            additionalInformationNode.appendChild(addInfoText);
+        }
+        else if (tempList[i]->metaObject()->className() == QStringLiteral("GuestRegistration"))
+        {
+            QDomElement additionalInformationNode = document.createElement("additionalInformation");
+            registrationListRoot.appendChild(additionalInformationNode);
+            GuestRegistration *guest = qobject_cast<GuestRegistration*>(tempList[i]);
+            QDomText addInfoText = document.createTextNode(guest->Category());
+            additionalInformationNode.appendChild(addInfoText);
+        }
     }
 
     QFile file(path);
