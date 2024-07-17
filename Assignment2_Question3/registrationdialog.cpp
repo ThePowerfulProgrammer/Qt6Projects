@@ -61,16 +61,20 @@ RegistrationDialog::RegistrationDialog(QWidget *parent) : QDialog(parent, Qt::Wi
 
     model = new QStandardItemModel(this);
     QStringList columnLabels;
-    columnLabels << "Name" << "Type" << "Booking Date" << "Fee";
+    columnLabels << "Name" << "Type" << "Email" << "Booking Date" << "Fee" << "Affiliation" << "Additional Info";
     model->setHorizontalHeaderLabels(columnLabels);
 
     tableView = new QTableView(this);
     tableView->setModel(model);
     tableView->setShowGrid(true);
     tableView->setSortingEnabled(true);
-    tableView->setColumnWidth(1, tableView->columnWidth(1)+15);
+    tableView->setColumnWidth(1, tableView->columnWidth(1)+10);
     tableView->setColumnWidth(2, tableView->columnWidth(2)+15);
-    tableView->setColumnWidth(3, tableView->columnWidth(3)+30);
+    tableView->setColumnWidth(3, tableView->columnWidth(3)+10);
+    tableView->setColumnWidth(4, tableView->columnWidth(4)+10);
+    tableView->setColumnWidth(5, tableView->columnWidth(5)+5);
+    tableView->setColumnWidth(5, tableView->columnWidth(5)+5);
+    tableView->setColumnWidth(6, tableView->columnWidth(6)+5);
     tableView->horizontalHeader()->setStretchLastSection(true);
 
 
@@ -115,6 +119,7 @@ RegistrationDialog::RegistrationDialog(QWidget *parent) : QDialog(parent, Qt::Wi
     mainLayout->addLayout(sixthRow);
 
     setWindowTitle("Conference Registration System");
+    setMinimumWidth(800);
     setLayout(mainLayout);
 }
 
@@ -134,13 +139,16 @@ void RegistrationDialog::createRegistration()
             {
 
                 QStandardItem *name_item = new QStandardItem(name);
-                QStandardItem *email_item = new QStandardItem(r->metaObject()->className());
+                QStandardItem *type_item = new QStandardItem(r->metaObject()->className());
+                QStandardItem *email_item = new QStandardItem(r->getAttendee().getEmail());
                 QStandardItem *booking_date_item = new QStandardItem(r->getBookingDate().toString("dd.MM.yyyy"));
                 QStandardItem *reg_fee_item = new QStandardItem(QString::number(r->calculateFee()));
+                QStandardItem *aff_item = new QStandardItem(r->getAttendee().getAffliation());
+                QStandardItem *add_item = new QStandardItem("None");
 
                 // insert a new row to the model
                 int row =  model->rowCount();
-                model->insertRow(row, QList<QStandardItem*>() << name_item << email_item << booking_date_item << reg_fee_item);
+                model->insertRow(row, QList<QStandardItem*>() << name_item << type_item <<email_item << booking_date_item << reg_fee_item << aff_item << add_item);
             }
         }
         else if (typeOfRegistration->currentText() == "Student Registration")
@@ -156,11 +164,16 @@ void RegistrationDialog::createRegistration()
             {
                 QStandardItem *name_item = new QStandardItem(name);
                 QStandardItem *type_item = new QStandardItem(student->metaObject()->className());
+                QStandardItem *email_item = new QStandardItem(student->getAttendee().getEmail());
                 QStandardItem *booking_date_item = new QStandardItem(student->getBookingDate().toString("dd.MM.yyyy"));
                 QStandardItem *reg_fee_item = new QStandardItem(QString::number(student->STANDARD_FEE));
+                QStandardItem *aff_item = new QStandardItem(student->getAttendee().getAffliation());
+                QStandardItem *add_item = new QStandardItem(student->Qualification());
+
+
                 // insert a new row to the model
                 int row =  model->rowCount();
-                model->insertRow(row, QList<QStandardItem*>() << name_item << type_item << booking_date_item << reg_fee_item);
+                model->insertRow(row, QList<QStandardItem*>() << name_item << type_item << email_item << booking_date_item << reg_fee_item << aff_item << add_item);
             }
         }
         else
@@ -178,12 +191,16 @@ void RegistrationDialog::createRegistration()
 
                 QStandardItem *name_item = new QStandardItem(name);
                 QStandardItem *type_item = new QStandardItem(guest->metaObject()->className());
+                QStandardItem *email_item = new QStandardItem(guest->getAttendee().getEmail());
                 QStandardItem *booking_date_item = new QStandardItem(guest->getBookingDate().toString("dd.MM.yyyy"));
                 QStandardItem *reg_fee_item = new QStandardItem(QString::number(guest->STANDARD_FEE));
+                QStandardItem *aff_item = new QStandardItem(guest->getAttendee().getAffliation());
+                QStandardItem *add_item = new QStandardItem(guest->Category());
+
 
                 // insert a new row to the model
                 int row =  model->rowCount();
-                model->insertRow(row, QList<QStandardItem*>() << name_item << type_item << booking_date_item << reg_fee_item);
+                model->insertRow(row, QList<QStandardItem*>() << name_item << type_item << email_item << booking_date_item << reg_fee_item << aff_item << add_item);
             }
         }
 
@@ -285,12 +302,26 @@ void RegistrationDialog::runRegistrationReaderFunction()
         {
             QStandardItem *name_item = new QStandardItem(list[i]->getAttendee().getName());
             QStandardItem *type_item = new QStandardItem(list[i]->metaObject()->className());
+            QStandardItem *email_item = new QStandardItem(list[i]->getAttendee().getEmail());
             QStandardItem *booking_date_item = new QStandardItem(list[i]->getBookingDate().toString("yyyy.MM.dd"));
             QStandardItem *reg_fee_item = new QStandardItem(QString::number(list[i]->STANDARD_FEE));
+            QStandardItem *aff_item = new QStandardItem(list[i]->getAttendee().getAffliation());
+            QStandardItem *add_item = new QStandardItem("None");
+
+            QString className = list[i]->metaObject()->className();
+            qDebug() << className << "\n";
+            if (className == "StudentRegistration")
+            {
+                add_item->setText(qobject_cast<StudentRegistration*>(list[i])->Qualification());
+            }
+            else if (className == "GuestRegistration")
+            {
+                add_item->setText(qobject_cast<GuestRegistration*>(list[i])->Category());
+            }
 
             // insert a new row to the model
             int row =  model->rowCount();
-            model->insertRow(row, QList<QStandardItem*>() << name_item << type_item << booking_date_item << reg_fee_item);
+            model->insertRow(row, QList<QStandardItem*>() << name_item << type_item << email_item << booking_date_item << reg_fee_item << aff_item << add_item);
         }
     }
 }

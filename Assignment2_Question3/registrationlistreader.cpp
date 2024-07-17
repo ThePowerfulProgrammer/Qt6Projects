@@ -5,6 +5,7 @@
 #include <QFile>
 #include <QDebug>
 
+
 RegistrationListReader::RegistrationListReader() {}
 
 QList<Registration *> RegistrationListReader::readXML(QString path)
@@ -51,7 +52,6 @@ QList<Registration *> RegistrationListReader::readXML(QString path)
         {
             addInfo = reader.readElementText(QXmlStreamReader::SkipChildElements);
             qDebug() << "Add info: " << addInfo << "\n";
-
         }
 
         if (t != "" && n != "" && a != "" && e != "" && date != "")
@@ -68,7 +68,7 @@ QList<Registration *> RegistrationListReader::readXML(QString path)
                 e = "";
                 date = "";
             }
-            else if (t == "StudentRegistration")
+            else if (t == "StudentRegistration" && addInfo != "")
             {
                 Person p(n,a,e);
                 StudentRegistration *r = new StudentRegistration(p, addInfo);
@@ -81,7 +81,7 @@ QList<Registration *> RegistrationListReader::readXML(QString path)
                 date = "";
                 addInfo = "";
             }
-            else
+            else if (t == "GuestRegistration" && addInfo != "")
             {
                 Person p(n,a,e);
                 GuestRegistration *r = new GuestRegistration(p, addInfo);
