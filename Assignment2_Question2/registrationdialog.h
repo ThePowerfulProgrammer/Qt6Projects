@@ -4,12 +4,14 @@
 
 #include "registrationlist.h"
 #include <QDialog>
+#include <QDateEdit>
 
 class QStandardItemModel;
 class QTableView; // model + view + (delegate) MVC (MVD) design pattern
 class  QLineEdit;
 class QPushButton;
 class QComboBox;
+class QLabel;
 
 
 class RegistrationDialog : public QDialog
@@ -30,6 +32,8 @@ private:
     QLineEdit *addName;
     QLineEdit *addEmail;
     QLineEdit *addAffliation;
+    QLabel *dateLabel;
+    QDateEdit *addDate;
     QPushButton *ok;
 
     // 2nd row

@@ -18,6 +18,7 @@
 #include <QStandardItem>
 #include <QInputDialog>
 #include <QFileDialog>
+#include <QLabel>
 
 
 // I will create the base UI
@@ -35,11 +36,19 @@ RegistrationDialog::RegistrationDialog(QWidget *parent) : QDialog(parent, Qt::Wi
     addAffliation = new QLineEdit(this);
     addAffliation->setPlaceholderText("Affiliation: ");
 
+    addDate = new QDateEdit(QDate::currentDate(), this);
+    addDate->setCalendarPopup(true);
+    addDate->setDisplayFormat("dd.MM.yyyy");
+    dateLabel = new QLabel("Date: ", this);
+    dateLabel->setBuddy(addDate);
+
 
     QHBoxLayout *firstRow = new QHBoxLayout;
     firstRow->addWidget(addName);
     firstRow->addWidget(addEmail);
     firstRow->addWidget(addAffliation);
+    firstRow->addWidget(dateLabel);
+    firstRow->addWidget(addDate);
     firstRow->addSpacing(20);
 
     // create the 2nd row
@@ -125,6 +134,7 @@ void RegistrationDialog::createRegistration()
 
             Person p(name, affliation, email);
             Registration *r = new Registration(p);
+            r->setBookingDate(addDate->date());
             if(regList.addRegistration(r))
             {
 
@@ -150,6 +160,7 @@ void RegistrationDialog::createRegistration()
             Person p(name, affliation, email);
             QString qualification = QInputDialog::getText(this, "Confirm Qualification", "Enter qualification",QLineEdit::Normal);
             StudentRegistration *student = new StudentRegistration(p, qualification);
+            student->setBookingDate(addDate->date());
             if (regList.addRegistration(student))
             {
                 QStandardItem *name_item = new QStandardItem(name);
@@ -175,6 +186,7 @@ void RegistrationDialog::createRegistration()
             Person p(name, affliation, email);
             QString category = QInputDialog::getText(this, "Confirm Category", "Enter category",QLineEdit::Normal);
             GuestRegistration *guest= new GuestRegistration(p, category);
+            guest->setBookingDate(addDate->date());
 
             if(regList.addRegistration(guest))
             {
