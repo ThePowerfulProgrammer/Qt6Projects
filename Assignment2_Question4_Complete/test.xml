@@ -1,60 +1,79 @@
 <registrationlist>
  <registration type="Registration">
   <attendee>
-   <name>Ash</name>
-   <affiliation>yt</affiliation>
-   <email>ash@yahoo.com</email>
+   <name>Tom</name>
+   <affiliation>cn</affiliation>
+   <email>tomCat@yahoo.com</email>
   </attendee>
-  <bookingdate>16.07.2024</bookingdate>
+  <bookingdate>17.07.2024</bookingdate>
+  <registrationfee>500</registrationfee>
+ </registration>
+ <registration type="Registration">
+  <attendee>
+   <name>Jerry</name>
+   <affiliation>cn</affiliation>
+   <email>jerryMrmouse@gmail.com</email>
+  </attendee>
+  <bookingdate>17.07.2024</bookingdate>
   <registrationfee>500</registrationfee>
  </registration>
  <registration type="StudentRegistration">
   <attendee>
-   <name>bob</name>
-   <affiliation>yt</affiliation>
-   <email>bob@test.com</email>
+   <name>Jin Kazama</name>
+   <affiliation>tekken</affiliation>
+   <email>jkazama@gmail.com</email>
   </attendee>
-  <bookingdate>16.07.2024</bookingdate>
+  <bookingdate>17.07.2024</bookingdate>
   <registrationfee>250</registrationfee>
  </registration>
- <additionalInformation></additionalInformation>
- <registration type="GuestRegistration">
-  <attendee>
-   <name>Guest</name>
-   <affiliation>guest</affiliation>
-   <email>guest1@home.com</email>
-  </attendee>
-  <bookingdate>16.07.2024</bookingdate>
-  <registrationfee>50</registrationfee>
- </registration>
- <additionalInformation>BSc Lol</additionalInformation>
+ <additionalInformation>BSc Comp Sci</additionalInformation>
  <registration type="StudentRegistration">
   <attendee>
-   <name>AshK</name>
-   <affiliation>pokemon</affiliation>
-   <email>pikachu@gmail.com</email>
+   <name>Kuma</name>
+   <affiliation>tekken</affiliation>
+   <email>Kuma&amp;Panda@yahoo.com</email>
   </attendee>
-  <bookingdate>16.07.2024</bookingdate>
+  <bookingdate>17.07.2024</bookingdate>
   <registrationfee>250</registrationfee>
  </registration>
- <additionalInformation>BA Gym trainer</additionalInformation>
+ <additionalInformation>BSc Life Sciencec</additionalInformation>
  <registration type="GuestRegistration">
   <attendee>
-   <name>Jessie</name>
-   <affiliation>team rocket</affiliation>
-   <email>jessie@gmail.com</email>
+   <name>Victor</name>
+   <affiliation>unisa</affiliation>
+   <email>vonDoom@outlook.com</email>
   </attendee>
-  <bookingdate>16.07.2024</bookingdate>
+  <bookingdate>17.07.2024</bookingdate>
   <registrationfee>50</registrationfee>
  </registration>
  <additionalInformation>Visitor</additionalInformation>
  <registration type="Registration">
   <attendee>
-   <name>James</name>
-   <affiliation>pokemon</affiliation>
-   <email>james@yahoo.com</email>
+   <name>Nandi</name>
+   <affiliation>unisa</affiliation>
+   <email>nandos@yahoo.com</email>
   </attendee>
-  <bookingdate>16.07.2024</bookingdate>
+  <bookingdate>01.08.2024</bookingdate>
   <registrationfee>500</registrationfee>
  </registration>
+ <registration type="StudentRegistration">
+  <attendee>
+   <name>Gordan</name>
+   <affiliation>SAS</affiliation>
+   <email>gramsey_hellskitchen@hotmail.com</email>
+  </attendee>
+  <bookingdate>30.08.2024</bookingdate>
+  <registrationfee>250</registrationfee>
+ </registration>
+ <additionalInformation>BA Consumer Science</additionalInformation>
+ <registration type="GuestRegistration">
+  <attendee>
+   <name>Charlie</name>
+   <affiliation>yt</affiliation>
+   <email>penguiz0@gmail.com</email>
+  </attendee>
+  <bookingdate>14.09.2024</bookingdate>
+  <registrationfee>50</registrationfee>
+ </registration>
+ <additionalInformation>Speaker</additionalInformation>
 </registrationlist>
