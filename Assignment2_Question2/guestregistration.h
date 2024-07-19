@@ -9,7 +9,7 @@ class GuestRegistration : public Registration
 public:
     GuestRegistration(Person a, QString q);
     double calculateFee();
-    QString toString();
+    QString toString() override;
 
     QString Category() const;
     void setCategory(const QString &newCategory);

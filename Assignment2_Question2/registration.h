@@ -14,7 +14,7 @@ public:
     Person getAttendee();
     QDate getBookingDate();
     double calculateFee();
-    QString toString();
+    virtual QString toString();
     double STANDARD_FEE;
     void setBookingDate(const QDate &newBookingDate);
 
