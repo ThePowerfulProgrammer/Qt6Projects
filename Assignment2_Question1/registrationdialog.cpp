@@ -56,6 +56,9 @@ RegistrationDialog::RegistrationDialog(QWidget *parent) : QDialog(parent, Qt::Wi
     list << "Registration Type▾" << "Standard Registration" << "Student Registration" << "Guest Registration";
     typeOfRegistration->addItems(list);
     ok = new QPushButton("OK",this);
+    ok->setObjectName("okBtn");
+    ok->setStyleSheet("border: 2px solid orange;"
+                      "border-radius: 6px;");
 
 
     QHBoxLayout *secondRow = new QHBoxLayout;
