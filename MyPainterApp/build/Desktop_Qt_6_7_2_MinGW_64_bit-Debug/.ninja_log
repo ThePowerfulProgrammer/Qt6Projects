@@ -1,0 +1,91 @@
+# ninja log v5
+13	936	7433587399571342	MyPainterApp_autogen/timestamp	7da3a8e1d9bb74d0
+13	936	7433587399571342	MyPainterApp_autogen/mocs_compilation.cpp	7da3a8e1d9bb74d0
+13	936	7433587399571342	C:/Qt6 Projects/MyPainterApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/MyPainterApp_autogen/timestamp	7da3a8e1d9bb74d0
+13	936	7433587399571342	C:/Qt6 Projects/MyPainterApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/MyPainterApp_autogen/mocs_compilation.cpp	7da3a8e1d9bb74d0
+943	1034	7433587401441541	MyPainterApp_autogen/EWIEGA46WW/qrc_resource.cpp	7a2ca26926778f86
+943	1034	7433587401441541	C:/Qt6 Projects/MyPainterApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/MyPainterApp_autogen/EWIEGA46WW/qrc_resource.cpp	7a2ca26926778f86
+1061	1196	7433587403123243	CMakeFiles/MyPainterApp.dir/MyPainterApp_autogen/EWIEGA46WW/qrc_resource.cpp.obj	f107403e30b59e48
+1054	3793	7433587429072995	CMakeFiles/MyPainterApp.dir/canvas.cpp.obj	90b6efcefca13938
+1035	3820	7433587429338686	CMakeFiles/MyPainterApp.dir/MyPainterApp_autogen/mocs_compilation.cpp.obj	dfa1cb1051a6c493
+1041	3892	7433587430059783	CMakeFiles/MyPainterApp.dir/main.cpp.obj	bfc6df96978d0f32
+1048	4001	7433587431151071	CMakeFiles/MyPainterApp.dir/mainwindow.cpp.obj	79ad33fda0e60f9e
+4001	4311	7433587434179755	MyPainterApp.exe	fc275ef8ab488060
+35	1083	7433594194093640	MyPainterApp_autogen/timestamp	7da3a8e1d9bb74d0
+35	1083	7433594194093640	MyPainterApp_autogen/mocs_compilation.cpp	7da3a8e1d9bb74d0
+35	1083	7433594194093640	C:/Qt6 Projects/MyPainterApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/MyPainterApp_autogen/timestamp	7da3a8e1d9bb74d0
+35	1083	7433594194093640	C:/Qt6 Projects/MyPainterApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/MyPainterApp_autogen/mocs_compilation.cpp	7da3a8e1d9bb74d0
+48	1077	7433594279960081	MyPainterApp_autogen/timestamp	7da3a8e1d9bb74d0
+48	1077	7433594279960081	MyPainterApp_autogen/mocs_compilation.cpp	7da3a8e1d9bb74d0
+48	1077	7433594279960081	C:/Qt6 Projects/MyPainterApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/MyPainterApp_autogen/timestamp	7da3a8e1d9bb74d0
+48	1077	7433594279960081	C:/Qt6 Projects/MyPainterApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/MyPainterApp_autogen/mocs_compilation.cpp	7da3a8e1d9bb74d0
+1078	3632	7433594306554578	CMakeFiles/MyPainterApp.dir/MyPainterApp_autogen/mocs_compilation.cpp.obj	dfa1cb1051a6c493
+1085	3735	7433594307586554	CMakeFiles/MyPainterApp.dir/main.cpp.obj	bfc6df96978d0f32
+1091	3917	7433594309398770	CMakeFiles/MyPainterApp.dir/mainwindow.cpp.obj	79ad33fda0e60f9e
+3917	4195	7433594312116865	MyPainterApp.exe	fc275ef8ab488060
+38	295	7433594611410892	MyPainterApp_autogen/timestamp	7da3a8e1d9bb74d0
+38	295	7433594611410892	MyPainterApp_autogen/mocs_compilation.cpp	7da3a8e1d9bb74d0
+38	295	7433594611410892	C:/Qt6 Projects/MyPainterApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/MyPainterApp_autogen/timestamp	7da3a8e1d9bb74d0
+38	295	7433594611410892	C:/Qt6 Projects/MyPainterApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/MyPainterApp_autogen/mocs_compilation.cpp	7da3a8e1d9bb74d0
+321	3340	7433594646157135	CMakeFiles/MyPainterApp.dir/mainwindow.cpp.obj	79ad33fda0e60f9e
+3340	3647	7433594649125431	MyPainterApp.exe	fc275ef8ab488060
+18	245	7433595024956394	MyPainterApp_autogen/timestamp	7da3a8e1d9bb74d0
+18	245	7433595024956394	MyPainterApp_autogen/mocs_compilation.cpp	7da3a8e1d9bb74d0
+18	245	7433595024956394	C:/Qt6 Projects/MyPainterApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/MyPainterApp_autogen/timestamp	7da3a8e1d9bb74d0
+18	245	7433595024956394	C:/Qt6 Projects/MyPainterApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/MyPainterApp_autogen/mocs_compilation.cpp	7da3a8e1d9bb74d0
+269	2507	7433595213794055	CMakeFiles/MyPainterApp.dir/mainwindow.cpp.obj	79ad33fda0e60f9e
+2507	2742	7433595216080275	MyPainterApp.exe	fc275ef8ab488060
+32	293	7433595862093198	MyPainterApp_autogen/timestamp	7da3a8e1d9bb74d0
+32	293	7433595862093198	MyPainterApp_autogen/mocs_compilation.cpp	7da3a8e1d9bb74d0
+32	293	7433595862093198	C:/Qt6 Projects/MyPainterApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/MyPainterApp_autogen/timestamp	7da3a8e1d9bb74d0
+32	293	7433595862093198	C:/Qt6 Projects/MyPainterApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/MyPainterApp_autogen/mocs_compilation.cpp	7da3a8e1d9bb74d0
+320	3076	7433595902564200	CMakeFiles/MyPainterApp.dir/mainwindow.cpp.obj	79ad33fda0e60f9e
+3076	3342	7433595905146424	MyPainterApp.exe	fc275ef8ab488060
+28	310	7433596369294905	MyPainterApp_autogen/timestamp	7da3a8e1d9bb74d0
+28	310	7433596369294905	MyPainterApp_autogen/mocs_compilation.cpp	7da3a8e1d9bb74d0
+28	310	7433596369294905	C:/Qt6 Projects/MyPainterApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/MyPainterApp_autogen/timestamp	7da3a8e1d9bb74d0
+28	310	7433596369294905	C:/Qt6 Projects/MyPainterApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/MyPainterApp_autogen/mocs_compilation.cpp	7da3a8e1d9bb74d0
+342	3882	7433596413536795	CMakeFiles/MyPainterApp.dir/mainwindow.cpp.obj	79ad33fda0e60f9e
+3882	4193	7433596416563470	MyPainterApp.exe	fc275ef8ab488060
+69	312	7433817240300668	MyPainterApp_autogen/timestamp	7da3a8e1d9bb74d0
+69	312	7433817240300668	MyPainterApp_autogen/mocs_compilation.cpp	7da3a8e1d9bb74d0
+69	312	7433817240300668	C:/Qt6 Projects/MyPainterApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/MyPainterApp_autogen/timestamp	7da3a8e1d9bb74d0
+69	312	7433817240300668	C:/Qt6 Projects/MyPainterApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/MyPainterApp_autogen/mocs_compilation.cpp	7da3a8e1d9bb74d0
+334	2770	7433817348967856	CMakeFiles/MyPainterApp.dir/mainwindow.cpp.obj	79ad33fda0e60f9e
+2770	3297	7433817354181943	MyPainterApp.exe	fc275ef8ab488060
+24	307	7433817669568799	MyPainterApp_autogen/timestamp	7da3a8e1d9bb74d0
+24	307	7433817669568799	MyPainterApp_autogen/mocs_compilation.cpp	7da3a8e1d9bb74d0
+24	307	7433817669568799	C:/Qt6 Projects/MyPainterApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/MyPainterApp_autogen/timestamp	7da3a8e1d9bb74d0
+24	307	7433817669568799	C:/Qt6 Projects/MyPainterApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/MyPainterApp_autogen/mocs_compilation.cpp	7da3a8e1d9bb74d0
+336	3330	7433817709255630	CMakeFiles/MyPainterApp.dir/mainwindow.cpp.obj	79ad33fda0e60f9e
+3331	3626	7433817712139606	MyPainterApp.exe	fc275ef8ab488060
+25	320	7433817783801541	MyPainterApp_autogen/timestamp	7da3a8e1d9bb74d0
+25	320	7433817783801541	MyPainterApp_autogen/mocs_compilation.cpp	7da3a8e1d9bb74d0
+25	320	7433817783801541	C:/Qt6 Projects/MyPainterApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/MyPainterApp_autogen/timestamp	7da3a8e1d9bb74d0
+25	320	7433817783801541	C:/Qt6 Projects/MyPainterApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/MyPainterApp_autogen/mocs_compilation.cpp	7da3a8e1d9bb74d0
+350	3246	7433817825621188	CMakeFiles/MyPainterApp.dir/mainwindow.cpp.obj	79ad33fda0e60f9e
+3247	3513	7433817828182039	MyPainterApp.exe	fc275ef8ab488060
+30	304	7433818071806656	MyPainterApp_autogen/timestamp	7da3a8e1d9bb74d0
+30	304	7433818071806656	MyPainterApp_autogen/mocs_compilation.cpp	7da3a8e1d9bb74d0
+30	304	7433818071806656	C:/Qt6 Projects/MyPainterApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/MyPainterApp_autogen/timestamp	7da3a8e1d9bb74d0
+30	304	7433818071806656	C:/Qt6 Projects/MyPainterApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/MyPainterApp_autogen/mocs_compilation.cpp	7da3a8e1d9bb74d0
+339	3411	7433818110594174	CMakeFiles/MyPainterApp.dir/mainwindow.cpp.obj	79ad33fda0e60f9e
+3411	3687	7433818113316966	MyPainterApp.exe	fc275ef8ab488060
+19	272	7433819097067025	MyPainterApp_autogen/timestamp	7da3a8e1d9bb74d0
+19	272	7433819097067025	MyPainterApp_autogen/mocs_compilation.cpp	7da3a8e1d9bb74d0
+19	272	7433819097067025	C:/Qt6 Projects/MyPainterApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/MyPainterApp_autogen/timestamp	7da3a8e1d9bb74d0
+19	272	7433819097067025	C:/Qt6 Projects/MyPainterApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/MyPainterApp_autogen/mocs_compilation.cpp	7da3a8e1d9bb74d0
+294	2205	7433819120105892	CMakeFiles/MyPainterApp.dir/mainwindow.cpp.obj	79ad33fda0e60f9e
+2206	2424	7433819122189476	MyPainterApp.exe	fc275ef8ab488060
+19	273	7433819449131510	MyPainterApp_autogen/timestamp	7da3a8e1d9bb74d0
+19	273	7433819449131510	MyPainterApp_autogen/mocs_compilation.cpp	7da3a8e1d9bb74d0
+19	273	7433819449131510	C:/Qt6 Projects/MyPainterApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/MyPainterApp_autogen/timestamp	7da3a8e1d9bb74d0
+19	273	7433819449131510	C:/Qt6 Projects/MyPainterApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/MyPainterApp_autogen/mocs_compilation.cpp	7da3a8e1d9bb74d0
+291	2203	7433819472042777	CMakeFiles/MyPainterApp.dir/mainwindow.cpp.obj	79ad33fda0e60f9e
+2203	2427	7433819474207253	MyPainterApp.exe	fc275ef8ab488060
+31	363	7433820218756153	MyPainterApp_autogen/timestamp	7da3a8e1d9bb74d0
+31	363	7433820218756153	MyPainterApp_autogen/mocs_compilation.cpp	7da3a8e1d9bb74d0
+31	363	7433820218756153	C:/Qt6 Projects/MyPainterApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/MyPainterApp_autogen/timestamp	7da3a8e1d9bb74d0
+31	363	7433820218756153	C:/Qt6 Projects/MyPainterApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/MyPainterApp_autogen/mocs_compilation.cpp	7da3a8e1d9bb74d0
+398	3343	7433820261053951	CMakeFiles/MyPainterApp.dir/mainwindow.cpp.obj	79ad33fda0e60f9e
+3343	3602	7433820263538389	MyPainterApp.exe	fc275ef8ab488060

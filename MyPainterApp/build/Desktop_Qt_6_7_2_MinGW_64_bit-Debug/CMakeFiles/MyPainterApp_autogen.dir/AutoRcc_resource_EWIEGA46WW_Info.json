@@ -1,0 +1,32 @@
+{
+	"BUILD_DIR" : "C:/Qt6 Projects/MyPainterApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/MyPainterApp_autogen",
+	"CMAKE_BINARY_DIR" : "C:/Qt6 Projects/MyPainterApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "C:/Qt6 Projects/MyPainterApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Qt6 Projects/MyPainterApp",
+	"CMAKE_SOURCE_DIR" : "C:/Qt6 Projects/MyPainterApp",
+	"CROSS_CONFIG" : false,
+	"GENERATOR" : "Ninja",
+	"INCLUDE_DIR" : "C:/Qt6 Projects/MyPainterApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/MyPainterApp_autogen/include",
+	"INPUTS" : 
+	[
+		"C:/Qt6 Projects/MyPainterApp/images/Rectangle.png",
+		"C:/Qt6 Projects/MyPainterApp/images/Pen.png",
+		"C:/Qt6 Projects/MyPainterApp/images/About.png",
+		"C:/Qt6 Projects/MyPainterApp/images/Quit.png",
+		"C:/Qt6 Projects/MyPainterApp/images/Craser.png",
+		"C:/Qt6 Projects/MyPainterApp/images/Circle.png",
+		"C:/Qt6 Projects/MyPainterApp/images/Open.png",
+		"C:/Qt6 Projects/MyPainterApp/images/Save.png"
+	],
+	"LOCK_FILE" : "C:/Qt6 Projects/MyPainterApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/MyPainterApp_autogen.dir/AutoRcc_resource_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "--no-zstd", "-name", "resource" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_resource.cpp",
+	"RCC_EXECUTABLE" : "C:/Qt6/6.7.2/mingw_64/./bin/rcc.exe",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "C:/Qt6 Projects/MyPainterApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/MyPainterApp_autogen.dir/AutoRcc_resource_EWIEGA46WW_Used.txt",
+	"SOURCE" : "C:/Qt6 Projects/MyPainterApp/resource.qrc",
+	"USE_BETTER_GRAPH" : false,
+	"VERBOSITY" : 0
+}
