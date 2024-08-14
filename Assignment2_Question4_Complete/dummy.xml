@@ -1,0 +1,11 @@
+<registrationlist>
+ <registration type="Registration">
+  <attendee>
+   <name>ash</name>
+   <affiliation>Aloha Regional Champs</affiliation>
+   <email>ashk@yahoo.com</email>
+  </attendee>
+  <bookingdate>30.07.2024</bookingdate>
+  <registrationfee>500</registrationfee>
+ </registration>
+</registrationlist>
