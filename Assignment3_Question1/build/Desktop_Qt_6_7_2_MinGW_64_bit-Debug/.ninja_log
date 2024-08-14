@@ -1,0 +1,10 @@
+# ninja log v5
+24	220	7453507925414638	Assignment3_Question1_autogen/timestamp	22a787963e97d9ef
+24	220	7453507925414638	Assignment3_Question1_autogen/mocs_compilation.cpp	22a787963e97d9ef
+351	698	7453505990331063	CMakeFiles/Assignment3_Question1.dir/Assignment3_Question1_autogen/mocs_compilation.cpp.obj	8f643e6258fa696d
+24	220	7453507925414638	C:/Qt6 Projects/Assignment3_Question1/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Assignment3_Question1_autogen/timestamp	22a787963e97d9ef
+24	220	7453507925414638	C:/Qt6 Projects/Assignment3_Question1/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Assignment3_Question1_autogen/mocs_compilation.cpp	22a787963e97d9ef
+4380	4597	7453507992355472	Assignment3_Question1.exe	1685b3017985a22d
+365	2671	7453506010021392	CMakeFiles/Assignment3_Question1.dir/book.cpp.obj	1eeecb6c9b11d5e
+231	4379	7453507990270788	CMakeFiles/Assignment3_Question1.dir/bookwriter.cpp.obj	4aaa8509589d141b
+264	3237	7453506475477464	CMakeFiles/Assignment3_Question1.dir/main.cpp.obj	3c143fb2e24db546
