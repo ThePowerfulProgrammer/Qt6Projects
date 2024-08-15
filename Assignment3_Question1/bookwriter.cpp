@@ -47,7 +47,7 @@ void BookWriter::saveBook(Book &b)
         authorNode.appendChild(authorText);
     }
 
-    if (!file.open(QIODevice::WriteOnly | QIODevice::Text))
+    if (!file.open(QIODevice::Append | QIODevice::Text))
     {
         qDebug() << "File error \n";
     }

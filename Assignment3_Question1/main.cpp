@@ -1,6 +1,7 @@
 #include <QApplication>
 #include "book.h"
 #include "bookwriter.h"
+#include "bookinput.h"
 #include <QDebug>
 
 int main(int argc, char *argv[])
@@ -8,7 +9,7 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
     Book book;
     book.setTitle("Berserk Volume 1");
-    book.setAuthors(QStringList() << "Kentaro Miura" << "Some Dude");
+    book.setAuthors(QStringList() << "Kentaro Miura" << "Some Dude" << "Sheeto Nokamura");
     book.setIsbn("1018356438389");
     book.setPublicationDate(QDate(2024,6,4));
 
@@ -28,5 +29,10 @@ int main(int argc, char *argv[])
     BookWriter writer("./test.xml");
 
     writer.saveBook(book);
+
+    BookInput *dialog = new BookInput();
+    dialog->show();
+
+
     return a.exec();
 }
