@@ -9,6 +9,9 @@
 #include <QDateEdit>
 #include <QPushButton>
 #include <QInputDialog>
+#include <QLabel>
+#include <QString>
+#include <QFileDialog>
 
 BookInput::BookInput(QWidget *parent) : QDialog(parent), authors(), books()
 {
@@ -16,7 +19,7 @@ BookInput::BookInput(QWidget *parent) : QDialog(parent), authors(), books()
     addTitle->setPlaceholderText("Title: ");
 
     addISBN = new QLineEdit(this);
-    addISBN->setPlaceholderText("isbn: ");
+    addISBN->setPlaceholderText("Isbn: ");
 
     addDate = new QDateEdit(this);
     addDate->setDate(QDate::currentDate());
@@ -24,7 +27,10 @@ BookInput::BookInput(QWidget *parent) : QDialog(parent), authors(), books()
 
     numberOfAuthors = new QSpinBox(this);
     numberOfAuthors->setValue(1);
-    numberOfAuthors->setRange(1,10);
+    numberOfAuthors->setRange(1,100);
+
+    QLabel *label = new QLabel("Number of Authors: ", this);
+    label->setBuddy(numberOfAuthors);
 
     submitBtn = new QPushButton("Submit", this);
 
@@ -34,6 +40,7 @@ BookInput::BookInput(QWidget *parent) : QDialog(parent), authors(), books()
     firstRow->addWidget(addTitle,2);
     firstRow->addWidget(addISBN,2);
     firstRow->addWidget(addDate,3);
+    firstRow->addWidget(label,1);
     firstRow->addWidget(numberOfAuthors,1);
 
     QHBoxLayout *secondRow = new QHBoxLayout();
@@ -80,7 +87,7 @@ void BookInput::addAuthor()
         }
 
         createBook();
-
+        numberOfAuthors->setValue(1);
     }
     else
     {
@@ -93,12 +100,20 @@ void BookInput::writeToFile()
 {
     if (books.size() > 0)
     {
-        BookWriter writer("./test.xml");
+        QString path = QFileDialog::getSaveFileName(nullptr,"Create or Select XML File", QDir::currentPath(), "XML Files (*.xml)");
+
+        if (path == "")
+        {
+            return;
+        }
+
+        BookWriter writer(path);
 
         for (int i=0; i<books.size();i++)
         {
             writer.saveBook(books[i]);
         }
+
     }
     else
     {
@@ -113,6 +128,12 @@ void BookInput::createBook()
     book.setIsbn(addISBN->text());
     book.setPublicationDate(addDate->date());
 
+    addTitle->clear();
+    addTitle->setPlaceholderText("Title: ");
+    addISBN->clear();
+    addISBN->setPlaceholderText("ISBN: ");
+
+
     QStringList listOfAuthors;
     for (int i=0;i<authors.size();i++)
     {
@@ -121,6 +142,8 @@ void BookInput::createBook()
 
     book.setAuthors(listOfAuthors);
     books.append(book);
+
+    authors.clear();
 }
 
 

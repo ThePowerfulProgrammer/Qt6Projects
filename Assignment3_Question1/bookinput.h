@@ -2,19 +2,24 @@
 #define BOOKINPUT_H
 
 #include <QDialog>
-#include <QLineEdit>
-#include <QDateEdit>
-#include <QFileDialog>
-#include <QSpinBox>
-
 #include "book.h"
-#include "bookwriter.h"
+class QPushButton;
+class QDateEdit;
+class QFileDialog;
+class QSpinBox;
+class QLineEdit;
+
 
 
 class BookInput : public QDialog
 {
+    Q_OBJECT
 public:
-    BookInput();
+    BookInput(QWidget *parent = 0);
+
+public slots:
+    void addAuthor();
+    void writeToFile();
 
 private:
 
@@ -23,12 +28,17 @@ private:
     QLineEdit *addISBN;
     QDateEdit *addDate;
     QSpinBox *numberOfAuthors;
+    QPushButton *submitBtn;
+    QPushButton *writeBtn;
 
+    // Container for authors
+    QList<QString> authors;
 
+    // Container for Books
+    QList<Book> books;
 
-
-
-
+    // function to create book object
+    void createBook();
 };
 
 #endif // BOOKINPUT_H

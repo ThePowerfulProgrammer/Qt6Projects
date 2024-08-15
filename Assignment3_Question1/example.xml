@@ -1,0 +1,14 @@
+<bookNode>
+ <title>Berserk</title>
+ <isbn>978-92-95055-02-5</isbn>
+ <date>2024/08/15</date>
+ <author>Kentaro Miyazaki</author>
+</bookNode>
+<bookNode>
+ <title>AskJapan</title>
+ <isbn>978-92-23657-01-5</isbn>
+ <date>2024/08/28</date>
+ <author>Ash</author>
+ <author>Azura</author>
+ <author>Bob</author>
+</bookNode>
