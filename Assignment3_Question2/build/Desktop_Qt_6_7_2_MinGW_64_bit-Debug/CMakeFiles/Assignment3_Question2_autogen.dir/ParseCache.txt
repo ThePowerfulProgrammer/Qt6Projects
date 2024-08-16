@@ -681,7 +681,7 @@ C:/Qt6 Projects/Assignment3_Question2/bookinput.h
  mdp:C:/Qt6/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h
  mdp:C:/Qt6/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h
 C:/Qt6 Projects/Assignment3_Question2/bookwriter.h
-C:/Qt6 Projects/Assignment3_Question2/main.cpp
 C:/Qt6 Projects/Assignment3_Question2/book.cpp
+C:/Qt6 Projects/Assignment3_Question2/main.cpp
 C:/Qt6 Projects/Assignment3_Question2/bookinput.cpp
 C:/Qt6 Projects/Assignment3_Question2/bookwriter.cpp

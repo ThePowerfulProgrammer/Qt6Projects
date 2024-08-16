@@ -25,18 +25,19 @@ void BookWriter::saveBook(Book &b)
 
 
 
-    QDomElement titleNode = document.createElement(b.metaObject()->property(0).name());
-
+    QDomElement titleNode = document.createElement(b.metaObject()->property(1).name());
     bookRoot.appendChild(titleNode);
+
+
     QDomText titleText = document.createTextNode(b.getTitle());
     titleNode.appendChild(titleText);
 
-    QDomElement isbnNode = document.createElement(b.metaObject()->property(1).name());
+    QDomElement isbnNode = document.createElement(b.metaObject()->property(2).name());
     bookRoot.appendChild(isbnNode);
     QDomText isbnText = document.createTextNode(b.getIsbn());
     isbnNode.appendChild(isbnText);
 
-    QDomElement dateNode = document.createElement(b.metaObject()->property(2).name());
+    QDomElement dateNode = document.createElement(b.metaObject()->property(3).name());
     bookRoot.appendChild(dateNode);
     QDomText dateText = document.createTextNode(b.getPublicationDate().toString("yyyy/MM/dd"));
     dateNode.appendChild(dateText);

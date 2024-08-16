@@ -71,7 +71,7 @@ void BookInput::addAuthor()
         for (int i=0; i<numberOfAuthors->value(); i++)
         {
             bool ok;
-            QString name = QInputDialog::getText(this,"Author Details", QString("Author number: %1").arg(i+1), QLineEdit::Normal, "Name: ", &ok).trimmed();
+            QString name = QInputDialog::getText(this,"Author Details", QString("Author %1 ").arg(i+1), QLineEdit::Normal, "Name: ", &ok).trimmed();
 
             if (ok)
             {
@@ -113,6 +113,7 @@ void BookInput::writeToFile()
         {
             writer.saveBook(*books[i]);
         }
+        books.clear();
 
     }
     else

@@ -4,3 +4,29 @@
  <isbn>2024/08/15</isbn>
  <author>Bob</author>
 </bookNode>
+<bookNode>
+ <title>3DMJ Bodybuilding bible</title>
+ <isbn>1122-2234-4593-9458</isbn>
+ <publicationDate>2024/08/16</publicationDate>
+ <author>Alberto Nunez</author>
+ <author>Mike Israetel</author>
+</bookNode>
+<bookNode>
+ <title>Raylib guide</title>
+ <isbn>1234-7586-8643-7584</isbn>
+ <publicationDate>2026/08/31</publicationDate>
+ <author>Bill</author>
+</bookNode>
+<bookNode>
+ <title>3DMJ Bodybuilding bible</title>
+ <isbn>1122-2234-4593-9458</isbn>
+ <publicationDate>2024/08/16</publicationDate>
+ <author>Alberto Nunez</author>
+ <author>Mike Israetel</author>
+</bookNode>
+<bookNode>
+ <title>Raylib guide</title>
+ <isbn>1234-7586-8643-7584</isbn>
+ <publicationDate>2026/08/31</publicationDate>
+ <author>Bill</author>
+</bookNode>
