@@ -11,6 +11,9 @@ class validatorDialog : public QDialog
 public:
     validatorDialog(QWidget *parent = 0);
 
+public slots:
+    bool isValid();
+
 private:
     QCheckBox *checkBox;
     QCheckBox *checkBoxTwo;

@@ -4,6 +4,9 @@
 #include <QAction>
 #include <QButtonGroup>
 #include <QPushButton>
+#include <QMessageBox>
+#include <QRegularExpression>
+#include <QDebug>
 
 validatorDialog::validatorDialog(QWidget *parent) : QDialog(parent)
 {
@@ -43,7 +46,53 @@ validatorDialog::validatorDialog(QWidget *parent) : QDialog(parent)
     mainLayout->addLayout(secondRow);
     mainLayout->addLayout(thirdRow);
 
+    connect(validateBtn, SIGNAL(clicked(bool)), this, SLOT(isValid()));
     setLayout(mainLayout);
 
-    connect(checkBox, SIGNAL(checkStateChanged(Qt::CheckState)), this, SLOT());
+
 }
+
+bool validatorDialog::isValid()
+{
+    // Crosscheck password against regexp
+    if (checkBox->isChecked() || checkBoxTwo->isChecked() || checkBoxThree->isChecked())
+    {
+        if (checkBox->isChecked() && lineedit->text() != "")
+        {
+            QRegularExpression re;
+            re.setPattern("^[\\w!@#$%^&*()]{5,}$");
+
+            QRegularExpressionMatch match = re.match(lineedit->text(), 0,QRegularExpression::NormalMatch);
+            bool hasMatch = match.hasMatch();
+            qDebug() << "Match? " << hasMatch << "\n";
+            return hasMatch;
+        }
+        else if (checkBoxTwo->isChecked() && lineedit->text() != "")
+        {
+            QRegularExpression re;
+            re.setPattern("^..[0-9a-fA-F].{2}$");
+            QRegularExpressionMatch match = re.match(lineedit->text(),0,QRegularExpression::NormalMatch);
+            bool hasMatch = match.hasMatch();
+            qDebug() << "Match? " << hasMatch << "\n";
+            return hasMatch;
+        }
+        else if (checkBoxThree->isCheckable() && lineedit->text() != "")
+        {
+
+        }
+        return true;
+    }
+
+    QMessageBox::warning(nullptr,"Validation Error", "Select a pattern from above to cross check against");
+    return false;
+
+}
+
+
+
+
+
+
+
+
+
