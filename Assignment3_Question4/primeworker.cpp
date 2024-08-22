@@ -11,13 +11,13 @@ void primeWorker::process()
     {
         if (isPrime(number))
         {
-            emit primeFound(number);
+            emit primeFound(m_threadNumber,number);
             qDebug() << number << " is a prime number ";
             primeList.append(QString::number(number));
         }
     }
 
-    emit finished(); // when done let this signal be heared
+    emit finished(m_threadNumber); // when done let this signal be heared
 }
 
 int primeWorker::threadNumber() const

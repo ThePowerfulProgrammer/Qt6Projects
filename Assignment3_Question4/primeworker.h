@@ -21,8 +21,8 @@ public slots:
     void process();
 
 signals:
-    void finished();
-    void primeFound(int primeNumber);
+    void finished(int threadNumber);
+    void primeFound(int threadNumber,int primeNumber);
 
 private:
     int m_threadNumber;

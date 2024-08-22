@@ -17,8 +17,8 @@ public:
 
 private slots:
     void startFindingPrimes();
-    void displayPrime(int primeNumber);
-    void threadFinished();
+    void displayPrime(int threadNumber,int primeNumber);
+    void threadFinished(int threadNumber);
 
 private:
 
@@ -34,7 +34,14 @@ private:
 
 
     primeWorker *worker1;
+    primeWorker *worker2;
+    primeWorker *worker3;
+    primeWorker *worker4;
+
     QThread *thread1;
+    QThread *thread2;
+    QThread *thread3;
+    QThread *thread4;
 
 
 };
