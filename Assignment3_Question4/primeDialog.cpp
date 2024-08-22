@@ -2,10 +2,10 @@
 #include <QVBoxLayout>
 #include <QLabel>
 
-#include "primefinder.h"
+#include "primeDialog.h"
 
 
-PrimeFinder::PrimeFinder(QWidget *parent) : QDialog(parent)
+PrimeDialog::PrimeDialog(QWidget *parent) : QDialog(parent)
 {
     startNumber = new QSpinBox(this);
     startNumber->setValue(1);

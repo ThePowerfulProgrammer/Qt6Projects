@@ -1,15 +1,16 @@
-#ifndef PRIMEFINDER_H
-#define PRIMEFINDER_H
+#ifndef PRIMEDIALOG_H
+#define PRIMEDIALOG_H
 
 #include <QDialog>
+#include <QObject>
 #include <QSpinBox>
 #include <QPushButton>
 
-class PrimeFinder : public QDialog
+class PrimeDialog : public QDialog
 {
     Q_OBJECT
 public:
-    PrimeFinder(QWidget *parent = 0);
+    PrimeDialog(QWidget *parent = 0);
 
 private:
 
@@ -23,4 +24,4 @@ private:
 
 };
 
-#endif // PRIMEFINDER_H
+#endif // PRIMEDIALOG_H
