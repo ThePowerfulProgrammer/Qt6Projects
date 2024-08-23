@@ -17,7 +17,7 @@ PrimeDialog::PrimeDialog(QWidget *parent) : QDialog(parent)
 
     endNumber = new QSpinBox(this);
     endNumber->setValue(10);
-    endNumber->setRange(1,2000);
+    endNumber->setRange(1,1000);
     QLabel *secondLabel = new QLabel("End Number: ",this);
     secondLabel->setBuddy(endNumber);
 
@@ -64,6 +64,14 @@ PrimeDialog::PrimeDialog(QWidget *parent) : QDialog(parent)
     mainLayout->addLayout(thirdRow);
 
     connect(btn,SIGNAL(clicked()), this, SLOT(startFindingPrimes()));
+    thread1 = new QThread;
+    thread2 = new QThread;
+    thread3 = new QThread;
+    thread4 = new QThread;
+    connect(this, &QDialog::rejected, thread1, &QThread::quit);
+    connect(this, &QDialog::rejected, thread2, &QThread::quit);
+    connect(this, &QDialog::rejected, thread3, &QThread::quit);
+    connect(this, &QDialog::rejected, thread4, &QThread::quit);
 
     setLayout(mainLayout);
 
@@ -76,83 +84,189 @@ void PrimeDialog::startFindingPrimes()
 {
     int start = startNumber->value();
     int end = endNumber->value();
-    // need to divide end / 4 if end is a multiple of 2
-    int start1 = 0, start2=0, start3=0, start4=0;
-
-    int endT1 = 0;
-    int endT2 = 0;
-    int endT3 = 0;
-    int endT4 = 0;
-
-    while (end%2 != 0)
+    if (start == end)
     {
-        end +=1;
+        return;
     }
 
-    endT1 = (end/4);
-    endT2 = endT1 + (end/4);
-    endT3 = endT2 + (end/4);
-    endT4 = endT3 + (end/4);
+
+    if (numberOfThreads->value() == 4)
+    {
+        // need to divide end / 4 if end is a multiple of 2
+        int endT1 = 0;
+        int endT2 = 0;
+        int endT3 = 0;
+        int endT4 = 0;
+
+        if (end%2 != 0)
+        {
+            end +=1;
+        }
+
+        endT1 = (end/4);
+        endT2 = endT1 + (end/4);
+        endT3 = endT2 + (end/4);
+        endT4 = endT3 + (end/4);
+
+        worker1 = new primeWorker(1, start, endT1);
+        worker2 = new primeWorker(2,endT1, endT2);
+        worker3 = new primeWorker(3, endT2,endT3);
+        worker4 = new primeWorker(4,endT3, endT4);
 
 
+        worker1->moveToThread(thread1);
 
-    thread1 = new QThread;
-    thread2 = new QThread;
-    thread3 = new QThread;
-    thread4 = new QThread;
-    // thread4 = new QThread;
+        connect(thread1, SIGNAL(started()), worker1, SLOT(process()));
+        connect(worker1, &primeWorker::primeFound, this, &PrimeDialog::displayPrime);
+        connect(worker1, &primeWorker::finished, this, &PrimeDialog::threadFinished);
 
-    worker1 = new primeWorker(1, start, endT1);
-    worker2 = new primeWorker(2,endT1, endT2);
-    worker3 = new primeWorker(3, endT2,endT3);
-    worker4 = new primeWorker(4,endT3, endT4);
+        // Clean up after the thread finishes
+        connect(worker1, &primeWorker::finished, worker1, &QObject::deleteLater);
+        connect(thread1, &QThread::finished, thread1, &QObject::deleteLater);
 
+        worker2->moveToThread(thread2);
 
-    worker1->moveToThread(thread1);
+        connect(thread2, SIGNAL(started()), worker2, SLOT(process()));
+        connect(worker2, &primeWorker::primeFound, this, &PrimeDialog::displayPrime);
+        connect(worker2, &primeWorker::finished, this, &PrimeDialog::threadFinished);
 
-    connect(thread1, SIGNAL(started()), worker1, SLOT(process()));
-    connect(worker1, &primeWorker::primeFound, this, &PrimeDialog::displayPrime);
-    connect(worker1, &primeWorker::finished, this, &PrimeDialog::threadFinished);
+        // Clean up after the thread finishes
+        connect(worker2, &primeWorker::finished, worker2, &QObject::deleteLater);
+        connect(thread2, &QThread::finished, thread2, &QObject::deleteLater);
 
-    // Clean up after the thread finishes
-    connect(worker1, &primeWorker::finished, worker1, &QObject::deleteLater);
-    connect(thread1, &QThread::finished, thread1, &QObject::deleteLater);
+        worker3->moveToThread(thread3);
 
-    worker2->moveToThread(thread2);
+        connect(thread3, SIGNAL(started()), worker3, SLOT(process()));
+        connect(worker3, &primeWorker::primeFound, this, &PrimeDialog::displayPrime);
+        connect(worker3, &primeWorker::finished, this, &PrimeDialog::threadFinished);
 
-    connect(thread2, SIGNAL(started()), worker2, SLOT(process()));
-    connect(worker2, &primeWorker::primeFound, this, &PrimeDialog::displayPrime);
-    connect(worker2, &primeWorker::finished, this, &PrimeDialog::threadFinished);
-
-    // Clean up after the thread finishes
-    connect(worker2, &primeWorker::finished, worker2, &QObject::deleteLater);
-    connect(thread2, &QThread::finished, thread2, &QObject::deleteLater);
-
-    worker3->moveToThread(thread3);
-
-    connect(thread3, SIGNAL(started()), worker3, SLOT(process()));
-    connect(worker3, &primeWorker::primeFound, this, &PrimeDialog::displayPrime);
-    connect(worker3, &primeWorker::finished, this, &PrimeDialog::threadFinished);
-
-    // Clean up after the thread finishes
-    connect(worker3, &primeWorker::finished, worker3, &QObject::deleteLater);
-    connect(thread3, &QThread::finished, thread3, &QObject::deleteLater);
+        // Clean up after the thread finishes
+        connect(worker3, &primeWorker::finished, worker3, &QObject::deleteLater);
+        connect(thread3, &QThread::finished, thread3, &QObject::deleteLater);
 
 
-    worker4->moveToThread(thread4);
+        worker4->moveToThread(thread4);
 
-    connect(thread4, SIGNAL(started()), worker4, SLOT(process()));
-    connect(worker4, &primeWorker::primeFound, this, &PrimeDialog::displayPrime);
-    connect(worker4, &primeWorker::finished, this, &PrimeDialog::threadFinished);
+        connect(thread4, SIGNAL(started()), worker4, SLOT(process()));
+        connect(worker4, &primeWorker::primeFound, this, &PrimeDialog::displayPrime);
+        connect(worker4, &primeWorker::finished, this, &PrimeDialog::threadFinished);
 
-    // Clean up after the thread finishes
-    connect(worker4, &primeWorker::finished, worker4, &QObject::deleteLater);
-    connect(thread4, &QThread::finished, thread3, &QObject::deleteLater);
+        // Clean up after the thread finishes
+        connect(worker4, &primeWorker::finished, worker4, &QObject::deleteLater);
+        connect(thread4, &QThread::finished, thread4, &QObject::deleteLater);
 
-    thread1->start();
-    thread2->start();
-    thread3->start();
-    thread4->start();
+        thread1->start();
+        thread2->start();
+        thread3->start();
+        thread4->start();
+    }
+    else if (numberOfThreads->value() == 3)
+    {
+        while (end % 3 != 0)
+        {
+            end +=1;
+        }
+        //now end is divisible by 3
+
+        int endT1 = end/3;
+        int endT2 = endT1 + (end/3);
+        int endT3 = endT2 + (end/3);
+
+
+        worker1 = new primeWorker(1, start, endT1);
+        worker2 = new primeWorker(2,endT1, endT2);
+        worker3 = new primeWorker(3, endT2,endT3);
+
+        worker1->moveToThread(thread1);
+
+        connect(thread1, SIGNAL(started()), worker1, SLOT(process()));
+        connect(worker1, &primeWorker::primeFound, this, &PrimeDialog::displayPrime);
+        connect(worker1, &primeWorker::finished, this, &PrimeDialog::threadFinished);
+
+        // Clean up after the thread finishes
+        connect(worker1, &primeWorker::finished, worker1, &QObject::deleteLater);
+        connect(thread1, &QThread::finished, thread1, &QObject::deleteLater);
+
+        worker2->moveToThread(thread2);
+
+        connect(thread2, SIGNAL(started()), worker2, SLOT(process()));
+        connect(worker2, &primeWorker::primeFound, this, &PrimeDialog::displayPrime);
+        connect(worker2, &primeWorker::finished, this, &PrimeDialog::threadFinished);
+
+        // Clean up after the thread finishes
+        connect(worker2, &primeWorker::finished, worker2, &QObject::deleteLater);
+        connect(thread2, &QThread::finished, thread2, &QObject::deleteLater);
+
+        worker3->moveToThread(thread3);
+
+        connect(thread3, SIGNAL(started()), worker3, SLOT(process()));
+        connect(worker3, &primeWorker::primeFound, this, &PrimeDialog::displayPrime);
+        connect(worker3, &primeWorker::finished, this, &PrimeDialog::threadFinished);
+
+        // Clean up after the thread finishes
+        connect(worker3, &primeWorker::finished, worker3, &QObject::deleteLater);
+        connect(thread3, &QThread::finished, thread3, &QObject::deleteLater);
+
+        thread1->start();
+        thread2->start();
+        thread3->start();
+    }
+    else if (numberOfThreads->value() == 2)
+    {
+        while (end % 2 != 0)
+        {
+            end +=1;
+        }
+        //now end is divisible by 2
+
+        int endT1 = end/2;
+        int endT2 = endT1 + end/2;
+
+        worker1 = new primeWorker(1, start, endT1);
+        worker2 = new primeWorker(2,endT1, endT2);
+
+        worker1->moveToThread(thread1);
+
+        connect(thread1, SIGNAL(started()), worker1, SLOT(process()));
+        connect(worker1, &primeWorker::primeFound, this, &PrimeDialog::displayPrime);
+        connect(worker1, &primeWorker::finished, this, &PrimeDialog::threadFinished);
+
+        // Clean up after the thread finishes
+        connect(worker1, &primeWorker::finished, worker1, &QObject::deleteLater);
+        connect(thread1, &QThread::finished, thread1, &QObject::deleteLater);
+
+        worker2->moveToThread(thread2);
+
+        connect(thread2, SIGNAL(started()), worker2, SLOT(process()));
+        connect(worker2, &primeWorker::primeFound, this, &PrimeDialog::displayPrime);
+        connect(worker2, &primeWorker::finished, this, &PrimeDialog::threadFinished);
+
+        // Clean up after the thread finishes
+        connect(worker2, &primeWorker::finished, worker2, &QObject::deleteLater);
+        connect(thread2, &QThread::finished, thread2, &QObject::deleteLater);
+
+        thread1->start();
+        thread2->start();
+
+    }
+    else if (numberOfThreads->value() == 1)
+    {
+
+        worker1 = new primeWorker(1,start,end);
+        worker1->moveToThread(thread1);
+
+        connect(thread1, SIGNAL(started()), worker1, SLOT(process()));
+        connect(worker1, &primeWorker::primeFound, this, &PrimeDialog::displayPrime);
+        connect(worker1, &primeWorker::finished, this, &PrimeDialog::threadFinished);
+
+        // Clean up after the thread finishes
+        connect(worker1, &primeWorker::finished, worker1, &QObject::deleteLater);
+        connect(thread1, &QThread::finished, thread1, &QObject::deleteLater);
+
+        thread1->start();
+    }
+
+
 }
 
 
@@ -161,6 +275,7 @@ void PrimeDialog::displayPrime(int threadNumber, int primeNumber)
 {
     // Display the prime number in one of the textEdits
     qDebug() << threadNumber << " : " << "RUNNING \n";
+
     if (threadNumber == 1)
     {
         textEdit->append(QString("Prime: %1\n").arg(primeNumber));
@@ -177,7 +292,6 @@ void PrimeDialog::displayPrime(int threadNumber, int primeNumber)
     {
         textEditFour->append(QString("Prime: %1\n").arg(primeNumber));
     }
-
 }
 
 void PrimeDialog::threadFinished(int threadNumber)

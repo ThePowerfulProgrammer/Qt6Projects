@@ -20,6 +20,7 @@ private slots:
     void displayPrime(int threadNumber,int primeNumber);
     void threadFinished(int threadNumber);
 
+
 private:
 
     QSpinBox *startNumber;
