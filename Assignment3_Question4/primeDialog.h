@@ -19,6 +19,7 @@ private slots:
     void startFindingPrimes();
     void displayPrime(int threadNumber,int primeNumber);
     void threadFinished(int threadNumber);
+    void deleteThreads();
 
 
 private:

@@ -72,11 +72,11 @@ PrimeDialog::PrimeDialog(QWidget *parent) : QDialog(parent)
     connect(this, &QDialog::rejected, thread2, &QThread::quit);
     connect(this, &QDialog::rejected, thread3, &QThread::quit);
     connect(this, &QDialog::rejected, thread4, &QThread::quit);
+    connect(this, SIGNAL(rejected()), this, SLOT(deleteThreads()));
+
 
     setLayout(mainLayout);
-
     this->setMinimumWidth(600);
-
 }
 
 
@@ -88,6 +88,27 @@ void PrimeDialog::startFindingPrimes()
     {
         return;
     }
+
+    if (thread1->isRunning() || thread2->isRunning() || thread3->isRunning() || thread4->isRunning())
+    {
+        thread1->quit();
+        thread2->quit();
+        thread3->quit();
+        thread4->quit();
+
+        thread1->wait();
+        thread2->wait();
+        thread3->wait();
+        thread4->wait();
+
+        thread1 = new QThread;
+        thread2 = new QThread;
+        thread3 = new QThread;
+        thread4 = new QThread;
+
+    }
+
+
 
 
     if (numberOfThreads->value() == 4)
@@ -273,6 +294,7 @@ void PrimeDialog::startFindingPrimes()
 
 void PrimeDialog::displayPrime(int threadNumber, int primeNumber)
 {
+
     // Display the prime number in one of the textEdits
     qDebug() << threadNumber << " : " << "RUNNING \n";
 
@@ -314,6 +336,28 @@ void PrimeDialog::threadFinished(int threadNumber)
     }
 
 
+}
+
+void PrimeDialog::deleteThreads()
+{
+    qDebug() << "Done " << "\n";
+    if (thread1->isRunning() || thread2->isRunning() || thread3->isRunning() || thread4->isRunning())
+    {
+        thread1->quit();
+        thread2->quit();
+        thread3->quit();
+        thread4->quit();
+
+        thread1->wait();
+        thread2->wait();
+        thread3->wait();
+        thread4->wait();
+
+        thread1->deleteLater();
+        thread2->deleteLater();
+        thread3->deleteLater();
+        thread4->deleteLater();
+    }
 }
 
 
