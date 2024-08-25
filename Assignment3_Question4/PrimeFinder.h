@@ -1,15 +1,15 @@
-#ifndef PRIMEWORKER_H
-#define PRIMEWORKER_H
+#ifndef PRIMEFINDER_H
+#define PRIMEFINDER_H
 
 #include <QObject>
 #include <QDebug>
 #include <QStringList>
 
-class primeWorker : public QObject
+class PrimeFinder : public QObject
 {
     Q_OBJECT
 public:
-    explicit primeWorker(int threadNumber,int start, int end);
+    explicit PrimeFinder(int threadNumber,int start, int end);
 
     QStringList getPrimeList() const;
     void setPrimeList(const QStringList &newPrimeList);
@@ -37,4 +37,4 @@ private:
 signals:
 };
 
-#endif // PRIMEWORKER_H
+#endif // PRIMEFINDER_H

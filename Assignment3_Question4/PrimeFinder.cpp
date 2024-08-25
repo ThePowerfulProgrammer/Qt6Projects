@@ -1,11 +1,11 @@
-#include "primeworker.h"
+#include "PrimeFinder.h"
 
-primeWorker::primeWorker(int threadNumber,int start, int end) : m_threadNumber(threadNumber),m_start(start), m_end(end), primeList()
+PrimeFinder::PrimeFinder(int threadNumber,int start, int end) : m_threadNumber(threadNumber),m_start(start), m_end(end), primeList()
 {
 
 }
 
-void primeWorker::process()
+void PrimeFinder::process()
 {
     for (int number = m_start;number<=m_end;number++)
     {
@@ -20,27 +20,27 @@ void primeWorker::process()
     emit finished(m_threadNumber); // when done let this signal be heared
 }
 
-int primeWorker::threadNumber() const
+int PrimeFinder::threadNumber() const
 {
     return m_threadNumber;
 }
 
-void primeWorker::setThreadNumber(int newThreadNumber)
+void PrimeFinder::setThreadNumber(int newThreadNumber)
 {
     m_threadNumber = newThreadNumber;
 }
 
-QStringList primeWorker::getPrimeList() const
+QStringList PrimeFinder::getPrimeList() const
 {
     return primeList;
 }
 
-void primeWorker::setPrimeList(const QStringList &newPrimeList)
+void PrimeFinder::setPrimeList(const QStringList &newPrimeList)
 {
     primeList = newPrimeList;
 }
 
-bool primeWorker::isPrime(int number)
+bool PrimeFinder::isPrime(int number)
 {
     if (number <= 1) return false;          // Numbers less than 2 are not prime
     if (number == 2) return true;           // 2 is the only even prime number

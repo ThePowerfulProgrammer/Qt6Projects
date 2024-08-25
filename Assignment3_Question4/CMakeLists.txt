@@ -15,7 +15,7 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core Widgets)
 add_executable(Assignment3_Question4
   main.cpp
   primeDialog.h primeDialog.cpp
-  primeworker.h primeworker.cpp
+  PrimeFinder.h PrimeFinder.cpp
 
 )
 target_link_libraries(Assignment3_Question4 Qt${QT_VERSION_MAJOR}::Core Qt${QT_VERSION_MAJOR}::Widgets)

@@ -7,7 +7,7 @@
 #include <QPushButton>
 #include <QTextEdit>
 #include <QThread>
-#include "primeworker.h"
+#include "PrimeFinder.h"
 
 class PrimeDialog : public QDialog
 {
@@ -35,10 +35,10 @@ private:
     QTextEdit *textEditFour;
 
 
-    primeWorker *worker1;
-    primeWorker *worker2;
-    primeWorker *worker3;
-    primeWorker *worker4;
+    PrimeFinder *worker1;
+    PrimeFinder *worker2;
+    PrimeFinder *worker3;
+    PrimeFinder *worker4;
 
     QThread *thread1;
     QThread *thread2;

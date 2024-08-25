@@ -1,6 +1,6 @@
 #include <QApplication>
 #include <QThread>
-#include "primeworker.h"
+#include "PrimeFinder.h"
 #include "primeDialog.h"
 
 
@@ -9,8 +9,8 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
 
-    primeWorker *worker1 = new primeWorker(1,1,10);
-    primeWorker *worker2 = new primeWorker(1,10,20);
+    PrimeFinder *worker1 = new PrimeFinder(1,1,10);
+    PrimeFinder *worker2 = new PrimeFinder(1,10,20);
 
     QThread *thread1 = new QThread;
     QThread *thread2 = new QThread;
@@ -19,16 +19,16 @@ int main(int argc, char *argv[])
     worker2->moveToThread(thread2);
 
     // Using the new syntax
-    QObject::connect(thread1, &QThread::started, worker1, &primeWorker::process);
-    QObject::connect(worker1, &primeWorker::finished, thread1, &QThread::quit);
-    QObject::connect(worker1, &primeWorker::finished, worker1, &QObject::deleteLater);
+    QObject::connect(thread1, &QThread::started, worker1, &PrimeFinder::process);
+    QObject::connect(worker1, &PrimeFinder::finished, thread1, &QThread::quit);
+    QObject::connect(worker1, &PrimeFinder::finished, worker1, &QObject::deleteLater);
     QObject::connect(thread1, &QThread::finished, thread1, &QObject::deleteLater);
-    QObject::connect(worker1, &primeWorker::primeFound, thread1, &QThread::quit);
-    QObject::connect(worker1, &primeWorker::primeFound, worker1, &QObject::deleteLater);
+    QObject::connect(worker1, &PrimeFinder::primeFound, thread1, &QThread::quit);
+    QObject::connect(worker1, &PrimeFinder::primeFound, worker1, &QObject::deleteLater);
 
-    QObject::connect(thread2, &QThread::started, worker2, &primeWorker::process);
-    QObject::connect(worker2, &primeWorker::finished, thread2, &QThread::quit);
-    QObject::connect(worker2, &primeWorker::finished, worker2, &QObject::deleteLater);
+    QObject::connect(thread2, &QThread::started, worker2, &PrimeFinder::process);
+    QObject::connect(worker2, &PrimeFinder::finished, thread2, &QThread::quit);
+    QObject::connect(worker2, &PrimeFinder::finished, worker2, &QObject::deleteLater);
     QObject::connect(thread2, &QThread::finished, thread2, &QObject::deleteLater);
 
 
