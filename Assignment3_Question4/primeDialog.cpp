@@ -320,19 +320,19 @@ void PrimeDialog::threadFinished(int threadNumber)
 {
     if (threadNumber == 1)
     {
-        textEdit->append("Thread finished");
+        textEdit->append("CALCULATION COMPLETE\n\n");
     }
     else if (threadNumber == 2)
     {
-        textEditTwo->append("Thread finished");
+        textEditTwo->append("CALCULATION COMPLETE\n\n");
     }
     else if (threadNumber == 3)
     {
-        textEditThree->append("Thread finished");
+        textEditThree->append("CALCULATION COMPLETE\n\n");
     }
     else if (threadNumber == 4)
     {
-        textEditFour->append("Thread finished");
+        textEditFour->append("CALCULATION COMPLETE\n\n");
     }
 
 
@@ -359,25 +359,3 @@ void PrimeDialog::deleteThreads()
         thread4->deleteLater();
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
