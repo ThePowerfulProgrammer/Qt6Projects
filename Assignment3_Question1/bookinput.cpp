@@ -60,8 +60,8 @@ BookInput::BookInput(QWidget *parent) : QDialog(parent), authors(), books()
 
 
     // set layout apperance
+    this->setMinimumSize(600,100);
     setLayout(mainLayout);
-    this->setMinimumSize(500,100);
 }
 
 void BookInput::addAuthor()
