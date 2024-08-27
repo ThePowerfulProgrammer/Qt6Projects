@@ -10,14 +10,14 @@ PrimeDialog::PrimeDialog(QWidget *parent) : QDialog(parent)
 {
     startNumber = new QSpinBox(this);
     startNumber->setValue(1);
-    startNumber->setRange(1,1000);
+    startNumber->setRange(1,2000);
     QLabel *firstLabel = new QLabel("Start Number: ",this);
     firstLabel->setBuddy(startNumber);
 
 
     endNumber = new QSpinBox(this);
     endNumber->setValue(10);
-    endNumber->setRange(1,1000);
+    endNumber->setRange(1,2000);
     QLabel *secondLabel = new QLabel("End Number: ",this);
     secondLabel->setBuddy(endNumber);
 
