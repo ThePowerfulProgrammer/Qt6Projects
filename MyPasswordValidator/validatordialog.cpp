@@ -48,6 +48,7 @@ validatorDialog::validatorDialog(QWidget *parent) : QDialog(parent)
 
     connect(validateBtn, SIGNAL(clicked(bool)), this, SLOT(isValid()));
     setLayout(mainLayout);
+    setWindowTitle("Assignment3_Question3_Password_Validator");
 
 
 }
