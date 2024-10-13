@@ -1,0 +1,12 @@
+# ninja log v5
+6	162	7505365495291105	ExamPrep_autogen/timestamp	e5fc8598f5ce1a47
+6	162	7505365495291105	ExamPrep_autogen/mocs_compilation.cpp	e5fc8598f5ce1a47
+6	162	7505365495291105	C:/Qt6 Projects/ExamPrep/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/ExamPrep_autogen/timestamp	e5fc8598f5ce1a47
+6	162	7505365495291105	C:/Qt6 Projects/ExamPrep/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/ExamPrep_autogen/mocs_compilation.cpp	e5fc8598f5ce1a47
+165	671	7505365500845561	CMakeFiles/ExamPrep.dir/ExamPrep_autogen/mocs_compilation.cpp.obj	46db2f61e6dcda77
+192	1602	7505365510107475	CMakeFiles/ExamPrep.dir/chocolatefactory.cpp.obj	f6aebfc647ffbe7d
+182	1642	7505365510567449	CMakeFiles/ExamPrep.dir/slab.cpp.obj	10f0ae4cb6414e67
+177	1648	7505365510637439	CMakeFiles/ExamPrep.dir/chocolate.cpp.obj	f7dc255d675df872
+187	1653	7505365510687454	CMakeFiles/ExamPrep.dir/bar.cpp.obj	3239f7c5209040b3
+207	1665	7505365510787624	CMakeFiles/ExamPrep.dir/customer.cpp.obj	e0f67aa259be7390
+172	2019	7505365514339727	CMakeFiles/ExamPrep.dir/main.cpp.obj	feb2ebb0c53f3023
