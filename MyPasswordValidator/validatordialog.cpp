@@ -65,10 +65,12 @@ bool validatorDialog::isValid()
     {
         if (checkBox->isChecked() && lineedit->text() != "")
         {
-            QRegularExpression re;
+            QRegularExpression re; // the one needed for assignment
             re.setPattern("^[\\w!@#$%^&*()]{5,}$");
+            QRegularExpression renew("^(Bk|Mg)[0-3][0-9][0-9]_([bcdfghjklmnpqrstvxyz]|[abcdefghijklmnopqrstuvwxyz][bcdfghjklmnpqrstvxyz])$"); // the one needed for exam
 
-            QRegularExpressionMatch match = re.match(lineedit->text(), 0,QRegularExpression::NormalMatch);
+
+            QRegularExpressionMatch match = renew.match(lineedit->text(), 0,QRegularExpression::NormalMatch);
             bool hasMatch = match.hasMatch();
             qDebug() << "Match? " << hasMatch << "\n";
 
