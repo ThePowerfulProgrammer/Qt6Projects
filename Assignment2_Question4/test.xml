@@ -1,0 +1,29 @@
+<registrationlist>
+ <registration Type="StudentRegistration">
+  <attendee>
+   <name>Ash</name>
+   <affiliation>unisa</affiliation>
+   <email>ash@unisa.com</email>
+  </attendee>
+  <bookingdate>15.07.2024</bookingdate>
+  <registrationfee>250</registrationfee>
+ </registration>
+ <registration Type="Registration">
+  <attendee>
+   <name>Azura</name>
+   <affiliation>SAPS</affiliation>
+   <email>azura@gmail.com</email>
+  </attendee>
+  <bookingdate>15.07.2024</bookingdate>
+  <registrationfee>500</registrationfee>
+ </registration>
+ <registration Type="GuestRegistration">
+  <attendee>
+   <name>Prav</name>
+   <affiliation>unisa</affiliation>
+   <email>prav@outlook.ac.za</email>
+  </attendee>
+  <bookingdate>15.07.2024</bookingdate>
+  <registrationfee>50</registrationfee>
+ </registration>
+</registrationlist>
