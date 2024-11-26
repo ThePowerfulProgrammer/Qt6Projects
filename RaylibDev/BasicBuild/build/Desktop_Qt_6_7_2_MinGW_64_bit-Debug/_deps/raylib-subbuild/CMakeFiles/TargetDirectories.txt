@@ -1,0 +1,3 @@
+C:/Qt6 Projects/RaylibDev/BasicBuild/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-subbuild/CMakeFiles/raylib-populate.dir
+C:/Qt6 Projects/RaylibDev/BasicBuild/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-subbuild/CMakeFiles/edit_cache.dir
+C:/Qt6 Projects/RaylibDev/BasicBuild/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-subbuild/CMakeFiles/rebuild_cache.dir
