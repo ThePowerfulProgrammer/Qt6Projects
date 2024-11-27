@@ -53,12 +53,22 @@ struct Brick
     }
 };
 
+struct Score
+{
+    string scoreString;
+    int currentScore;
+
+};
+
 const int rows = 2;
 const int cols = 20;
 
 Brick bricks[rows][cols]; // bricks array[rows][cols]:
 Paddle paddle;
 Ball ball;
+
+Score scoreboard;
+
 
 // init the bricks,paddle and ball before the first draw
 void startGame()
@@ -94,7 +104,12 @@ void startGame()
     ball.position.y = 620;
     ball.speed = {0,-5}; // init move up
     ball.r = 10;
-    ball.c = RED;
+    ball.c = GREEN;
+
+    scoreboard.scoreString = "";
+    scoreboard.currentScore = 0;
+    scoreboard.scoreString = "Score: " + to_string(scoreboard.currentScore);
+
 }
 
 
@@ -102,12 +117,12 @@ void startGame()
 void draw()
 {
     // Create xy axis
-    DrawLine(450,0,450,720,RED); // y-axis
-    DrawLine(0,360,900,360,DARKBROWN); // x-axis
+    DrawLine(450,0,450,720,GREEN); // y-axis
+    DrawLine(0,360,900,360,BLACK); // x-axis
 
 
     // draw bricks
-    bool colorSwitch = 0;
+
 
     for (int i=0;i<rows;i++)
     {
@@ -116,21 +131,18 @@ void draw()
         {
             Brick brick = bricks[i][j];
             cout << brick.position.x << ", " << brick.position.y << endl;
-
-            if (colorSwitch == 0 && brick.active)
+            if (((i+j) % 2 == 0 ) && brick.active)
             {
                 DrawRectangle(brick.position.x, brick.position.y, brick.size.x,
-                              brick.size.y, RED);
-                colorSwitch = !colorSwitch;
+                              brick.size.y, GREEN);
             }
-            else if (colorSwitch == 1 && brick.active)
+            else if (((i+j) % 2 != 0 ) && brick.active)
             {
                 DrawRectangle(bricks[i][j].position.x, bricks[i][j].position.y,
-                              bricks[i][j].size.x,bricks[i][j].size.y, DARKBROWN);
-                colorSwitch = !colorSwitch;
+                              bricks[i][j].size.x,bricks[i][j].size.y, BLACK);
             }
         }
-        colorSwitch = !colorSwitch;
+
     }
 
     // draw paddle
@@ -139,11 +151,17 @@ void draw()
     // draw ball
     DrawCircle(ball.position.x, ball.position.y, ball.r, ball.c);
 
+    // draw Scoreboard
+
+    const char* c_string = scoreboard.scoreString.c_str();
+    DrawText(c_string,10,690,21,BLACK);
+
+
 }
 
 bool inRange(unsigned low, unsigned high, unsigned x)
 {
-    // low = 100,high = 145, 101
+    // low = 100,high = 145, x = 101
     return (low <= x && x<=high);
 }
 
@@ -202,6 +220,7 @@ void playGame()
                     (inRange(bricks[i][j].position.y, bricks[i][j].position.y + 45, ball.position.y + ball.r)) && bricks[i][j].active)
                 {
                     ball.speed.y *= -1;
+
                     string x = to_string(bricks[i][j].position.x);
                     string xTra = to_string(bricks[i][j].position.x + 45);
                     string pos = x + " , " + xTra;
@@ -210,6 +229,11 @@ void playGame()
                     DrawText(posPointer,200,200,14, BLACK);
 
                     bricks[i][j].active = false;
+
+                    scoreboard.currentScore += 1;
+                    scoreboard.scoreString = "Score: " + to_string(scoreboard.currentScore);
+                    const char* c_string = scoreboard.scoreString.c_str();
+                    DrawText(c_string,10,690,21,BLACK);
                 }
 
 
@@ -223,7 +247,7 @@ void playGame()
     else if (ball.position.y >= screenHeight)
     {
         ClearBackground(WHITE);
-        DrawText("Game Over", 370,360, 30, BLACK);
+        DrawText("Game Over", 378,360, 28, BLACK);
     }
 
 }
