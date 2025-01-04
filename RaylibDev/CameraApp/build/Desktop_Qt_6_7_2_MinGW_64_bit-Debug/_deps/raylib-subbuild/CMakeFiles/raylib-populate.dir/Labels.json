@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Qt6 Projects/RaylibDev/CameraApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-subbuild/CMakeFiles/raylib-populate"
+		},
+		{
+			"file" : "C:/Qt6 Projects/RaylibDev/CameraApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-subbuild/CMakeFiles/raylib-populate.rule"
+		},
+		{
+			"file" : "C:/Qt6 Projects/RaylibDev/CameraApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-subbuild/CMakeFiles/raylib-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Qt6 Projects/RaylibDev/CameraApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-build.rule"
+		},
+		{
+			"file" : "C:/Qt6 Projects/RaylibDev/CameraApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Qt6 Projects/RaylibDev/CameraApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-download.rule"
+		},
+		{
+			"file" : "C:/Qt6 Projects/RaylibDev/CameraApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-install.rule"
+		},
+		{
+			"file" : "C:/Qt6 Projects/RaylibDev/CameraApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Qt6 Projects/RaylibDev/CameraApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Qt6 Projects/RaylibDev/CameraApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-test.rule"
+		},
+		{
+			"file" : "C:/Qt6 Projects/RaylibDev/CameraApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"raylib-populate"
+		],
+		"name" : "raylib-populate"
+	}
+}

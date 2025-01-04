@@ -1,0 +1,21 @@
+# ninja log v5
+2	49	7576966410001056	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-mkdir	11a4614c10533156
+2	49	7576966410001056	C:/Qt6 Projects/RaylibDev/CameraApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-mkdir	11a4614c10533156
+50	4968	7576966459163559	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-download	dcacd7c24e0fe320
+50	4968	7576966459163559	C:/Qt6 Projects/RaylibDev/CameraApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-download	dcacd7c24e0fe320
+4969	5012	7576966459646854	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-update	bec92e5bcd14a98a
+4969	5012	7576966459646854	C:/Qt6 Projects/RaylibDev/CameraApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-update	bec92e5bcd14a98a
+5013	5057	7576966460063204	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-patch	7c0f8d4adebd8d82
+5013	5057	7576966460063204	C:/Qt6 Projects/RaylibDev/CameraApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-patch	7c0f8d4adebd8d82
+5057	5101	7576966460479878	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-configure	d3688107a278d
+5057	5101	7576966460479878	C:/Qt6 Projects/RaylibDev/CameraApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-configure	d3688107a278d
+5101	5145	7576966460966007	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-build	276e5d8a41c6a3fa
+5101	5145	7576966460966007	C:/Qt6 Projects/RaylibDev/CameraApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-build	276e5d8a41c6a3fa
+5145	5189	7576966461382945	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-install	24410a2c05793aaf
+5145	5189	7576966461382945	C:/Qt6 Projects/RaylibDev/CameraApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-install	24410a2c05793aaf
+5189	5233	7576966461798661	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-test	cffef84f865d4374
+5189	5233	7576966461798661	C:/Qt6 Projects/RaylibDev/CameraApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-test	cffef84f865d4374
+5233	5293	7576966462423828	CMakeFiles/raylib-populate-complete	22746bea535f4d83
+5233	5293	7576966462423828	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-done	22746bea535f4d83
+5233	5293	7576966462423828	C:/Qt6 Projects/RaylibDev/CameraApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-subbuild/CMakeFiles/raylib-populate-complete	22746bea535f4d83
+5233	5293	7576966462423828	C:/Qt6 Projects/RaylibDev/CameraApp/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-done	22746bea535f4d83
