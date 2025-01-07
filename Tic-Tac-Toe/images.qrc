@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>TTC-Cross.png</file>
+        <file>TTT-Circle.png</file>
+    </qresource>
+</RCC>

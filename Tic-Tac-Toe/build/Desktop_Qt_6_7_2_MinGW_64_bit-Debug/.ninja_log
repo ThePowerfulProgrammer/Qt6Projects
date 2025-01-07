@@ -1,0 +1,59 @@
+# ninja log v5
+663	877	7577720850366549	C:/Qt6 Projects/Tic-Tac-Toe/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Tic-Tac-Toe_autogen/EWIEGA46WW/qrc_images.cpp	f0cf00b07fd8c810
+173	1995	7578504149206211	CMakeFiles/Tic-Tac-Toe.dir/player.cpp.obj	601ba611562feee9
+374	3999	7579517220558327	CMakeFiles/Tic-Tac-Toe.dir/mainwindow.cpp.obj	939292bf0f933bf1
+585	2526	7577990487700714	CMakeFiles/Tic-Tac-Toe.dir/main.cpp.obj	1ae5fd889569896
+3531	4003	7579527482893095	Tic-Tac-Toe.exe	72af5613e3d1f85b
+25	261	7579527441590300	C:/Qt6 Projects/Tic-Tac-Toe/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Tic-Tac-Toe_autogen/mocs_compilation.cpp	9817b8adde3949dc
+25	261	7579527441590300	C:/Qt6 Projects/Tic-Tac-Toe/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Tic-Tac-Toe_autogen/timestamp	9817b8adde3949dc
+25	261	7579527441590300	Tic-Tac-Toe_autogen/mocs_compilation.cpp	9817b8adde3949dc
+25	261	7579527441590300	Tic-Tac-Toe_autogen/timestamp	9817b8adde3949dc
+172	2078	7578501787486611	CMakeFiles/Tic-Tac-Toe.dir/positionrect.cpp.obj	41a67eafd7bf19f4
+278	3531	7579527478268595	CMakeFiles/Tic-Tac-Toe.dir/stage.cpp.obj	7773edbc8de4c839
+907	1169	7577720853452710	CMakeFiles/Tic-Tac-Toe.dir/Tic-Tac-Toe_autogen/EWIEGA46WW/qrc_images.cpp.obj	90a23099abff2b60
+582	2544	7577990487861076	CMakeFiles/Tic-Tac-Toe.dir/Tic-Tac-Toe_autogen/mocs_compilation.cpp.obj	ee928034f640a98f
+663	877	7577720850366549	Tic-Tac-Toe_autogen/EWIEGA46WW/qrc_images.cpp	f0cf00b07fd8c810
+25	178	7579530141406956	Tic-Tac-Toe_autogen/timestamp	9817b8adde3949dc
+25	178	7579530141406956	Tic-Tac-Toe_autogen/mocs_compilation.cpp	9817b8adde3949dc
+25	178	7579530141406956	C:/Qt6 Projects/Tic-Tac-Toe/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Tic-Tac-Toe_autogen/timestamp	9817b8adde3949dc
+25	178	7579530141406956	C:/Qt6 Projects/Tic-Tac-Toe/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Tic-Tac-Toe_autogen/mocs_compilation.cpp	9817b8adde3949dc
+193	2198	7579530169294643	CMakeFiles/Tic-Tac-Toe.dir/stage.cpp.obj	7773edbc8de4c839
+2198	2483	7579530172112210	Tic-Tac-Toe.exe	72af5613e3d1f85b
+13	166	7579531671208402	Tic-Tac-Toe_autogen/timestamp	9817b8adde3949dc
+13	166	7579531671208402	Tic-Tac-Toe_autogen/mocs_compilation.cpp	9817b8adde3949dc
+13	166	7579531671208402	C:/Qt6 Projects/Tic-Tac-Toe/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Tic-Tac-Toe_autogen/timestamp	9817b8adde3949dc
+13	166	7579531671208402	C:/Qt6 Projects/Tic-Tac-Toe/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Tic-Tac-Toe_autogen/mocs_compilation.cpp	9817b8adde3949dc
+183	2242	7579531703217051	CMakeFiles/Tic-Tac-Toe.dir/mainwindow.cpp.obj	939292bf0f933bf1
+188	2395	7579531704714095	CMakeFiles/Tic-Tac-Toe.dir/stage.cpp.obj	7773edbc8de4c839
+2396	2698	7579531707714309	Tic-Tac-Toe.exe	72af5613e3d1f85b
+13	169	7579532060224444	Tic-Tac-Toe_autogen/timestamp	9817b8adde3949dc
+13	169	7579532060224444	Tic-Tac-Toe_autogen/mocs_compilation.cpp	9817b8adde3949dc
+13	169	7579532060224444	C:/Qt6 Projects/Tic-Tac-Toe/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Tic-Tac-Toe_autogen/timestamp	9817b8adde3949dc
+13	169	7579532060224444	C:/Qt6 Projects/Tic-Tac-Toe/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Tic-Tac-Toe_autogen/mocs_compilation.cpp	9817b8adde3949dc
+185	2206	7579532090963373	CMakeFiles/Tic-Tac-Toe.dir/stage.cpp.obj	7773edbc8de4c839
+2207	2472	7579532093590126	Tic-Tac-Toe.exe	72af5613e3d1f85b
+13	148	7579547381019395	Tic-Tac-Toe_autogen/timestamp	9817b8adde3949dc
+13	148	7579547381019395	Tic-Tac-Toe_autogen/mocs_compilation.cpp	9817b8adde3949dc
+13	148	7579547381019395	C:/Qt6 Projects/Tic-Tac-Toe/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Tic-Tac-Toe_autogen/timestamp	9817b8adde3949dc
+13	148	7579547381019395	C:/Qt6 Projects/Tic-Tac-Toe/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Tic-Tac-Toe_autogen/mocs_compilation.cpp	9817b8adde3949dc
+162	1775	7579547811534468	CMakeFiles/Tic-Tac-Toe.dir/mainwindow.cpp.obj	939292bf0f933bf1
+1775	2035	7579547814093702	Tic-Tac-Toe.exe	72af5613e3d1f85b
+13	153	7579550444922398	Tic-Tac-Toe_autogen/timestamp	9817b8adde3949dc
+13	153	7579550444922398	Tic-Tac-Toe_autogen/mocs_compilation.cpp	9817b8adde3949dc
+13	153	7579550444922398	C:/Qt6 Projects/Tic-Tac-Toe/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Tic-Tac-Toe_autogen/timestamp	9817b8adde3949dc
+13	153	7579550444922398	C:/Qt6 Projects/Tic-Tac-Toe/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Tic-Tac-Toe_autogen/mocs_compilation.cpp	9817b8adde3949dc
+167	1903	7579550497575148	CMakeFiles/Tic-Tac-Toe.dir/stage.cpp.obj	7773edbc8de4c839
+1903	2158	7579550500079565	Tic-Tac-Toe.exe	72af5613e3d1f85b
+13	149	7579552557204640	Tic-Tac-Toe_autogen/timestamp	9817b8adde3949dc
+13	149	7579552557204640	Tic-Tac-Toe_autogen/mocs_compilation.cpp	9817b8adde3949dc
+13	149	7579552557204640	C:/Qt6 Projects/Tic-Tac-Toe/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Tic-Tac-Toe_autogen/timestamp	9817b8adde3949dc
+13	149	7579552557204640	C:/Qt6 Projects/Tic-Tac-Toe/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Tic-Tac-Toe_autogen/mocs_compilation.cpp	9817b8adde3949dc
+163	1960	7579552774308783	CMakeFiles/Tic-Tac-Toe.dir/stage.cpp.obj	7773edbc8de4c839
+1960	2231	7579552776973544	Tic-Tac-Toe.exe	72af5613e3d1f85b
+14	174	7579561009002831	Tic-Tac-Toe_autogen/timestamp	9817b8adde3949dc
+14	174	7579561009002831	Tic-Tac-Toe_autogen/mocs_compilation.cpp	9817b8adde3949dc
+14	174	7579561009002831	C:/Qt6 Projects/Tic-Tac-Toe/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Tic-Tac-Toe_autogen/timestamp	9817b8adde3949dc
+14	174	7579561009002831	C:/Qt6 Projects/Tic-Tac-Toe/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Tic-Tac-Toe_autogen/mocs_compilation.cpp	9817b8adde3949dc
+189	2087	7579561037767332	CMakeFiles/Tic-Tac-Toe.dir/mainwindow.cpp.obj	939292bf0f933bf1
+193	2195	7579561038860820	CMakeFiles/Tic-Tac-Toe.dir/stage.cpp.obj	7773edbc8de4c839
+2195	2454	7579561041427819	Tic-Tac-Toe.exe	72af5613e3d1f85b
