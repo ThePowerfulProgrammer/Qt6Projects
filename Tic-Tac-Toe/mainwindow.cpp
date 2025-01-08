@@ -20,8 +20,9 @@ MainWindow::MainWindow(QWidget *parent, Qt::WindowFlags flags)
     view->setMinimumSize(QSize(650,650));
     view->setScene(stage);
 
+
     bar = new QStatusBar();
-    bar->showMessage("Game active");
+    bar->showMessage("Who will win?");
 
     setCentralWidget(view);
     setStatusBar(bar);

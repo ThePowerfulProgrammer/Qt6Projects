@@ -413,8 +413,11 @@ void Stage::checkState()
             addItem(text);
         }
     }
-    else if (isSquareSix && isSquareFour && isSquareTwo)
+
+    if (isSquareSix && isSquareFour && isSquareTwo)
     {
+
+        qDebug() << "Runnning a diagonal check \n";
         if ( (playedGrid[6] == playedGrid[4]) && (playedGrid[4] == playedGrid[2])  )
         {
             qDebug() << "Win state \n";
