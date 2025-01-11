@@ -1,0 +1,99 @@
+# ninja log v5
+20	118	7505385976752255	workingWithDb_autogen/timestamp	b04a542fbbe77b2a
+20	118	7505385976752255	C:/Qt6 Projects/workingWithDb/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/workingWithDb_autogen/mocs_compilation.cpp	b04a542fbbe77b2a
+20	118	7505385976752255	workingWithDb_autogen/mocs_compilation.cpp	b04a542fbbe77b2a
+20	118	7505385976752255	C:/Qt6 Projects/workingWithDb/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/workingWithDb_autogen/timestamp	b04a542fbbe77b2a
+181	223	7505370216103583	CMakeFiles/workingWithDb.dir/workingWithDb_autogen/mocs_compilation.cpp.obj	66e7c0ca6e6125e1
+108	1252	7505385470182336	CMakeFiles/workingWithDb.dir/main.cpp.obj	f1972eb92134771b
+1252	1351	7505385471143738	workingWithDb.exe	f688503bebe3c399
+24	176	7505386419232120	workingWithDb_autogen/timestamp	b04a542fbbe77b2a
+24	176	7505386419232120	workingWithDb_autogen/mocs_compilation.cpp	b04a542fbbe77b2a
+24	176	7505386419232120	C:/Qt6 Projects/workingWithDb/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/workingWithDb_autogen/timestamp	b04a542fbbe77b2a
+24	176	7505386419232120	C:/Qt6 Projects/workingWithDb/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/workingWithDb_autogen/mocs_compilation.cpp	b04a542fbbe77b2a
+180	221	7505386455706677	CMakeFiles/workingWithDb.dir/workingWithDb_autogen/mocs_compilation.cpp.obj	184b2874c3231cb4
+184	1917	7505386472630702	CMakeFiles/workingWithDb.dir/main.cpp.obj	cc0fe3337bc248bd
+1917	2063	7505386474058838	workingWithDb.exe	ecb4a9f6cfd8da34
+15	147	7505391807240912	workingWithDb_autogen/timestamp	b04a542fbbe77b2a
+15	147	7505391807240912	workingWithDb_autogen/mocs_compilation.cpp	b04a542fbbe77b2a
+15	147	7505391807240912	C:/Qt6 Projects/workingWithDb/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/workingWithDb_autogen/timestamp	b04a542fbbe77b2a
+15	147	7505391807240912	C:/Qt6 Projects/workingWithDb/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/workingWithDb_autogen/mocs_compilation.cpp	b04a542fbbe77b2a
+155	1833	7505391846847096	CMakeFiles/workingWithDb.dir/main.cpp.obj	cc0fe3337bc248bd
+1833	1972	7505391848190317	workingWithDb.exe	ecb4a9f6cfd8da34
+14	127	7505394377925654	workingWithDb_autogen/timestamp	b04a542fbbe77b2a
+14	127	7505394377925654	workingWithDb_autogen/mocs_compilation.cpp	b04a542fbbe77b2a
+14	127	7505394377925654	C:/Qt6 Projects/workingWithDb/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/workingWithDb_autogen/timestamp	b04a542fbbe77b2a
+14	127	7505394377925654	C:/Qt6 Projects/workingWithDb/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/workingWithDb_autogen/mocs_compilation.cpp	b04a542fbbe77b2a
+135	2214	7505394407137659	CMakeFiles/workingWithDb.dir/main.cpp.obj	cc0fe3337bc248bd
+2215	2394	7505394408909282	workingWithDb.exe	ecb4a9f6cfd8da34
+26	145	7505394695918173	workingWithDb_autogen/timestamp	b04a542fbbe77b2a
+26	145	7505394695918173	workingWithDb_autogen/mocs_compilation.cpp	b04a542fbbe77b2a
+26	145	7505394695918173	C:/Qt6 Projects/workingWithDb/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/workingWithDb_autogen/timestamp	b04a542fbbe77b2a
+26	145	7505394695918173	C:/Qt6 Projects/workingWithDb/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/workingWithDb_autogen/mocs_compilation.cpp	b04a542fbbe77b2a
+152	1733	7505394730772268	CMakeFiles/workingWithDb.dir/main.cpp.obj	cc0fe3337bc248bd
+1733	1861	7505394732030511	workingWithDb.exe	ecb4a9f6cfd8da34
+16	136	7505396715348410	workingWithDb_autogen/timestamp	b04a542fbbe77b2a
+16	136	7505396715348410	workingWithDb_autogen/mocs_compilation.cpp	b04a542fbbe77b2a
+16	136	7505396715348410	C:/Qt6 Projects/workingWithDb/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/workingWithDb_autogen/timestamp	b04a542fbbe77b2a
+16	136	7505396715348410	C:/Qt6 Projects/workingWithDb/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/workingWithDb_autogen/mocs_compilation.cpp	b04a542fbbe77b2a
+145	1674	7505396754475460	CMakeFiles/workingWithDb.dir/main.cpp.obj	cc0fe3337bc248bd
+1674	1818	7505396755900379	workingWithDb.exe	ecb4a9f6cfd8da34
+14	133	7505397076665623	workingWithDb_autogen/timestamp	b04a542fbbe77b2a
+14	133	7505397076665623	workingWithDb_autogen/mocs_compilation.cpp	b04a542fbbe77b2a
+14	133	7505397076665623	C:/Qt6 Projects/workingWithDb/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/workingWithDb_autogen/timestamp	b04a542fbbe77b2a
+14	133	7505397076665623	C:/Qt6 Projects/workingWithDb/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/workingWithDb_autogen/mocs_compilation.cpp	b04a542fbbe77b2a
+140	1905	7505397102435748	CMakeFiles/workingWithDb.dir/main.cpp.obj	cc0fe3337bc248bd
+1905	2046	7505397103785035	workingWithDb.exe	ecb4a9f6cfd8da34
+18	142	7505399107827134	workingWithDb_autogen/timestamp	b04a542fbbe77b2a
+18	142	7505399107827134	workingWithDb_autogen/mocs_compilation.cpp	b04a542fbbe77b2a
+18	142	7505399107827134	C:/Qt6 Projects/workingWithDb/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/workingWithDb_autogen/timestamp	b04a542fbbe77b2a
+18	142	7505399107827134	C:/Qt6 Projects/workingWithDb/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/workingWithDb_autogen/mocs_compilation.cpp	b04a542fbbe77b2a
+149	2040	7505399144013281	CMakeFiles/workingWithDb.dir/main.cpp.obj	cc0fe3337bc248bd
+2040	2186	7505399145435398	workingWithDb.exe	ecb4a9f6cfd8da34
+26	151	7505406187326297	workingWithDb_autogen/timestamp	b04a542fbbe77b2a
+26	151	7505406187326297	workingWithDb_autogen/mocs_compilation.cpp	b04a542fbbe77b2a
+26	151	7505406187326297	C:/Qt6 Projects/workingWithDb/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/workingWithDb_autogen/timestamp	b04a542fbbe77b2a
+26	151	7505406187326297	C:/Qt6 Projects/workingWithDb/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/workingWithDb_autogen/mocs_compilation.cpp	b04a542fbbe77b2a
+158	1698	7505406226880033	CMakeFiles/workingWithDb.dir/main.cpp.obj	cc0fe3337bc248bd
+1698	1834	7505406228231109	workingWithDb.exe	ecb4a9f6cfd8da34
+13	129	7505406544912229	workingWithDb_autogen/timestamp	b04a542fbbe77b2a
+13	129	7505406544912229	workingWithDb_autogen/mocs_compilation.cpp	b04a542fbbe77b2a
+13	129	7505406544912229	C:/Qt6 Projects/workingWithDb/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/workingWithDb_autogen/timestamp	b04a542fbbe77b2a
+13	129	7505406544912229	C:/Qt6 Projects/workingWithDb/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/workingWithDb_autogen/mocs_compilation.cpp	b04a542fbbe77b2a
+136	1716	7505406580612804	CMakeFiles/workingWithDb.dir/main.cpp.obj	cc0fe3337bc248bd
+1716	1850	7505406581908161	workingWithDb.exe	ecb4a9f6cfd8da34
+13	132	7505406961086626	workingWithDb_autogen/timestamp	b04a542fbbe77b2a
+13	132	7505406961086626	workingWithDb_autogen/mocs_compilation.cpp	b04a542fbbe77b2a
+13	132	7505406961086626	C:/Qt6 Projects/workingWithDb/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/workingWithDb_autogen/timestamp	b04a542fbbe77b2a
+13	132	7505406961086626	C:/Qt6 Projects/workingWithDb/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/workingWithDb_autogen/mocs_compilation.cpp	b04a542fbbe77b2a
+140	1652	7505406997006086	CMakeFiles/workingWithDb.dir/main.cpp.obj	cc0fe3337bc248bd
+1652	1785	7505406998297920	workingWithDb.exe	ecb4a9f6cfd8da34
+21	152	7505407249869178	workingWithDb_autogen/timestamp	b04a542fbbe77b2a
+21	152	7505407249869178	workingWithDb_autogen/mocs_compilation.cpp	b04a542fbbe77b2a
+21	152	7505407249869178	C:/Qt6 Projects/workingWithDb/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/workingWithDb_autogen/timestamp	b04a542fbbe77b2a
+21	152	7505407249869178	C:/Qt6 Projects/workingWithDb/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/workingWithDb_autogen/mocs_compilation.cpp	b04a542fbbe77b2a
+161	2159	7505407286978594	CMakeFiles/workingWithDb.dir/main.cpp.obj	cc0fe3337bc248bd
+2159	2319	7505407288548560	workingWithDb.exe	ecb4a9f6cfd8da34
+30	160	7505409045330939	workingWithDb_autogen/timestamp	b04a542fbbe77b2a
+30	160	7505409045330939	workingWithDb_autogen/mocs_compilation.cpp	b04a542fbbe77b2a
+30	160	7505409045330939	C:/Qt6 Projects/workingWithDb/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/workingWithDb_autogen/timestamp	b04a542fbbe77b2a
+30	160	7505409045330939	C:/Qt6 Projects/workingWithDb/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/workingWithDb_autogen/mocs_compilation.cpp	b04a542fbbe77b2a
+168	2122	7505409081057015	CMakeFiles/workingWithDb.dir/main.cpp.obj	cc0fe3337bc248bd
+2122	2274	7505409082517847	workingWithDb.exe	ecb4a9f6cfd8da34
+17	129	7505414748725535	workingWithDb_autogen/timestamp	b04a542fbbe77b2a
+17	129	7505414748725535	workingWithDb_autogen/mocs_compilation.cpp	b04a542fbbe77b2a
+17	129	7505414748725535	C:/Qt6 Projects/workingWithDb/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/workingWithDb_autogen/timestamp	b04a542fbbe77b2a
+17	129	7505414748725535	C:/Qt6 Projects/workingWithDb/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/workingWithDb_autogen/mocs_compilation.cpp	b04a542fbbe77b2a
+136	1875	7505414779121725	CMakeFiles/workingWithDb.dir/main.cpp.obj	cc0fe3337bc248bd
+1875	2014	7505414780487042	workingWithDb.exe	ecb4a9f6cfd8da34
+14	149	7582895714838010	workingWithDb_autogen/timestamp	b04a542fbbe77b2a
+14	149	7582895714838010	workingWithDb_autogen/mocs_compilation.cpp	b04a542fbbe77b2a
+14	149	7582895714838010	C:/Qt6 Projects/workingWithDb/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/workingWithDb_autogen/timestamp	b04a542fbbe77b2a
+14	149	7582895714838010	C:/Qt6 Projects/workingWithDb/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/workingWithDb_autogen/mocs_compilation.cpp	b04a542fbbe77b2a
+155	1773	7582895733342446	CMakeFiles/workingWithDb.dir/main.cpp.obj	cc0fe3337bc248bd
+1773	1921	7582895734748512	workingWithDb.exe	ecb4a9f6cfd8da34
+28	136	7582896242341707	workingWithDb_autogen/timestamp	b04a542fbbe77b2a
+28	136	7582896242341707	workingWithDb_autogen/mocs_compilation.cpp	b04a542fbbe77b2a
+28	136	7582896242341707	C:/Qt6 Projects/workingWithDb/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/workingWithDb_autogen/timestamp	b04a542fbbe77b2a
+28	136	7582896242341707	C:/Qt6 Projects/workingWithDb/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/workingWithDb_autogen/mocs_compilation.cpp	b04a542fbbe77b2a
+143	1602	7582896270878298	CMakeFiles/workingWithDb.dir/main.cpp.obj	cc0fe3337bc248bd
+1602	1732	7582896272110222	workingWithDb.exe	ecb4a9f6cfd8da34
