@@ -65,6 +65,14 @@ build CMakeFiles/SimpleGuiInteractionWithDB.dir/main.cpp.obj: CXX_COMPILER__Simp
   OBJECT_DIR = CMakeFiles\SimpleGuiInteractionWithDB.dir
   OBJECT_FILE_DIR = CMakeFiles\SimpleGuiInteractionWithDB.dir
 
+build CMakeFiles/SimpleGuiInteractionWithDB.dir/dialog.cpp.obj: CXX_COMPILER__SimpleGuiInteractionWithDB_unscanned_Debug C$:/Qt6$ Projects/SimpleGuiInteractionWithDB/dialog.cpp || cmake_object_order_depends_target_SimpleGuiInteractionWithDB
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\SimpleGuiInteractionWithDB.dir\dialog.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Qt6 Projects/SimpleGuiInteractionWithDB/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/SimpleGuiInteractionWithDB_autogen/include" -isystem C:/Qt6/6.7.2/mingw_64/include/QtCore -isystem C:/Qt6/6.7.2/mingw_64/include -isystem C:/Qt6/6.7.2/mingw_64/mkspecs/win32-g++ -isystem C:/Qt6/6.7.2/mingw_64/include/QtSql -isystem C:/Qt6/6.7.2/mingw_64/include/QtWidgets -isystem C:/Qt6/6.7.2/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\SimpleGuiInteractionWithDB.dir
+  OBJECT_FILE_DIR = CMakeFiles\SimpleGuiInteractionWithDB.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target SimpleGuiInteractionWithDB
@@ -73,7 +81,7 @@ build CMakeFiles/SimpleGuiInteractionWithDB.dir/main.cpp.obj: CXX_COMPILER__Simp
 #############################################
 # Link the executable SimpleGuiInteractionWithDB.exe
 
-build SimpleGuiInteractionWithDB.exe: CXX_EXECUTABLE_LINKER__SimpleGuiInteractionWithDB_Debug CMakeFiles/SimpleGuiInteractionWithDB.dir/SimpleGuiInteractionWithDB_autogen/mocs_compilation.cpp.obj CMakeFiles/SimpleGuiInteractionWithDB.dir/main.cpp.obj | C$:/Qt6/6.7.2/mingw_64/lib/libQt6Sql.a C$:/Qt6/6.7.2/mingw_64/lib/libQt6Widgets.a C$:/Qt6/6.7.2/mingw_64/lib/libQt6Gui.a C$:/Qt6/6.7.2/mingw_64/lib/libQt6Core.a || SimpleGuiInteractionWithDB_autogen SimpleGuiInteractionWithDB_autogen_timestamp_deps
+build SimpleGuiInteractionWithDB.exe: CXX_EXECUTABLE_LINKER__SimpleGuiInteractionWithDB_Debug CMakeFiles/SimpleGuiInteractionWithDB.dir/SimpleGuiInteractionWithDB_autogen/mocs_compilation.cpp.obj CMakeFiles/SimpleGuiInteractionWithDB.dir/main.cpp.obj CMakeFiles/SimpleGuiInteractionWithDB.dir/dialog.cpp.obj | C$:/Qt6/6.7.2/mingw_64/lib/libQt6Sql.a C$:/Qt6/6.7.2/mingw_64/lib/libQt6Widgets.a C$:/Qt6/6.7.2/mingw_64/lib/libQt6Gui.a C$:/Qt6/6.7.2/mingw_64/lib/libQt6Core.a || SimpleGuiInteractionWithDB_autogen SimpleGuiInteractionWithDB_autogen_timestamp_deps
   FLAGS = -DQT_QML_DEBUG -g
   LINK_LIBRARIES = C:/Qt6/6.7.2/mingw_64/lib/libQt6Sql.a  C:/Qt6/6.7.2/mingw_64/lib/libQt6Widgets.a  C:/Qt6/6.7.2/mingw_64/lib/libQt6Gui.a  C:/Qt6/6.7.2/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -ld3d11  -ldxgi  -ldxguid  -ld3d12  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\SimpleGuiInteractionWithDB.dir

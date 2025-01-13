@@ -14,6 +14,8 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core Widgets Sql)
 
 add_executable(SimpleGuiInteractionWithDB
   main.cpp
+  dialog.h dialog.cpp
+
 )
 
 target_link_libraries(SimpleGuiInteractionWithDB Qt${QT_VERSION_MAJOR}::Core Qt${QT_VERSION_MAJOR}::Sql Qt${QT_VERSION_MAJOR}::Widgets)
