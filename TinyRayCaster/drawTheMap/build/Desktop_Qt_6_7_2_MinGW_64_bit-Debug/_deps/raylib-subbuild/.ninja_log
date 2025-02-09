@@ -1,0 +1,21 @@
+# ninja log v5
+2	93	7472477337247057	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-mkdir	7d40dd8d8029e585
+2	93	7472477337247057	C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-mkdir	7d40dd8d8029e585
+94	28684	7472477623159016	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-download	f7dadba0c08eb634
+94	28684	7472477623159016	C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-download	f7dadba0c08eb634
+28686	28756	7472477623884649	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-update	78d21c1afcff7c13
+28686	28756	7472477623884649	C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-update	78d21c1afcff7c13
+28756	28823	7472477624524951	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-patch	aa7b1bebdfc362a7
+28756	28823	7472477624524951	C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-patch	aa7b1bebdfc362a7
+28823	28890	7472477625245873	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-configure	2381c268c2a81223
+28823	28890	7472477625245873	C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-configure	2381c268c2a81223
+28891	28957	7472477625885858	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-build	16d091402f6a064f
+28891	28957	7472477625885858	C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-build	16d091402f6a064f
+28957	29028	7472477626606120	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-install	19d9d1855f85bfe4
+28957	29028	7472477626606120	C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-install	19d9d1855f85bfe4
+29029	29096	7472477627246601	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-test	69243c54db79400
+29029	29096	7472477627246601	C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-test	69243c54db79400
+29096	29191	7472477628206948	CMakeFiles/raylib-populate-complete	729d2985b0921a22
+29096	29191	7472477628206948	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-done	729d2985b0921a22
+29096	29191	7472477628206948	C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-subbuild/CMakeFiles/raylib-populate-complete	729d2985b0921a22
+29096	29191	7472477628206948	C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-done	729d2985b0921a22

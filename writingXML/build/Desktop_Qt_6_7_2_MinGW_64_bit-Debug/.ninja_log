@@ -1,0 +1,80 @@
+# ninja log v5
+3506	3672	7424217817821358	writingXML.exe	ad82fce5a6284960
+202	248	7421641530280921	CMakeFiles/writingXML.dir/writingXML_autogen/mocs_compilation.cpp.obj	2f3c6e60e8d97859
+15	169	7424217166487338	C:/Qt6 Projects/writingXML/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/writingXML_autogen/mocs_compilation.cpp	24bb548e787093ba
+179	3505	7424217816220782	CMakeFiles/writingXML.dir/main.cpp.obj	8180627b4a62c8ec
+15	169	7424217166487338	C:/Qt6 Projects/writingXML/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/writingXML_autogen/timestamp	24bb548e787093ba
+15	169	7424217166487338	writingXML_autogen/mocs_compilation.cpp	24bb548e787093ba
+15	169	7424217166487338	writingXML_autogen/timestamp	24bb548e787093ba
+26	193	7424220364966246	writingXML_autogen/timestamp	24bb548e787093ba
+26	193	7424220364966246	writingXML_autogen/mocs_compilation.cpp	24bb548e787093ba
+26	193	7424220364966246	C:/Qt6 Projects/writingXML/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/writingXML_autogen/timestamp	24bb548e787093ba
+26	193	7424220364966246	C:/Qt6 Projects/writingXML/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/writingXML_autogen/mocs_compilation.cpp	24bb548e787093ba
+204	4689	7424220442243388	CMakeFiles/writingXML.dir/main.cpp.obj	8180627b4a62c8ec
+4689	4876	7424220444084599	writingXML.exe	ad82fce5a6284960
+20	191	7424222254795093	writingXML_autogen/timestamp	24bb548e787093ba
+20	191	7424222254795093	writingXML_autogen/mocs_compilation.cpp	24bb548e787093ba
+20	191	7424222254795093	C:/Qt6 Projects/writingXML/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/writingXML_autogen/timestamp	24bb548e787093ba
+20	191	7424222254795093	C:/Qt6 Projects/writingXML/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/writingXML_autogen/mocs_compilation.cpp	24bb548e787093ba
+201	4205	7424222331101196	CMakeFiles/writingXML.dir/main.cpp.obj	8180627b4a62c8ec
+4206	4390	7424222332943688	writingXML.exe	ad82fce5a6284960
+20	216	7424224175905366	writingXML_autogen/timestamp	24bb548e787093ba
+20	216	7424224175905366	writingXML_autogen/mocs_compilation.cpp	24bb548e787093ba
+20	216	7424224175905366	C:/Qt6 Projects/writingXML/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/writingXML_autogen/timestamp	24bb548e787093ba
+20	216	7424224175905366	C:/Qt6 Projects/writingXML/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/writingXML_autogen/mocs_compilation.cpp	24bb548e787093ba
+228	5029	7424224238391508	CMakeFiles/writingXML.dir/main.cpp.obj	8180627b4a62c8ec
+5029	5236	7424224240395639	writingXML.exe	ad82fce5a6284960
+18	189	7424225232795819	writingXML_autogen/timestamp	24bb548e787093ba
+18	189	7424225232795819	writingXML_autogen/mocs_compilation.cpp	24bb548e787093ba
+18	189	7424225232795819	C:/Qt6 Projects/writingXML/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/writingXML_autogen/timestamp	24bb548e787093ba
+18	189	7424225232795819	C:/Qt6 Projects/writingXML/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/writingXML_autogen/mocs_compilation.cpp	24bb548e787093ba
+201	5163	7424225316988471	CMakeFiles/writingXML.dir/main.cpp.obj	8180627b4a62c8ec
+5163	5345	7424225318754477	writingXML.exe	ad82fce5a6284960
+25	187	7424231232570790	writingXML_autogen/timestamp	24bb548e787093ba
+25	187	7424231232570790	writingXML_autogen/mocs_compilation.cpp	24bb548e787093ba
+25	187	7424231232570790	C:/Qt6 Projects/writingXML/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/writingXML_autogen/timestamp	24bb548e787093ba
+25	187	7424231232570790	C:/Qt6 Projects/writingXML/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/writingXML_autogen/mocs_compilation.cpp	24bb548e787093ba
+196	5207	7424231304645138	CMakeFiles/writingXML.dir/main.cpp.obj	8180627b4a62c8ec
+5207	5396	7424231306485834	writingXML.exe	ad82fce5a6284960
+19	177	7424231741820502	writingXML_autogen/timestamp	24bb548e787093ba
+19	177	7424231741820502	writingXML_autogen/mocs_compilation.cpp	24bb548e787093ba
+19	177	7424231741820502	C:/Qt6 Projects/writingXML/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/writingXML_autogen/timestamp	24bb548e787093ba
+19	177	7424231741820502	C:/Qt6 Projects/writingXML/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/writingXML_autogen/mocs_compilation.cpp	24bb548e787093ba
+187	5359	7424231802450894	CMakeFiles/writingXML.dir/main.cpp.obj	8180627b4a62c8ec
+5360	5566	7424231804451917	writingXML.exe	ad82fce5a6284960
+19	192	7424236140933697	writingXML_autogen/timestamp	24bb548e787093ba
+19	192	7424236140933697	writingXML_autogen/mocs_compilation.cpp	24bb548e787093ba
+19	192	7424236140933697	C:/Qt6 Projects/writingXML/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/writingXML_autogen/timestamp	24bb548e787093ba
+19	192	7424236140933697	C:/Qt6 Projects/writingXML/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/writingXML_autogen/mocs_compilation.cpp	24bb548e787093ba
+202	4682	7424236220810769	CMakeFiles/writingXML.dir/main.cpp.obj	8180627b4a62c8ec
+4683	4873	7424236222734999	writingXML.exe	ad82fce5a6284960
+22	205	7424236616078898	writingXML_autogen/timestamp	24bb548e787093ba
+22	205	7424236616078898	writingXML_autogen/mocs_compilation.cpp	24bb548e787093ba
+22	205	7424236616078898	C:/Qt6 Projects/writingXML/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/writingXML_autogen/timestamp	24bb548e787093ba
+22	205	7424236616078898	C:/Qt6 Projects/writingXML/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/writingXML_autogen/mocs_compilation.cpp	24bb548e787093ba
+220	5163	7424236687649243	CMakeFiles/writingXML.dir/main.cpp.obj	8180627b4a62c8ec
+5163	5358	7424236689570684	writingXML.exe	ad82fce5a6284960
+51	210	7424849385472579	writingXML_autogen/timestamp	24bb548e787093ba
+51	210	7424849385472579	writingXML_autogen/mocs_compilation.cpp	24bb548e787093ba
+51	210	7424849385472579	C:/Qt6 Projects/writingXML/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/writingXML_autogen/timestamp	24bb548e787093ba
+51	210	7424849385472579	C:/Qt6 Projects/writingXML/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/writingXML_autogen/mocs_compilation.cpp	24bb548e787093ba
+217	4219	7424849516706856	CMakeFiles/writingXML.dir/main.cpp.obj	8180627b4a62c8ec
+4220	4587	7424849520341950	writingXML.exe	ad82fce5a6284960
+17	163	7424849979324604	writingXML_autogen/timestamp	24bb548e787093ba
+17	163	7424849979324604	writingXML_autogen/mocs_compilation.cpp	24bb548e787093ba
+17	163	7424849979324604	C:/Qt6 Projects/writingXML/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/writingXML_autogen/timestamp	24bb548e787093ba
+17	163	7424849979324604	C:/Qt6 Projects/writingXML/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/writingXML_autogen/mocs_compilation.cpp	24bb548e787093ba
+170	4742	7424850048882020	CMakeFiles/writingXML.dir/main.cpp.obj	8180627b4a62c8ec
+4742	4939	7424850050793612	writingXML.exe	ad82fce5a6284960
+16	166	7424850910703422	writingXML_autogen/timestamp	24bb548e787093ba
+16	166	7424850910703422	writingXML_autogen/mocs_compilation.cpp	24bb548e787093ba
+16	166	7424850910703422	C:/Qt6 Projects/writingXML/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/writingXML_autogen/timestamp	24bb548e787093ba
+16	166	7424850910703422	C:/Qt6 Projects/writingXML/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/writingXML_autogen/mocs_compilation.cpp	24bb548e787093ba
+174	4678	7424850976906774	CMakeFiles/writingXML.dir/main.cpp.obj	8180627b4a62c8ec
+4679	4857	7424850978651791	writingXML.exe	ad82fce5a6284960
+16	153	7424851779862237	writingXML_autogen/timestamp	24bb548e787093ba
+16	153	7424851779862237	writingXML_autogen/mocs_compilation.cpp	24bb548e787093ba
+16	153	7424851779862237	C:/Qt6 Projects/writingXML/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/writingXML_autogen/timestamp	24bb548e787093ba
+16	153	7424851779862237	C:/Qt6 Projects/writingXML/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/writingXML_autogen/mocs_compilation.cpp	24bb548e787093ba
+163	4583	7424851849101771	CMakeFiles/writingXML.dir/main.cpp.obj	8180627b4a62c8ec
+4583	4758	7424851850774600	writingXML.exe	ad82fce5a6284960

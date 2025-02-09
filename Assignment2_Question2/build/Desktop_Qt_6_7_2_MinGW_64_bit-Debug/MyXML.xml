@@ -1,0 +1,20 @@
+<registrationlist>
+ <registration Type="Registration">
+  <attendee>
+   <name>Ash</name>
+   <affiliation>yt</affiliation>
+   <email>ash@yahoo.com</email>
+  </attendee>
+  <bookingdate>12.07.2024</bookingdate>
+  <registrationfee>500</registrationfee>
+ </registration>
+ <registration Type="StudentRegistration">
+  <attendee>
+   <name>Ash Student</name>
+   <affiliation>yt</affiliation>
+   <email>ash@gmail.com</email>
+  </attendee>
+  <bookingdate>12.07.2024</bookingdate>
+  <registrationfee>250</registrationfee>
+ </registration>
+</registrationlist>

@@ -1,0 +1,55 @@
+# ninja log v5
+2529	4064	7472479008184462	_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_thread.c.obj	bc1bf3d69e7137c7
+249	570	7472478972809955	_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/glfw_autogen/mocs_compilation.cpp.obj	abe667cc27e26ef3
+2497	4016	7472479007734085	_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_time.c.obj	e20fbca1b7b47d42
+2625	4137	7472479008931315	_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_monitor.c.obj	d06b5e17e63d7c73
+384	2770	7472478995187333	_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.obj	83c2792898f4c92f
+549	848	7472479152827354	drawTheMap.exe	37248a948fee7dea
+4616	4838	7472479015443879	C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-build/raylib/raylib_autogen/mocs_compilation.cpp	906b6e5823f951ee
+366	2710	7472478994361458	_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_window.c.obj	ecdd72158d865cc8
+4879	5044	7472479018006207	_deps/raylib-build/raylib/CMakeFiles/raylib.dir/utils.c.obj	c18bd26bc813b3ec
+261	2694	7472478994041457	_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/init.c.obj	892899770f19cb2b
+321	2692	7472478993961472	_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.obj	3cac74f33d4f0492
+291	2636	7472478993059230	_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/vulkan.c.obj	b4ca34a7b41158bf
+283	2625	7472478992819183	_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/platform.c.obj	8458740f0b5df87d
+571	3035	7472478997939429	_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_module.c.obj	9e243a134241c270
+276	2556	7472478992819183	_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/monitor.c.obj	fa9a6ab99657707c
+308	2598	7472478992578670	_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/egl_context.c.obj	47661d9ccb8895f6
+37	181	7472479136675053	C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/drawTheMap_autogen/timestamp	1d1322c7e0a3430a
+347	2528	7472478991858651	_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.obj	42111bae025004de
+299	2667	7472478993325777	_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/window.c.obj	cc124015057daa02
+36	247	7472478969607881	_deps/raylib-build/raylib/external/glfw/src/glfw_autogen/mocs_compilation.cpp	71047279bed186f3
+2637	4300	7472479010617080	_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_window.c.obj	6f425dfa98fe6c16
+36	247	7472478969607881	C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-build/raylib/external/glfw/src/glfw_autogen/mocs_compilation.cpp	71047279bed186f3
+4858	5231	7472479019927044	_deps/raylib-build/raylib/CMakeFiles/raylib.dir/rshapes.c.obj	3275395c9201ebb2
+4300	4615	7472479013762859	_deps/raylib-build/raylib/external/glfw/src/libglfw3.a	a245b3fce1000bc8
+4871	6261	7472479030138685	_deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtextures.c.obj	726b0f93e8eccdb8
+2668	4139	7472479008931315	_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/wgl_context.c.obj	f4e468894bcf8bb7
+37	181	7472479136675053	drawTheMap_autogen/mocs_compilation.cpp	1d1322c7e0a3430a
+2556	4025	7472479007784176	_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_init.c.obj	2728353b8345f1f6
+4616	4838	7472479015443879	_deps/raylib-build/raylib/raylib_autogen/timestamp	906b6e5823f951ee
+10005	10071	7472479068304868	CMakeFiles/drawTheMap.dir/drawTheMap_autogen/mocs_compilation.cpp.obj	65fc883a427b0e61
+2598	4146	7472479009011462	_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_joystick.c.obj	c4ac5836db6373a0
+4616	4838	7472479015443879	C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-build/raylib/raylib_autogen/timestamp	906b6e5823f951ee
+4839	4935	7472479016965319	_deps/raylib-build/raylib/CMakeFiles/raylib.dir/raylib_autogen/mocs_compilation.cpp.obj	4e87848ccb2414fc
+4887	9575	7472479063238871	_deps/raylib-build/raylib/CMakeFiles/raylib.dir/raudio.c.obj	1a8e1c6ae02e50d0
+4865	5710	7472479024649106	_deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtext.c.obj	4cf06b0ac48c19ec
+36	247	7472478969607881	_deps/raylib-build/raylib/external/glfw/src/glfw_autogen/timestamp	71047279bed186f3
+186	549	7472479149986335	CMakeFiles/drawTheMap.dir/main.cpp.obj	70d03fcc9b30261
+268	2761	7472478994867343	_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/input.c.obj	a299dbf615c1b650
+4845	6405	7472479031579193	_deps/raylib-build/raylib/CMakeFiles/raylib.dir/rcore.c.obj	393cb858d99c2b44
+36	247	7472478969607881	C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-build/raylib/external/glfw/src/glfw_autogen/timestamp	71047279bed186f3
+336	2740	7472478994787177	_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_init.c.obj	fe7f5d0b74329383
+4616	4838	7472479015443879	_deps/raylib-build/raylib/raylib_autogen/mocs_compilation.cpp	906b6e5823f951ee
+4850	6964	7472479037189336	_deps/raylib-build/raylib/CMakeFiles/raylib.dir/rmodels.c.obj	cb3ef58a24ad7b1c
+255	2493	7472478991938662	_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/context.c.obj	bee1ab5087c193e8
+37	181	7472479136675053	drawTheMap_autogen/timestamp	1d1322c7e0a3430a
+37	181	7472479136675053	C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/drawTheMap_autogen/mocs_compilation.cpp	1d1322c7e0a3430a
+9576	9771	7472479065262600	_deps/raylib-build/raylib/libraylib.a	102438e9b7c0b767
+23	275	7472479386999099	drawTheMap_autogen/timestamp	1d1322c7e0a3430a
+23	275	7472479386999099	drawTheMap_autogen/mocs_compilation.cpp	1d1322c7e0a3430a
+23	275	7472479386999099	C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/drawTheMap_autogen/timestamp	1d1322c7e0a3430a
+23	275	7472479386999099	C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/drawTheMap_autogen/mocs_compilation.cpp	1d1322c7e0a3430a
+283	361	7472479411354407	CMakeFiles/drawTheMap.dir/drawTheMap_autogen/mocs_compilation.cpp.obj	1ef236f0f8a6a1a0
+289	1099	7472479418727112	CMakeFiles/drawTheMap.dir/main.cpp.obj	4909dad8ba362135
+1099	1259	7472479420240993	drawTheMap.exe	90adbb9e766a12d6

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>816</width>
+    <height>634</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTableView" name="tableView"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>816</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuAdd_Workout">
+    <property name="title">
+     <string>Profile</string>
+    </property>
+    <addaction name="actionMe"/>
+    <addaction name="actionWorkout_History"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuPotenial_Unleashed">
+    <property name="title">
+     <string>Potenial Unleashed</string>
+    </property>
+    <widget class="QMenu" name="menuNew_Workout">
+     <property name="title">
+      <string>New Workout</string>
+     </property>
+     <addaction name="actionCreate_New"/>
+     <addaction name="actionCreate_From_Template"/>
+    </widget>
+    <widget class="QMenu" name="menuGuides">
+     <property name="title">
+      <string>Guides</string>
+     </property>
+     <addaction name="actionMuscle_Gain"/>
+     <addaction name="actionFat_Loss"/>
+    </widget>
+    <addaction name="menuNew_Workout"/>
+    <addaction name="separator"/>
+    <addaction name="actionAnalyse"/>
+    <addaction name="menuGuides"/>
+   </widget>
+   <addaction name="menuAdd_Workout"/>
+   <addaction name="menuPotenial_Unleashed"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionMe">
+   <property name="text">
+    <string>Me</string>
+   </property>
+  </action>
+  <action name="actionWorkout_History">
+   <property name="text">
+    <string>Workout History</string>
+   </property>
+  </action>
+  <action name="actionCreate_New">
+   <property name="text">
+    <string>Create New</string>
+   </property>
+  </action>
+  <action name="actionCreate_From_Template">
+   <property name="text">
+    <string>Create From Template</string>
+   </property>
+  </action>
+  <action name="actionAnalyse">
+   <property name="text">
+    <string>Analyse</string>
+   </property>
+  </action>
+  <action name="actionMuscle_Gain">
+   <property name="text">
+    <string>Muscle Gain</string>
+   </property>
+  </action>
+  <action name="actionFat_Loss">
+   <property name="text">
+    <string>Fat Loss</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

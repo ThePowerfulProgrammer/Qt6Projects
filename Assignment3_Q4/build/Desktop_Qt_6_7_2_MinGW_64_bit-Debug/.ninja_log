@@ -1,0 +1,10 @@
+# ninja log v5
+14	1223	7460374010384414	Assignment3_Q4_autogen/timestamp	ac4de09d89e80256
+14	1223	7460374010384414	C:/Qt6 Projects/Assignment3_Q4/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Assignment3_Q4_autogen/mocs_compilation.cpp	ac4de09d89e80256
+1232	5985	7460374059103752	CMakeFiles/Assignment3_Q4.dir/Assignment3_Q4_autogen/mocs_compilation.cpp.obj	3b79cbd2268a6dad
+14	1223	7460374010384414	Assignment3_Q4_autogen/mocs_compilation.cpp	ac4de09d89e80256
+14	1223	7460374010384414	C:/Qt6 Projects/Assignment3_Q4/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Assignment3_Q4_autogen/timestamp	ac4de09d89e80256
+1247	4689	7460374046182356	CMakeFiles/Assignment3_Q4.dir/primefinder.cpp.obj	8e59684e64aeb82a
+1239	5312	7460374052381717	CMakeFiles/Assignment3_Q4.dir/main.cpp.obj	21bd7bf898cd8491
+6509	7397	7460374073189903	Assignment3_Q4.exe	a569a00a4f6646a1
+1257	6509	7460374064276002	CMakeFiles/Assignment3_Q4.dir/mainwindow.cpp.obj	cee936e8b12a5108

@@ -1,0 +1,79 @@
+<registrationlist>
+ <registration type="Registration">
+  <attendee>
+   <name>Ashish</name>
+   <affiliation>unisa</affiliation>
+   <email>ash@gmail.com</email>
+  </attendee>
+  <bookingdate>16.07.2024</bookingdate>
+  <registrationfee>500</registrationfee>
+ </registration>
+ <registration type="StudentRegistration">
+  <attendee>
+   <name>Ash</name>
+   <affiliation>unisa</affiliation>
+   <email>90765432@unisa.ac.za</email>
+  </attendee>
+  <bookingdate>16.07.2024</bookingdate>
+  <registrationfee>250</registrationfee>
+ </registration>
+ <additionalInformation>None</additionalInformation>
+ <registration type="GuestRegistration">
+  <attendee>
+   <name>Azura</name>
+   <affiliation>None</affiliation>
+   <email>azuraTemp01@gmail.com</email>
+  </attendee>
+  <bookingdate>16.07.2024</bookingdate>
+  <registrationfee>50</registrationfee>
+ </registration>
+ <additionalInformation>None</additionalInformation>
+ <registration type="Registration">
+  <attendee>
+   <name>emil cosman</name>
+   <affiliation>yt</affiliation>
+   <email>emil@gmail.com</email>
+  </attendee>
+  <bookingdate>16.07.2024</bookingdate>
+  <registrationfee>500</registrationfee>
+ </registration>
+ <registration type="StudentRegistration">
+  <attendee>
+   <name>George</name>
+   <affiliation>Jungle</affiliation>
+   <email>georgejungle01@yahoo.com</email>
+  </attendee>
+  <bookingdate>16.07.2024</bookingdate>
+  <registrationfee>250</registrationfee>
+ </registration>
+ <additionalInformation>BSc Comp Sci</additionalInformation>
+ <registration type="Registration">
+  <attendee>
+   <name>Vicky</name>
+   <affiliation>yt</affiliation>
+   <email>vicks@gmail.com</email>
+  </attendee>
+  <bookingdate>16.07.2024</bookingdate>
+  <registrationfee>500</registrationfee>
+ </registration>
+ <registration type="StudentRegistration">
+  <attendee>
+   <name>Kentucky</name>
+   <affiliation>kfc</affiliation>
+   <email>kfc@gmail.com</email>
+  </attendee>
+  <bookingdate>16.07.2024</bookingdate>
+  <registrationfee>250</registrationfee>
+ </registration>
+ <additionalInformation>BSc Food Science</additionalInformation>
+ <registration type="GuestRegistration">
+  <attendee>
+   <name>Nandi</name>
+   <affiliation>nandos</affiliation>
+   <email>Nandios@yahoo.com</email>
+  </attendee>
+  <bookingdate>16.07.2024</bookingdate>
+  <registrationfee>50</registrationfee>
+ </registration>
+ <additionalInformation>Visitor</additionalInformation>
+</registrationlist>

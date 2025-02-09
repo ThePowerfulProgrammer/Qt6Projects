@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-e264b508ee340c9e0ec7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "crude3DRendering",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "crude3DRendering::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-crude3DRendering-Debug-b29ff7bbbfef2e0183d7.json",
+					"name" : "crude3DRendering",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "crude3DRendering_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-crude3DRendering_autogen-Debug-2622873e0ab8c10fda66.json",
+					"name" : "crude3DRendering_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "crude3DRendering_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-crude3DRendering_autogen_timestamp_deps-Debug-2499660ce64b9e1cb4aa.json",
+					"name" : "crude3DRendering_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Qt6 Projects/TinyRayCaster/crude3DRendering/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug",
+		"source" : "C:/Qt6 Projects/TinyRayCaster/crude3DRendering"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

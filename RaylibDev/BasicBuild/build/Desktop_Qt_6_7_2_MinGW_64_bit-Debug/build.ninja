@@ -57,14 +57,6 @@ build CMakeFiles/BasicBuild.dir/main.cpp.obj: CXX_COMPILER__BasicBuild_unscanned
   OBJECT_DIR = CMakeFiles\BasicBuild.dir
   OBJECT_FILE_DIR = CMakeFiles\BasicBuild.dir
 
-build CMakeFiles/BasicBuild.dir/game.cpp.obj: CXX_COMPILER__BasicBuild_unscanned_Debug C$:/Qt6$ Projects/RaylibDev/BasicBuild/game.cpp || cmake_object_order_depends_target_BasicBuild
-  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
-  DEP_FILE = CMakeFiles\BasicBuild.dir\game.cpp.obj.d
-  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -I"C:/Qt6 Projects/RaylibDev/BasicBuild/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/src" -I"C:/Qt6 Projects/RaylibDev/BasicBuild/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/src/external/glfw/include"
-  OBJECT_DIR = CMakeFiles\BasicBuild.dir
-  OBJECT_FILE_DIR = CMakeFiles\BasicBuild.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target BasicBuild
@@ -73,7 +65,7 @@ build CMakeFiles/BasicBuild.dir/game.cpp.obj: CXX_COMPILER__BasicBuild_unscanned
 #############################################
 # Link the executable BasicBuild.exe
 
-build BasicBuild.exe: CXX_EXECUTABLE_LINKER__BasicBuild_Debug CMakeFiles/BasicBuild.dir/main.cpp.obj CMakeFiles/BasicBuild.dir/game.cpp.obj | _deps/raylib-build/raylib/libraylib.a _deps/raylib-build/raylib/external/glfw/src/libglfw3.a || _deps/raylib-build/raylib/external/glfw/src/libglfw3.a _deps/raylib-build/raylib/libraylib.a
+build BasicBuild.exe: CXX_EXECUTABLE_LINKER__BasicBuild_Debug CMakeFiles/BasicBuild.dir/main.cpp.obj | _deps/raylib-build/raylib/libraylib.a _deps/raylib-build/raylib/external/glfw/src/libglfw3.a || _deps/raylib-build/raylib/external/glfw/src/libglfw3.a _deps/raylib-build/raylib/libraylib.a
   FLAGS = -DQT_QML_DEBUG -g
   LINK_LIBRARIES = _deps/raylib-build/raylib/libraylib.a  -lopengl32  -lglu32  -lwinmm  _deps/raylib-build/raylib/external/glfw/src/libglfw3.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\BasicBuild.dir

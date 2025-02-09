@@ -29,7 +29,7 @@ endif()
 # Add executable
 add_executable(BasicBuild
   main.cpp
-  game.cpp
+
 )
 
 # Link libraries

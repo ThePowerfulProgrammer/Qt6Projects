@@ -1,0 +1,255 @@
+{
+	"AUTOGEN_COMMAND_LINE_LENGTH_MAX" : 32000,
+	"BUILD_DIR" : "C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-build/raylib/external/glfw/src/glfw_autogen",
+	"CMAKE_BINARY_DIR" : "C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-build/raylib/external/glfw/src",
+	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/src/external/glfw/src",
+	"CMAKE_EXECUTABLE" : "C:/Qt6/Tools/CMake_64/bin/cmake.exe",
+	"CMAKE_LIST_FILES" : 
+	[
+		"C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/src/external/glfw/src/CMakeLists.txt",
+		"C:/Qt6/Tools/CMake_64/share/cmake-3.29/Modules/CheckIncludeFile.cmake",
+		"C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/src/external/glfw/CMake/glfw3.pc.in"
+	],
+	"CMAKE_SOURCE_DIR" : "C:/Qt6 Projects/TinyRayCaster/drawTheMap",
+	"CROSS_CONFIG" : false,
+	"DEP_FILE" : "C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-build/raylib/external/glfw/src/glfw_autogen/deps",
+	"DEP_FILE_RULE_NAME" : "glfw_autogen/timestamp",
+	"HEADERS" : 
+	[
+		[
+			"C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/src/external/glfw/include/GLFW/glfw3.h",
+			"MU",
+			"J4FC5ZN7ET/moc_glfw3.cpp",
+			null
+		],
+		[
+			"C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/src/external/glfw/include/GLFW/glfw3native.h",
+			"MU",
+			"J4FC5ZN7ET/moc_glfw3native.cpp",
+			null
+		],
+		[
+			"C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/src/external/glfw/src/internal.h",
+			"MU",
+			"EWIEGA46WW/moc_internal.cpp",
+			null
+		],
+		[
+			"C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/src/external/glfw/src/mappings.h",
+			"MU",
+			"EWIEGA46WW/moc_mappings.cpp",
+			null
+		],
+		[
+			"C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/src/external/glfw/src/null_joystick.h",
+			"MU",
+			"EWIEGA46WW/moc_null_joystick.cpp",
+			null
+		],
+		[
+			"C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/src/external/glfw/src/null_platform.h",
+			"MU",
+			"EWIEGA46WW/moc_null_platform.cpp",
+			null
+		],
+		[
+			"C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/src/external/glfw/src/platform.h",
+			"MU",
+			"EWIEGA46WW/moc_platform.cpp",
+			null
+		],
+		[
+			"C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/src/external/glfw/src/win32_joystick.h",
+			"MU",
+			"EWIEGA46WW/moc_win32_joystick.cpp",
+			null
+		],
+		[
+			"C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/src/external/glfw/src/win32_platform.h",
+			"MU",
+			"EWIEGA46WW/moc_win32_platform.cpp",
+			null
+		],
+		[
+			"C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/src/external/glfw/src/win32_thread.h",
+			"MU",
+			"EWIEGA46WW/moc_win32_thread.cpp",
+			null
+		],
+		[
+			"C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/src/external/glfw/src/win32_time.h",
+			"MU",
+			"EWIEGA46WW/moc_win32_time.cpp",
+			null
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-build/raylib/external/glfw/src/glfw_autogen/include",
+	"MOC_COMPILATION_FILE" : "C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-build/raylib/external/glfw/src/glfw_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : [ "UNICODE", "WINVER=0x0501", "_GLFW_WIN32", "_UNICODE" ],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/src/external/glfw/include",
+		"C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/src/external/glfw/src",
+		"C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-build/raylib/external/glfw/src",
+		"C:/Qt6/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++",
+		"C:/Qt6/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32",
+		"C:/Qt6/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward",
+		"C:/Qt6/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include",
+		"C:/Qt6/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed",
+		"C:/Qt6/Tools/mingw1120_64/x86_64-w64-mingw32/include"
+	],
+	"MOC_MACRO_NAMES" : 
+	[
+		"Q_OBJECT",
+		"Q_GADGET",
+		"Q_NAMESPACE",
+		"Q_NAMESPACE_EXPORT",
+		"Q_GADGET_EXPORT",
+		"Q_ENUM_NS"
+	],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"C:/Qt6/Tools/mingw1120_64/bin/g++.exe",
+		"-std=gnu++17",
+		"-dM",
+		"-E",
+		"-c",
+		"C:/Qt6/Tools/CMake_64/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-build/raylib/external/glfw/src/glfw_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 6,
+	"PARSE_CACHE_FILE" : "C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "C:/Qt6/6.7.2/mingw_64/./bin/moc.exe",
+	"QT_UIC_EXECUTABLE" : "",
+	"QT_VERSION_MAJOR" : 6,
+	"QT_VERSION_MINOR" : 7,
+	"SETTINGS_FILE" : "C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[
+			"C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/src/external/glfw/src/context.c",
+			"MU",
+			null
+		],
+		[
+			"C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/src/external/glfw/src/egl_context.c",
+			"MU",
+			null
+		],
+		[
+			"C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/src/external/glfw/src/init.c",
+			"MU",
+			null
+		],
+		[
+			"C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/src/external/glfw/src/input.c",
+			"MU",
+			null
+		],
+		[
+			"C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/src/external/glfw/src/monitor.c",
+			"MU",
+			null
+		],
+		[
+			"C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/src/external/glfw/src/null_init.c",
+			"MU",
+			null
+		],
+		[
+			"C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/src/external/glfw/src/null_joystick.c",
+			"MU",
+			null
+		],
+		[
+			"C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/src/external/glfw/src/null_monitor.c",
+			"MU",
+			null
+		],
+		[
+			"C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/src/external/glfw/src/null_window.c",
+			"MU",
+			null
+		],
+		[
+			"C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/src/external/glfw/src/osmesa_context.c",
+			"MU",
+			null
+		],
+		[
+			"C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/src/external/glfw/src/platform.c",
+			"MU",
+			null
+		],
+		[
+			"C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/src/external/glfw/src/vulkan.c",
+			"MU",
+			null
+		],
+		[
+			"C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/src/external/glfw/src/wgl_context.c",
+			"MU",
+			null
+		],
+		[
+			"C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/src/external/glfw/src/win32_init.c",
+			"MU",
+			null
+		],
+		[
+			"C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/src/external/glfw/src/win32_joystick.c",
+			"MU",
+			null
+		],
+		[
+			"C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/src/external/glfw/src/win32_module.c",
+			"MU",
+			null
+		],
+		[
+			"C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/src/external/glfw/src/win32_monitor.c",
+			"MU",
+			null
+		],
+		[
+			"C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/src/external/glfw/src/win32_thread.c",
+			"MU",
+			null
+		],
+		[
+			"C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/src/external/glfw/src/win32_time.c",
+			"MU",
+			null
+		],
+		[
+			"C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/src/external/glfw/src/win32_window.c",
+			"MU",
+			null
+		],
+		[
+			"C:/Qt6 Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/src/external/glfw/src/window.c",
+			"MU",
+			null
+		]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : [],
+	"UIC_UI_FILES" : [],
+	"USE_BETTER_GRAPH" : false,
+	"VERBOSITY" : 0
+}

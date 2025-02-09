@@ -1,0 +1,21 @@
+# ninja log v5
+1	50	7580336070213823	C:/Qt6 Projects/RaylibDev/SnakePlusPlus/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-mkdir	fcb363abec3f97fb
+6535	6593	7580336135631464	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-update	8e090bf4c7e91488
+51	6533	7580336135038021	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-download	16ddb38b02d12a2f
+6643	6688	7580336136588588	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-configure	6f9178e2e3c2d72d
+6688	6735	7580336137049929	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-build	d419c8439771c440
+6535	6593	7580336135631464	C:/Qt6 Projects/RaylibDev/SnakePlusPlus/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-update	8e090bf4c7e91488
+6780	6825	7580336137962467	C:/Qt6 Projects/RaylibDev/SnakePlusPlus/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-test	9b40debffbd29d
+6825	6888	7580336138593076	C:/Qt6 Projects/RaylibDev/SnakePlusPlus/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-subbuild/CMakeFiles/raylib-populate-complete	b3b3699ebdc8b7dd
+6688	6735	7580336137049929	C:/Qt6 Projects/RaylibDev/SnakePlusPlus/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-build	d419c8439771c440
+6825	6888	7580336138593076	CMakeFiles/raylib-populate-complete	b3b3699ebdc8b7dd
+6643	6688	7580336136588588	C:/Qt6 Projects/RaylibDev/SnakePlusPlus/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-configure	6f9178e2e3c2d72d
+6825	6888	7580336138593076	C:/Qt6 Projects/RaylibDev/SnakePlusPlus/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-done	b3b3699ebdc8b7dd
+6593	6643	7580336136132481	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-patch	80fd40eb7cb678ea
+6735	6779	7580336137507654	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-install	5fd5c5bc6ab169a5
+6593	6643	7580336136132481	C:/Qt6 Projects/RaylibDev/SnakePlusPlus/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-patch	80fd40eb7cb678ea
+51	6533	7580336135038021	C:/Qt6 Projects/RaylibDev/SnakePlusPlus/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-download	16ddb38b02d12a2f
+6735	6779	7580336137507654	C:/Qt6 Projects/RaylibDev/SnakePlusPlus/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-install	5fd5c5bc6ab169a5
+6825	6888	7580336138593076	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-done	b3b3699ebdc8b7dd
+1	50	7580336070213823	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-mkdir	fcb363abec3f97fb
+6780	6825	7580336137962467	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-test	9b40debffbd29d

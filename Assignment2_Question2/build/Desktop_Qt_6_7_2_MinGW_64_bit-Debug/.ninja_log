@@ -1,0 +1,29 @@
+# ninja log v5
+895	4333	7430919020481840	CMakeFiles/Assignment2_Question2.dir/main.cpp.obj	200623ac34f07cab
+901	3728	7430919014432529	CMakeFiles/Assignment2_Question2.dir/registration.cpp.obj	49c3d9e2a7af8ada
+27	889	7430918985435182	Assignment2_Question2_autogen/timestamp	867481fd1965e956
+920	4222	7430919019388393	CMakeFiles/Assignment2_Question2.dir/registrationlist.cpp.obj	bcc9b862b0aef539
+907	3706	7430919014191950	CMakeFiles/Assignment2_Question2.dir/studentregistration.cpp.obj	96c832d6573df410
+6995	7362	7430919050739009	Assignment2_Question2.exe	24e694d6d4aaff89
+913	3701	7430919014161840	CMakeFiles/Assignment2_Question2.dir/guestregistration.cpp.obj	4dcf7e2b1ae592a7
+514	4904	7424915488762099	CMakeFiles/Assignment2_Question2.dir/registrationlistreader.cpp.obj	5ce3f0c9e1ab6f2a
+927	6995	7430919047100168	CMakeFiles/Assignment2_Question2.dir/registrationdialog.cpp.obj	d675d1cdc3edc344
+935	6205	7430919039235677	CMakeFiles/Assignment2_Question2.dir/registrationlistwriter.cpp.obj	6da51043a7939b8d
+27	889	7430918985435182	Assignment2_Question2_autogen/mocs_compilation.cpp	867481fd1965e956
+890	4425	7430919021438981	CMakeFiles/Assignment2_Question2.dir/Assignment2_Question2_autogen/mocs_compilation.cpp.obj	15e07b9f17213063
+27	889	7430918985435182	C:/Qt6 Projects/Assignment2_Question2/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Assignment2_Question2_autogen/timestamp	867481fd1965e956
+27	889	7430918985435182	C:/Qt6 Projects/Assignment2_Question2/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Assignment2_Question2_autogen/mocs_compilation.cpp	867481fd1965e956
+1342	3773	7422385821595619	CMakeFiles/Assignment2_Question2.dir/person.cpp.obj	27dc786a7f41c8a9
+103	1949	7448979159394791	Assignment2_Question2_autogen/timestamp	867481fd1965e956
+103	1949	7448979159394791	Assignment2_Question2_autogen/mocs_compilation.cpp	867481fd1965e956
+103	1949	7448979159394791	C:/Qt6 Projects/Assignment2_Question2/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Assignment2_Question2_autogen/timestamp	867481fd1965e956
+103	1949	7448979159394791	C:/Qt6 Projects/Assignment2_Question2/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/Assignment2_Question2_autogen/mocs_compilation.cpp	867481fd1965e956
+1994	6839	7448979209986818	CMakeFiles/Assignment2_Question2.dir/guestregistration.cpp.obj	4dcf7e2b1ae592a7
+1983	6842	7448979209976784	CMakeFiles/Assignment2_Question2.dir/studentregistration.cpp.obj	96c832d6573df410
+1972	6846	7448979210056803	CMakeFiles/Assignment2_Question2.dir/registration.cpp.obj	49c3d9e2a7af8ada
+2007	6977	7448979211302086	CMakeFiles/Assignment2_Question2.dir/registrationlist.cpp.obj	bcc9b862b0aef539
+1963	7093	7448979212367354	CMakeFiles/Assignment2_Question2.dir/main.cpp.obj	200623ac34f07cab
+1952	7129	7448979212822636	CMakeFiles/Assignment2_Question2.dir/Assignment2_Question2_autogen/mocs_compilation.cpp.obj	15e07b9f17213063
+2028	10826	7448979249827460	CMakeFiles/Assignment2_Question2.dir/registrationlistwriter.cpp.obj	6da51043a7939b8d
+2018	12326	7448979264817123	CMakeFiles/Assignment2_Question2.dir/registrationdialog.cpp.obj	d675d1cdc3edc344
+12327	13560	7448979277069929	Assignment2_Question2.exe	24e694d6d4aaff89

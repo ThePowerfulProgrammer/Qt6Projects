@@ -67,8 +67,19 @@ bool validatorDialog::isValid()
         {
             QRegularExpression re; // the one needed for assignment
             re.setPattern("^[\\w!@#$%^&*()]{5,}$");
-            QRegularExpression renew("^(Bk|Mg)[0-3][0-9][0-9]_([bcdfghjklmnpqrstvxyz]|[abcdefghijklmnopqrstuvwxyz][bcdfghjklmnpqrstvxyz])$"); // the one needed for exam
+            QRegularExpression renew("^(Bk|Mg)[0-3][0-9][0-9]_([bcdfghjklmnpqrstvxyz]|"
+                                     "[abcdefghijklmnopqrstuvwxyz][bcdfghjklmnpqrstvxyz])$"); // the one needed for exam
 
+            // Words containing a number anywhere in the word.
+            // • Words containing a capital letter in any position other than the start of the word.
+            // • Words containing special characters (such as #, *, /, @, ^, etc.) within the word, except if
+            // the character is at the start or end of the word. A hyphen (-) is considered acceptable.
+
+            QRegularExpression test1("\\d+");
+            QRegularExpression test2("^([A-Za-z])([A-Z])");
+
+
+            QRegularExpression exp("^(G|K|W)[A-Z][a-z0-9]{1,}\\s$"); // Oct/Nov 2021
 
             QRegularExpressionMatch match = renew.match(lineedit->text(), 0,QRegularExpression::NormalMatch);
             bool hasMatch = match.hasMatch();
@@ -123,6 +134,34 @@ bool validatorDialog::isValid()
     return false;
 
 }
+
+
+// void Customer::listFromXml(QString s) {
+//     QDomDocument doc;
+//     if (!doc.setContent(&xmlString)){
+//         QDomElement root = doc.rootElement();
+//         if(root.tagName() == "customer")       {
+//             QDomNode node = root.firstChild();
+//             while(!node.isNull()){
+//                 QDomElement element = node.element();
+//                 if(!element.isNull()){
+//                     if(element.tagName() == "customer type"){
+//                         QString type{element.attribute()};
+//                         QString name;
+//                         QString other;
+//                         QDomNode n = node.firstChild();
+//                         while (!n.isNull()){
+//                             // get the tag values for this customer
+//                             n = n.nextTag();
+//                         }
+//                     }
+//                 }
+//                 node = node.nextSibling();
+//             }
+//         }
+//     }
+// }
+
 
 
 

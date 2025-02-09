@@ -1,0 +1,10 @@
+# ninja log v5
+24	166	7521864856782251	ExamPreperation_autogen/timestamp	95e54a6e2145c804
+24	166	7521864856782251	ExamPreperation_autogen/mocs_compilation.cpp	95e54a6e2145c804
+24	166	7521864856782251	C:/Qt6 Projects/ExamPreperation/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/ExamPreperation_autogen/timestamp	95e54a6e2145c804
+644	2420	7521864338925104	CMakeFiles/ExamPreperation.dir/ExamPreperation_autogen/mocs_compilation.cpp.obj	a533ca3065a4e9cf
+24	166	7521864856782251	C:/Qt6 Projects/ExamPreperation/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/ExamPreperation_autogen/mocs_compilation.cpp	95e54a6e2145c804
+648	2443	7521864339145643	CMakeFiles/ExamPreperation.dir/main.cpp.obj	faaae73e07c7830d
+183	1257	7521864947243180	CMakeFiles/ExamPreperation.dir/product.cpp.obj	7ccecc5824d02334
+180	1411	7521864948785609	CMakeFiles/ExamPreperation.dir/person.cpp.obj	99a933cb217f0daa
+1411	1565	7521864950280654	ExamPreperation.exe	997afa7410bfd1a4

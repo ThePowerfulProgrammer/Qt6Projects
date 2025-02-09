@@ -23,4 +23,6 @@ private:
     QDate m_BookingDate;
 };
 
+
+
 #endif // REGISTRATION_H

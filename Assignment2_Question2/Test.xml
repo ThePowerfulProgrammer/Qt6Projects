@@ -1,0 +1,31 @@
+<registrationlist>
+ <registration type="Registration">
+  <attendee>
+   <name>Ash R</name>
+   <affiliation>yt</affiliation>
+   <email>ash@gmail.com</email>
+  </attendee>
+  <bookingdate>09.07.2024</bookingdate>
+  <registrationfee>500</registrationfee>
+ </registration>
+ <registration type="StudentRegistration">
+  <attendee>
+   <name>Charles</name>
+   <affiliation>unisa</affiliation>
+   <email>charlie@yahoo.com</email>
+  </attendee>
+  <bookingdate>23.07.2024</bookingdate>
+  <registrationfee>250</registrationfee>
+ </registration>
+ <additionalInformation>BSc Comp SCi</additionalInformation>
+ <registration type="GuestRegistration">
+  <attendee>
+   <name>Albert </name>
+   <affiliation>unisa</affiliation>
+   <email>albert@yahoo.com</email>
+  </attendee>
+  <bookingdate>02.07.2024</bookingdate>
+  <registrationfee>50</registrationfee>
+ </registration>
+ <additionalInformation>Visitor</additionalInformation>
+</registrationlist>

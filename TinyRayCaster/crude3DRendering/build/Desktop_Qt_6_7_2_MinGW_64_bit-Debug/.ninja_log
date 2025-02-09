@@ -1,0 +1,8 @@
+# ninja log v5
+8	238	7456099991383029	crude3DRendering_autogen/timestamp	584adf537c1d3393
+8	238	7456099991383029	crude3DRendering_autogen/mocs_compilation.cpp	584adf537c1d3393
+8	238	7456099991383029	C:/Qt6 Projects/TinyRayCaster/crude3DRendering/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/crude3DRendering_autogen/timestamp	584adf537c1d3393
+8	238	7456099991383029	C:/Qt6 Projects/TinyRayCaster/crude3DRendering/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/crude3DRendering_autogen/mocs_compilation.cpp	584adf537c1d3393
+242	323	7456099992820496	CMakeFiles/crude3DRendering.dir/crude3DRendering_autogen/mocs_compilation.cpp.obj	89f394f5a02662fd
+247	769	7456099997230186	CMakeFiles/crude3DRendering.dir/main.cpp.obj	a3a54239fe5eb6a
+770	925	7456099998751965	crude3DRendering.exe	eac9874e91bd94ae

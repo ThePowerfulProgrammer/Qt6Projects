@@ -1,9 +1,6 @@
 #include "raylib.h"
-#include <iostream>
-#include <cstdlib>
 #include <ctime>
-
-
+#include <cstdlib>
 
 using namespace std;
 
@@ -12,8 +9,8 @@ const int screenHeight = 720;
 
 struct Paddle
 {
-    Vector2 position;
-    Vector2 size;
+    Vector2 position; // <x,y> == <posx, posy>
+    Vector2 size; // <x,y> == <width, height>
     Color color;
 };
 
@@ -29,7 +26,7 @@ struct Brick
 {
     Vector2 position;
     Vector2 size;
-    bool active;
+    bool active; // Determines if a brick should be drawn or not
 
     Brick()
     {
@@ -39,9 +36,10 @@ struct Brick
         size.x = 0;
         size.y = 0;
 
-    };
+        active = false;
+    }
 
-    Brick(float x, float y, float length,float width, bool act=true)
+    Brick(float x, float y, float length, float width, bool act=true)
     {
         position.x = x;
         position.y = y;
@@ -51,129 +49,106 @@ struct Brick
 
         active = act;
     }
-};
 
-struct Score
-{
-    string scoreString;
-    int currentScore;
-
-};
-
-const int rows = 2;
-const int cols = 20;
-
-Brick bricks[rows][cols]; // bricks array[rows][cols]:
-Paddle paddle;
-Ball ball;
-
-Score scoreboard;
+ };
 
 
-// init the bricks,paddle and ball before the first draw
-void startGame()
-{
+ const int rows = 2;
+ const int cols = 20;
 
-    float startingX = 0;
-    float startingY = 40;
-
-    float l = 45;
-    float w = 45;
-
-    for (int i=0;i<2;i++)
-    {
-        for (int j=0;j<20;j++)
-        {
-            Brick brick(startingX, startingY, l, w);
-            bricks[i][j] = brick;
-            startingX += 45;
-        }
-        startingX = 0;
-        startingY += 45;
-    }
+ Brick bricks[rows][cols];
+ Paddle paddle;
+ Ball ball;
 
 
-    // now the paddle
-    paddle.position = {400,650};
-    paddle.size = {100,25};
-    paddle.color = BLACK;
 
-    // Finally init the ball
+ // Init the starting variables of the game
+ void startGame()
+ {
+     // creates starting bricks
+     float startingX = 0; // refers to the starting x coordinate of the bricks
+     float startingY = 40;
 
-    ball.position.x = 450;
-    ball.position.y = 620;
-    ball.speed = {0,-5}; // init move up
-    ball.r = 10;
-    ball.c = GREEN;
+     float l = 45;
+     float w = 45;
 
-    scoreboard.scoreString = "";
-    scoreboard.currentScore = 0;
-    scoreboard.scoreString = "Score: " + to_string(scoreboard.currentScore);
+     for (int i=0;i<rows;i++)
+     {
+         for (int j=0;j<cols;j++)
+         {
+             Brick brick(startingX, startingY, l,w);
+             bricks[i][j] = brick;
+             startingX += w;
+         }
+         startingX = 0;
+         startingY +=l;
+     }
+
+     // the PADDLE
+     paddle.position = {400,650};
+     paddle.size = {100,25};
+     paddle.color = BLACK;
+
+     // the BalL
+     ball.position = {450,620};
+     ball.speed = {0,-5};
+     ball.r = 10;
+     ball.c = DARKBLUE;
 
 }
 
-
-// Draw the objects onto the canvas: For now just the bricks
-void draw()
+// draw the frames
+ void draw()
 {
-    // Create xy axis
-    DrawLine(450,0,450,720,GREEN); // y-axis
-    DrawLine(0,360,900,360,BLACK); // x-axis
+
 
 
     // draw bricks
-
-
     for (int i=0;i<rows;i++)
     {
-        cout << "drawing bricks" << endl;
-         for (int j=0;j<cols;j++)
+        for (int j=0;j<cols;j++)
         {
             Brick brick = bricks[i][j];
-            cout << brick.position.x << ", " << brick.position.y << endl;
-            if (((i+j) % 2 == 0 ) && brick.active)
+
+            if ( ((i+j) % 2== 0) && brick.active )
             {
                 DrawRectangle(brick.position.x, brick.position.y, brick.size.x,
-                              brick.size.y, GREEN);
+                              brick.size.y, BLUE);
             }
-            else if (((i+j) % 2 != 0 ) && brick.active)
+            else if ( ((i+j) % 2 != 0) && brick.active )
             {
-                DrawRectangle(bricks[i][j].position.x, bricks[i][j].position.y,
-                              bricks[i][j].size.x,bricks[i][j].size.y, BLACK);
+                DrawRectangle(brick.position.x, brick.position.y, brick.size.x,
+                              brick.size.y, BLACK);
+
             }
         }
-
     }
 
-    // draw paddle
-    DrawRectangle(paddle.position.x, paddle.position.y, paddle.size.x,paddle.size.y, paddle.color);
 
-    // draw ball
+    // draw paddle
+    DrawRectangle(paddle.position.x, paddle.position.y, paddle.size.x, paddle.size.y, paddle.color);
+
+    // Draw the ball
     DrawCircle(ball.position.x, ball.position.y, ball.r, ball.c);
 
-    // draw Scoreboard
-
-    const char* c_string = scoreboard.scoreString.c_str();
-    DrawText(c_string,10,690,21,BLACK);
-
-
 }
 
-bool inRange(unsigned low, unsigned high, unsigned x)
+bool inRange(unsigned low, unsigned high, unsigned target)
 {
-    // low = 100,high = 145, x = 101
-    return (low <= x && x<=high);
+    // low == 100, high = 145, target = 101: 100<=101 && 101<=145
+    return (low <= target && target <= high);
 }
 
-bool moveUp = true;
-// I need a function that handles the dynamic content of the game and calls the draw function
+
+// updates the variables and essentially the frames of the game
 void playGame()
 {
-    if (!(ball.position.y >= screenHeight))
+    if (!(ball.position.y >=  screenHeight))
     {
+        // move the paddle
         if (IsKeyDown(KEY_LEFT) && paddle.position.x > 10)
         {
-            paddle.position.x -=5;
+            paddle.position.x -= 5;
         }
         else if (IsKeyDown(KEY_RIGHT) && paddle.position.x < 790)
         {
@@ -187,21 +162,20 @@ void playGame()
         if (ball.position.y <= 0)
         {
             ball.speed.y *=-1;
-            ball.c = BLACK;
+            ball.c = RED;
         }
 
         // check collision of ball and paddle
-        if (CheckCollisionCircleRec(ball.position,ball.r,
-                                    Rectangle{paddle.position.x,paddle.position.y,paddle.size.x,paddle.size.y}))
+        if (CheckCollisionCircleRec(ball.position, ball.r,
+                                    Rectangle{paddle.position.x, paddle.position.y, paddle.size.x, paddle.size.y}))
         {
             ball.speed.y *= -1;
             int distancePlayer_Ball = ball.position.x - paddle.position.x;
             ball.speed.x = distancePlayer_Ball/(paddle.size.x/2)*5;
         }
 
-
-        // check ball collision and screenWidth
-        if (ball.position.x <= 0 ) // hit left wall
+        // check collision of ball and side walls
+        if (ball.position.x <= 0)
         {
             ball.speed.x *= -1;
         }
@@ -210,65 +184,52 @@ void playGame()
             ball.speed.x *= -1;
         }
 
-        // check collision of ball and any brick
-        for (int i=0;i<rows;i++)
+        // Math to detect collision of ball and ANY brick?
+        for (int i=0;i<rows; i++)
         {
             for (int j=0;j<cols;j++)
             {
-                //   (100,145,paddle.x) && (100,145,paddle.y)
-                if (inRange(bricks[i][j].position.x, bricks[i][j].position.x + 45, ball.position.x + ball.r) &&
-                    (inRange(bricks[i][j].position.y, bricks[i][j].position.y + 45, ball.position.y + ball.r)) && bricks[i][j].active)
+                // (100,145, ball.x) && (100, 145, ball.y)
+                if (inRange(bricks[i][j].position.x, bricks[i][j].position.x+45,ball.position.x + ball.r) &&
+                    (inRange(bricks[i][j].position.y, bricks[i][j].position.y+45,ball.position.y + ball.r)) &&
+                    bricks[i][j].active)
                 {
                     ball.speed.y *= -1;
-
-                    string x = to_string(bricks[i][j].position.x);
-                    string xTra = to_string(bricks[i][j].position.x + 45);
-                    string pos = x + " , " + xTra;
-                    const char* posPointer = pos.c_str();
-
-                    DrawText(posPointer,200,200,14, BLACK);
-
                     bricks[i][j].active = false;
 
-                    scoreboard.currentScore += 1;
-                    scoreboard.scoreString = "Score: " + to_string(scoreboard.currentScore);
-                    const char* c_string = scoreboard.scoreString.c_str();
-                    DrawText(c_string,10,690,21,BLACK);
+
                 }
-
-
             }
         }
-
 
 
         draw();
     }
     else if (ball.position.y >= screenHeight)
     {
-        ClearBackground(WHITE);
-        DrawText("Game Over", 378,360, 28, BLACK);
+        DrawText("GAME OVER", 378,360,28, BLACK);
     }
-
 }
 
 
-
-int main(int argc, char **args)
+int main(int argc, char **argv)
 {
-    InitWindow(screenWidth, screenHeight,"Arkanoid");
-    SetTargetFPS(60);
+    InitWindow(screenWidth, screenHeight, "Arkanoid");
+    SetTargetFPS(60); // The screen should be redrawn 60 times in 1 second
 
     startGame();
 
     while (!WindowShouldClose())
     {
         ClearBackground(WHITE);
-        BeginDrawing();
 
+        BeginDrawing();
+        // All our drawing will be done here
         draw();
         playGame();
+
         EndDrawing();
+
     }
 
     CloseWindow();

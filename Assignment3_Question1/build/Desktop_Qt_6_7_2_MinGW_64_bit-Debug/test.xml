@@ -95,3 +95,24 @@
  <author>Some Dude</author>
  <author>Sheeto Nokamura</author>
 </bookNode>
+<bookNode>
+ <title>Berserk Volume 1</title>
+ <isbn>1018356438389</isbn>
+ <date>2024/06/04</date>
+ <author>Kentaro Miura</author>
+ <author>Some Dude</author>
+ <author>Sheeto Nokamura</author>
+</bookNode>
+<bookNode>
+ <title>Akira</title>
+ <isbn>1122334455</isbn>
+ <date>2024/08/27</date>
+ <author>Katsuhiro Otomo</author>
+</bookNode>
+<bookNode>
+ <title>Gantz</title>
+ <isbn>1122334456</isbn>
+ <date>2024/08/29</date>
+ <author>Hiroya Oku</author>
+ <author>Todo Aoi</author>
+</bookNode>

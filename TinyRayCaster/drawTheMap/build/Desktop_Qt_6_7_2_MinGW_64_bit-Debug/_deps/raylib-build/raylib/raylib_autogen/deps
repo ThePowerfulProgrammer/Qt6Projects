@@ -1,0 +1,32 @@
+raylib_autogen/timestamp: \
+	C:/Qt6\ Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qtc/package-manager/auto-setup.cmake \
+	C:/Qt6\ Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/cmake/CompileDefinitions.cmake \
+	C:/Qt6\ Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/cmake/GlfwImport.cmake \
+	C:/Qt6\ Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/cmake/InstallConfigurations.cmake \
+	C:/Qt6\ Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/cmake/JoinPaths.cmake \
+	C:/Qt6\ Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/cmake/LibraryConfigurations.cmake \
+	C:/Qt6\ Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/cmake/LibraryPathToLinkerFlags.cmake \
+	C:/Qt6\ Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/cmake/PackConfigurations.cmake \
+	C:/Qt6\ Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/cmake/PopulateConfigVariablesLocally.cmake \
+	C:/Qt6\ Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/cmake/raylib-config-version.cmake \
+	C:/Qt6\ Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/raylib.pc.in \
+	C:/Qt6\ Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/src/CMakeLists.txt \
+	C:/Qt6\ Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/src/raudio.c \
+	C:/Qt6\ Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/src/raylib.h \
+	C:/Qt6\ Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/src/raymath.h \
+	C:/Qt6\ Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/src/rcore.c \
+	C:/Qt6\ Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/src/rlgl.h \
+	C:/Qt6\ Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/src/rmodels.c \
+	C:/Qt6\ Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/src/rshapes.c \
+	C:/Qt6\ Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/src/rtext.c \
+	C:/Qt6\ Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/src/rtextures.c \
+	C:/Qt6\ Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/src/utils.c \
+	C:/Qt6\ Projects/TinyRayCaster/drawTheMap/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/_deps/raylib-src/src/utils.h \
+	C:/Qt6/Tools/CMake_64/share/cmake-3.29/Modules/CPack.cmake \
+	C:/Qt6/Tools/CMake_64/share/cmake-3.29/Modules/CPackComponent.cmake \
+	C:/Qt6/Tools/CMake_64/share/cmake-3.29/Modules/FindOpenGL.cmake \
+	C:/Qt6/Tools/CMake_64/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake \
+	C:/Qt6/Tools/CMake_64/share/cmake-3.29/Modules/FindPackageMessage.cmake \
+	C:/Qt6/Tools/CMake_64/share/cmake-3.29/Modules/GNUInstallDirs.cmake \
+	C:/Qt6/Tools/CMake_64/share/cmake-3.29/Templates/CPackConfig.cmake.in \
+	C:/Qt6/Tools/CMake_64/bin/cmake.exe

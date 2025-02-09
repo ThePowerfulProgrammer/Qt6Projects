@@ -73,6 +73,7 @@ RegistrationDialog::RegistrationDialog(QWidget *parent) : QDialog(parent, Qt::Wi
     columnLabels << "Name" << "Type" << "Email" << "Booking Date" << "Fee" << "Affiliation" << "Additional Info";
     model->setHorizontalHeaderLabels(columnLabels);
 
+
     tableView = new QTableView(this);
     tableView->setModel(model);
     tableView->setShowGrid(true);
@@ -145,6 +146,10 @@ void RegistrationDialog::createRegistration()
                 // insert a new row to the model
                 int row =  model->rowCount();
                 model->insertRow(row, QList<QStandardItem*>() << name_item << type_item <<email_item << booking_date_item << reg_fee_item << aff_item << add_item);
+
+
+
+
             }
         }
         else if (typeOfRegistration->currentText() == "Student Registration")
