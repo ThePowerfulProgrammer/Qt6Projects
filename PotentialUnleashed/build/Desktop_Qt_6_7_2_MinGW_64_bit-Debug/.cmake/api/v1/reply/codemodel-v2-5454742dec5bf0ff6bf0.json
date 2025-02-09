@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-c721c98f806743e6f761.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "PotentialUnleashed",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "PotentialUnleashed::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-PotentialUnleashed-Debug-db212cfb9de60cdef10f.json",
+					"name" : "PotentialUnleashed",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "PotentialUnleashed_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-PotentialUnleashed_autogen-Debug-c09d1ecbcc2c0aa29209.json",
+					"name" : "PotentialUnleashed_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "PotentialUnleashed_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-PotentialUnleashed_autogen_timestamp_deps-Debug-bb3f25bc521bd876b5e8.json",
+					"name" : "PotentialUnleashed_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Qt6 Projects/PotentialUnleashed/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug",
+		"source" : "C:/Qt6 Projects/PotentialUnleashed"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

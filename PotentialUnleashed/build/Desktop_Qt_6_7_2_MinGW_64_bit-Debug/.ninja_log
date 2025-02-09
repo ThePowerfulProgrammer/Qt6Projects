@@ -1,0 +1,80 @@
+# ninja log v5
+371	3600	7602946542520593	CMakeFiles/PotentialUnleashed.dir/utlity.cpp.obj	a0fb1f58a4d4d26d
+202	2468	7603082986022691	CMakeFiles/PotentialUnleashed.dir/main.cpp.obj	d4170494a3cf42f8
+4055	4879	7607947016498466	PotentialUnleashed.exe	5038fa3badc06f3
+602	3282	7597785205148976	CMakeFiles/PotentialUnleashed.dir/PotentialUnleashed_autogen/mocs_compilation.cpp.obj	4cbe00d1b8a458e9
+185	1961	7593349144072500	CMakeFiles/PotentialUnleashed.dir/exercise.cpp.obj	8423447f100ae280
+20	276	7607946960439592	C:/Qt6 Projects/PotentialUnleashed/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/PotentialUnleashed_autogen/timestamp	4039befbf9c5ff0f
+815	3245	7592613592695040	CMakeFiles/PotentialUnleashed.dir/workout.cpp.obj	716183bcc4351536
+20	276	7607946960439592	PotentialUnleashed_autogen/mocs_compilation.cpp	4039befbf9c5ff0f
+306	4055	7607947008329948	CMakeFiles/PotentialUnleashed.dir/createworkoutdialog.cpp.obj	f4be6d81c6decb7
+20	276	7607946960439592	C:/Qt6 Projects/PotentialUnleashed/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/PotentialUnleashed_autogen/mocs_compilation.cpp	4039befbf9c5ff0f
+20	276	7607946960439592	PotentialUnleashed_autogen/timestamp	4039befbf9c5ff0f
+316	3844	7602950602788443	CMakeFiles/PotentialUnleashed.dir/mainwindow.cpp.obj	e77a09c161bd84ff
+33	300	7607948765835610	PotentialUnleashed_autogen/timestamp	4039befbf9c5ff0f
+33	300	7607948765835610	PotentialUnleashed_autogen/mocs_compilation.cpp	4039befbf9c5ff0f
+33	300	7607948765835610	C:/Qt6 Projects/PotentialUnleashed/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/PotentialUnleashed_autogen/timestamp	4039befbf9c5ff0f
+33	300	7607948765835610	C:/Qt6 Projects/PotentialUnleashed/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/PotentialUnleashed_autogen/mocs_compilation.cpp	4039befbf9c5ff0f
+331	4331	7607948819943578	CMakeFiles/PotentialUnleashed.dir/createworkoutdialog.cpp.obj	f4be6d81c6decb7
+4331	5290	7607948829456206	PotentialUnleashed.exe	5038fa3badc06f3
+49	305	7607948853482675	PotentialUnleashed_autogen/timestamp	4039befbf9c5ff0f
+49	305	7607948853482675	PotentialUnleashed_autogen/mocs_compilation.cpp	4039befbf9c5ff0f
+49	305	7607948853482675	C:/Qt6 Projects/PotentialUnleashed/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/PotentialUnleashed_autogen/timestamp	4039befbf9c5ff0f
+49	305	7607948853482675	C:/Qt6 Projects/PotentialUnleashed/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/PotentialUnleashed_autogen/mocs_compilation.cpp	4039befbf9c5ff0f
+326	4443	7607948899155803	CMakeFiles/PotentialUnleashed.dir/createworkoutdialog.cpp.obj	f4be6d81c6decb7
+4443	5200	7607948906693714	PotentialUnleashed.exe	5038fa3badc06f3
+42	305	7607949538559048	PotentialUnleashed_autogen/timestamp	4039befbf9c5ff0f
+42	305	7607949538559048	PotentialUnleashed_autogen/mocs_compilation.cpp	4039befbf9c5ff0f
+42	305	7607949538559048	C:/Qt6 Projects/PotentialUnleashed/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/PotentialUnleashed_autogen/timestamp	4039befbf9c5ff0f
+42	305	7607949538559048	C:/Qt6 Projects/PotentialUnleashed/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/PotentialUnleashed_autogen/mocs_compilation.cpp	4039befbf9c5ff0f
+331	3955	7607949598441829	CMakeFiles/PotentialUnleashed.dir/createworkoutdialog.cpp.obj	f4be6d81c6decb7
+3955	4696	7607949605821028	PotentialUnleashed.exe	5038fa3badc06f3
+23	1025	7607953846910076	PotentialUnleashed_autogen/timestamp	4039befbf9c5ff0f
+23	1025	7607953846910076	PotentialUnleashed_autogen/mocs_compilation.cpp	4039befbf9c5ff0f
+23	1025	7607953846910076	C:/Qt6 Projects/PotentialUnleashed/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/PotentialUnleashed_autogen/timestamp	4039befbf9c5ff0f
+23	1025	7607953846910076	C:/Qt6 Projects/PotentialUnleashed/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/PotentialUnleashed_autogen/mocs_compilation.cpp	4039befbf9c5ff0f
+1033	4434	7607953882069100	CMakeFiles/PotentialUnleashed.dir/main.cpp.obj	d4170494a3cf42f8
+1039	4942	7607953887090171	CMakeFiles/PotentialUnleashed.dir/mainwindow.cpp.obj	e77a09c161bd84ff
+1027	5353	7607953891173198	CMakeFiles/PotentialUnleashed.dir/PotentialUnleashed_autogen/mocs_compilation.cpp.obj	4cbe00d1b8a458e9
+1046	5629	7607953893999512	CMakeFiles/PotentialUnleashed.dir/createworkoutdialog.cpp.obj	f4be6d81c6decb7
+5630	6361	7607953901229045	PotentialUnleashed.exe	5038fa3badc06f3
+18	275	7607954398980164	PotentialUnleashed_autogen/timestamp	4039befbf9c5ff0f
+18	275	7607954398980164	PotentialUnleashed_autogen/mocs_compilation.cpp	4039befbf9c5ff0f
+18	275	7607954398980164	C:/Qt6 Projects/PotentialUnleashed/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/PotentialUnleashed_autogen/timestamp	4039befbf9c5ff0f
+18	275	7607954398980164	C:/Qt6 Projects/PotentialUnleashed/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/PotentialUnleashed_autogen/mocs_compilation.cpp	4039befbf9c5ff0f
+304	3920	7607954455854777	CMakeFiles/PotentialUnleashed.dir/createworkoutdialog.cpp.obj	f4be6d81c6decb7
+3920	4651	7607954463066206	PotentialUnleashed.exe	5038fa3badc06f3
+33	233	7607956912379774	PotentialUnleashed_autogen/timestamp	4039befbf9c5ff0f
+33	233	7607956912379774	PotentialUnleashed_autogen/mocs_compilation.cpp	4039befbf9c5ff0f
+33	233	7607956912379774	C:/Qt6 Projects/PotentialUnleashed/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/PotentialUnleashed_autogen/timestamp	4039befbf9c5ff0f
+33	233	7607956912379774	C:/Qt6 Projects/PotentialUnleashed/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/PotentialUnleashed_autogen/mocs_compilation.cpp	4039befbf9c5ff0f
+250	2797	7607957269361498	CMakeFiles/PotentialUnleashed.dir/mainwindow.cpp.obj	e77a09c161bd84ff
+2798	3551	7607957276908230	PotentialUnleashed.exe	5038fa3badc06f3
+41	286	7607957452363142	PotentialUnleashed_autogen/timestamp	4039befbf9c5ff0f
+41	286	7607957452363142	PotentialUnleashed_autogen/mocs_compilation.cpp	4039befbf9c5ff0f
+41	286	7607957452363142	C:/Qt6 Projects/PotentialUnleashed/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/PotentialUnleashed_autogen/timestamp	4039befbf9c5ff0f
+41	286	7607957452363142	C:/Qt6 Projects/PotentialUnleashed/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/PotentialUnleashed_autogen/mocs_compilation.cpp	4039befbf9c5ff0f
+310	3448	7607957499133525	CMakeFiles/PotentialUnleashed.dir/mainwindow.cpp.obj	e77a09c161bd84ff
+3449	4342	7607957508082500	PotentialUnleashed.exe	5038fa3badc06f3
+20	253	7607957917102504	PotentialUnleashed_autogen/timestamp	4039befbf9c5ff0f
+20	253	7607957917102504	PotentialUnleashed_autogen/mocs_compilation.cpp	4039befbf9c5ff0f
+20	253	7607957917102504	C:/Qt6 Projects/PotentialUnleashed/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/PotentialUnleashed_autogen/timestamp	4039befbf9c5ff0f
+20	253	7607957917102504	C:/Qt6 Projects/PotentialUnleashed/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/PotentialUnleashed_autogen/mocs_compilation.cpp	4039befbf9c5ff0f
+272	2907	7607957986843241	CMakeFiles/PotentialUnleashed.dir/mainwindow.cpp.obj	e77a09c161bd84ff
+2908	3647	7607957994220950	PotentialUnleashed.exe	5038fa3badc06f3
+15	721	7607958552611388	PotentialUnleashed_autogen/timestamp	4039befbf9c5ff0f
+15	721	7607958552611388	PotentialUnleashed_autogen/mocs_compilation.cpp	4039befbf9c5ff0f
+15	721	7607958552611388	C:/Qt6 Projects/PotentialUnleashed/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/PotentialUnleashed_autogen/timestamp	4039befbf9c5ff0f
+15	721	7607958552611388	C:/Qt6 Projects/PotentialUnleashed/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/PotentialUnleashed_autogen/mocs_compilation.cpp	4039befbf9c5ff0f
+729	3614	7607958582431620	CMakeFiles/PotentialUnleashed.dir/main.cpp.obj	d4170494a3cf42f8
+736	4033	7607958586676303	CMakeFiles/PotentialUnleashed.dir/mainwindow.cpp.obj	e77a09c161bd84ff
+723	4391	7607958590128470	CMakeFiles/PotentialUnleashed.dir/PotentialUnleashed_autogen/mocs_compilation.cpp.obj	4cbe00d1b8a458e9
+4391	5141	7607958597674312	PotentialUnleashed.exe	5038fa3badc06f3
+16	714	7607959142113793	PotentialUnleashed_autogen/timestamp	4039befbf9c5ff0f
+16	714	7607959142113793	PotentialUnleashed_autogen/mocs_compilation.cpp	4039befbf9c5ff0f
+16	714	7607959142113793	C:/Qt6 Projects/PotentialUnleashed/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/PotentialUnleashed_autogen/timestamp	4039befbf9c5ff0f
+16	714	7607959142113793	C:/Qt6 Projects/PotentialUnleashed/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/PotentialUnleashed_autogen/mocs_compilation.cpp	4039befbf9c5ff0f
+721	3498	7607959170840402	CMakeFiles/PotentialUnleashed.dir/main.cpp.obj	d4170494a3cf42f8
+727	3894	7607959174766399	CMakeFiles/PotentialUnleashed.dir/mainwindow.cpp.obj	e77a09c161bd84ff
+715	4165	7607959177434871	CMakeFiles/PotentialUnleashed.dir/PotentialUnleashed_autogen/mocs_compilation.cpp.obj	4cbe00d1b8a458e9
+4165	4902	7607959184656679	PotentialUnleashed.exe	5038fa3badc06f3
